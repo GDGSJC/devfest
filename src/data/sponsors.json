@@ -4,7 +4,7 @@
       {
         "id": 1,
         "name": "Google",
-        "logo": "/images/sponsors/google.png",
+        "logo": "https://via.placeholder.com/300x150/4285f4/ffffff?text=Google",
         "website": "https://google.com",
         "description": "Patrocinador principal do evento",
         "benefits": [
@@ -19,21 +19,21 @@
       {
         "id": 2,
         "name": "Microsoft",
-        "logo": "/images/sponsors/microsoft.png",
+        "logo": "https://via.placeholder.com/250x125/00a4ef/ffffff?text=Microsoft",
         "website": "https://microsoft.com",
         "description": "Parceiro tecnológico estratégico"
       },
       {
         "id": 3,
         "name": "Amazon Web Services",
-        "logo": "/images/sponsors/aws.png",
+        "logo": "https://via.placeholder.com/250x125/ff9900/ffffff?text=AWS",
         "website": "https://aws.amazon.com",
         "description": "Líder em serviços de nuvem"
       },
       {
         "id": 4,
         "name": "Meta",
-        "logo": "/images/sponsors/meta.png",
+        "logo": "https://via.placeholder.com/250x125/1877f2/ffffff?text=Meta",
         "website": "https://meta.com",
         "description": "Inovação em realidade virtual e social"
       }
@@ -42,42 +42,42 @@
       {
         "id": 5,
         "name": "JetBrains",
-        "logo": "/images/sponsors/jetbrains.png",
+        "logo": "https://via.placeholder.com/200x100/000000/ffffff?text=JetBrains",
         "website": "https://jetbrains.com",
         "description": "Ferramentas de desenvolvimento profissional"
       },
       {
         "id": 6,
         "name": "GitHub",
-        "logo": "/images/sponsors/github.png",
+        "logo": "https://via.placeholder.com/200x100/24292e/ffffff?text=GitHub",
         "website": "https://github.com",
         "description": "Plataforma de desenvolvimento colaborativo"
       },
       {
         "id": 7,
         "name": "Vercel",
-        "logo": "/images/sponsors/vercel.png",
+        "logo": "https://via.placeholder.com/200x100/000000/ffffff?text=Vercel",
         "website": "https://vercel.com",
         "description": "Plataforma de deploy e hosting frontend"
       },
       {
         "id": 8,
         "name": "MongoDB",
-        "logo": "/images/sponsors/mongodb.png",
+        "logo": "https://via.placeholder.com/200x100/47a248/ffffff?text=MongoDB",
         "website": "https://mongodb.com",
         "description": "Banco de dados NoSQL líder de mercado"
       },
       {
         "id": 9,
         "name": "Docker",
-        "logo": "/images/sponsors/docker.png",
+        "logo": "https://via.placeholder.com/200x100/2496ed/ffffff?text=Docker",
         "website": "https://docker.com",
         "description": "Containerização e DevOps"
       },
       {
         "id": 10,
         "name": "Stripe",
-        "logo": "/images/sponsors/stripe.png",
+        "logo": "https://via.placeholder.com/200x100/635bff/ffffff?text=Stripe",
         "website": "https://stripe.com",
         "description": "Infraestrutura de pagamentos online"
       }

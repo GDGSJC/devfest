@@ -112,11 +112,18 @@ const App = () => {
       <section id="palestrantes" className="section palestrantes">
         <div className="container">
           <h2 className="section-title">Palestrantes</h2>
-          <div className="speakers-grid">
-            {speakersData.speakers.map((speaker) => (
+          {speakersData.speakers.length > 0 ? (
+            <div className="speakers-grid">
+              {speakersData.speakers.map((speaker) => (
               <div key={speaker.id} className="speaker-card">
                 <div className="speaker-image">
-                  <img src={speaker.image} alt={speaker.name} onError={(e) => e.target.src = '/images/placeholder-avatar.jpg'} />
+                  <img 
+                    src={speaker.image} 
+                    alt={speaker.name} 
+                    onError={(e) => {
+                      e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
+                    }} 
+                  />
                 </div>
                 <h3>{speaker.name}</h3>
                 <p className="speaker-role">{speaker.role}</p>
@@ -135,7 +142,13 @@ const App = () => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>Os palestrantes serão anunciados em breve. Fique ligado!</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -143,7 +156,8 @@ const App = () => {
       <section className="section voluntarios">
         <div className="container">
           <h2 className="section-title">Voluntários</h2>
-          <div className="volunteers-content">
+          {volunteersData.volunteers.roles && volunteersData.volunteers.roles.length > 0 ? (
+            <div className="volunteers-content">
             <div className="volunteers-text">
               <h3>{volunteersData.volunteers.info.title}</h3>
               <p>{volunteersData.volunteers.info.description}</p>
@@ -160,9 +174,21 @@ const App = () => {
               </a>
             </div>
             <div className="volunteers-image">
-              <img src="/images/volunteers.jpg" alt="Voluntários" onError={(e) => e.target.style.display = 'none'} />
+              <img 
+                src="/images/volunteers.jpg" 
+                alt="Voluntários" 
+                onError={(e) => {
+                  e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=faces&auto=format&q=80'
+                }} 
+              />
             </div>
           </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>As informações sobre voluntários serão divulgadas em breve.</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -170,13 +196,21 @@ const App = () => {
       <section className="section patrocinadores">
         <div className="container">
           <h2 className="section-title">Patrocinadores</h2>
-          <div className="sponsors-tiers">
+          {(sponsorsData.sponsors.diamond.length > 0 || sponsorsData.sponsors.gold.length > 0 || sponsorsData.sponsors.silver.length > 0) ? (
+            <>
+              <div className="sponsors-tiers">
             <div className="sponsor-tier">
               <h3>Patrocinador Diamante</h3>
               <div className="sponsors-grid diamond">
                 {sponsorsData.sponsors.diamond.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
-                    <img src={sponsor.logo} alt={sponsor.name} onError={(e) => e.target.style.display = 'none'} />
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      onError={(e) => {
+                        e.target.src = `https://via.placeholder.com/300x150/b9f2ff/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                      }} 
+                    />
                   </div>
                 ))}
               </div>
@@ -186,7 +220,13 @@ const App = () => {
               <div className="sponsors-grid gold">
                 {sponsorsData.sponsors.gold.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
-                    <img src={sponsor.logo} alt={sponsor.name} onError={(e) => e.target.style.display = 'none'} />
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      onError={(e) => {
+                        e.target.src = `https://via.placeholder.com/250x125/ffd700/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                      }} 
+                    />
                   </div>
                 ))}
               </div>
@@ -196,7 +236,13 @@ const App = () => {
               <div className="sponsors-grid silver">
                 {sponsorsData.sponsors.silver.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
-                    <img src={sponsor.logo} alt={sponsor.name} onError={(e) => e.target.style.display = 'none'} />
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      onError={(e) => {
+                        e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                      }} 
+                    />
                   </div>
                 ))}
               </div>
@@ -209,6 +255,13 @@ const App = () => {
               Saiba Como Patrocinar
             </a>
           </div>
+          </>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>Os patrocinadores serão anunciados em breve.</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -216,10 +269,17 @@ const App = () => {
       <section className="section comunidades">
         <div className="container">
           <h2 className="section-title">Comunidades Parceiras</h2>
-          <div className="communities-grid">
-            {communitiesData.partnerCommunities.map((community) => (
+          {communitiesData.partnerCommunities.length > 0 ? (
+            <div className="communities-grid">
+              {communitiesData.partnerCommunities.map((community) => (
               <div key={community.id} className="community-card">
-                <img src={community.logo} alt={community.name} onError={(e) => e.target.style.display = 'none'} />
+                <img 
+                  src={community.logo} 
+                  alt={community.name} 
+                  onError={(e) => {
+                    e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(community.name)}&size=160&background=fbbc04&color=4285f4&bold=true&format=png`
+                  }} 
+                />
                 <h3>{community.name}</h3>
                 <p>{community.description}</p>
                 <div className="community-info">
@@ -233,7 +293,13 @@ const App = () => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>As comunidades parceiras serão anunciadas em breve.</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -291,11 +357,18 @@ const App = () => {
       <section className="section organizadores">
         <div className="container">
           <h2 className="section-title">Equipe Organizadora</h2>
-          <div className="organizers-grid">
-            {organizersData.organizers.team.map((organizer) => (
+          {organizersData.organizers.team.length > 0 ? (
+            <div className="organizers-grid">
+              {organizersData.organizers.team.map((organizer) => (
               <div key={organizer.id} className="organizer-card">
                 <div className="organizer-image">
-                  <img src={organizer.image} alt={organizer.name} onError={(e) => e.target.src = '/images/placeholder-avatar.jpg'} />
+                  <img 
+                    src={organizer.image} 
+                    alt={organizer.name} 
+                    onError={(e) => {
+                      e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(organizer.name)}&size=200&background=34a853&color=ffffff&bold=true&format=png`
+                    }} 
+                  />
                 </div>
                 <h3>{organizer.name}</h3>
                 <p className="organizer-role">{organizer.role}</p>
@@ -308,7 +381,13 @@ const App = () => {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>A equipe organizadora será apresentada em breve.</p>
+            </div>
+          )}
         </div>
       </section>
 
@@ -321,14 +400,14 @@ const App = () => {
             <div className="ticket-info">
               <div className="ticket-price">
                 {/* <span className="price">R$ 50,00</span> */}
-                <span className="price-info">Inclui coffee breaks, almoço e kit do evento</span>
+                <span className="price-info">Inclui coffee breaks e kit do evento</span>
               </div>
             </div>
             <a href="https://www.sympla.com.br/evento/devfest-sao-jose-dos-campos-2025/3127936" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
               <ExternalLink className="icon" />
               Comprar Ingresso
             </a>
-            <p className="ticket-note">* Temos ingressos solidários para pessoas em situação de vulnerabilidade</p>
+            <p className="ticket-note">* Temos ingressos solidários para pessoas em situação de vulnerabilidade, entre contato pelas redes sociais ou email</p>
           </div>
         </div>
       </section>

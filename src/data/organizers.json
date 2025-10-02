@@ -14,7 +14,7 @@
         "role": "Organizador Geral",
         "title": "GDG São José dos Campos Leader",
         "bio": "Desenvolvedor full-stack com mais de 10 anos de experiência. Líder do GDG SJC desde 2020, organizando eventos e workshops para a comunidade tech local.",
-        "image": "/images/organizers/joao-silva.jpg",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Google Developer Expert",
         "social": {
           "linkedin": "https://linkedin.com/in/joaosilva",
@@ -29,7 +29,7 @@
         "role": "Coordenadora de Conteúdo",
         "title": "Content Manager & Developer Relations",
         "bio": "Especialista em Developer Relations e criação de conteúdo técnico. Responsável por curar as palestras e garantir a qualidade do conteúdo do evento.",
-        "image": "/images/organizers/maria-santos.jpg",
+        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Microsoft MVP",
         "social": {
           "linkedin": "https://linkedin.com/in/mariasantos",
@@ -43,7 +43,7 @@
         "role": "Coordenador de Logística",
         "title": "Event Operations Manager",
         "bio": "Especialista em produção de eventos tech com mais de 15 anos de experiência. Responsável por toda a logística e operações do DevFest.",
-        "image": "/images/organizers/pedro-oliveira.jpg",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Freelancer",
         "social": {
           "linkedin": "https://linkedin.com/in/pedrooliveira"
@@ -56,7 +56,7 @@
         "role": "Coordenadora de Marketing",
         "title": "Digital Marketing Specialist",
         "bio": "Profissional de marketing digital focada em eventos de tecnologia. Responsável pela estratégia de comunicação e divulgação do DevFest.",
-        "image": "/images/organizers/ana-costa.jpg",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Tech Marketing Agency",
         "social": {
           "linkedin": "https://linkedin.com/in/anacosta",
@@ -70,7 +70,7 @@
         "role": "Coordenador de Patrocínios",
         "title": "Partnership & Sponsorship Manager",
         "bio": "Executivo de vendas e parcerias com experiência em eventos corporativos. Responsável por atrair e gerenciar patrocinadores do evento.",
-        "image": "/images/organizers/carlos-rodrigues.jpg",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Business Development",
         "social": {
           "linkedin": "https://linkedin.com/in/carlosrodrigues"
@@ -83,7 +83,7 @@
         "role": "Coordenadora de Voluntários",
         "title": "Community Engagement Manager",
         "bio": "Gestora de comunidades e recursos humanos. Responsável por recrutar, treinar e coordenar a equipe de voluntários do evento.",
-        "image": "/images/organizers/fernanda-lima.jpg",
+        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "HR Consultant",
         "social": {
           "linkedin": "https://linkedin.com/in/fernandalima",
@@ -99,7 +99,7 @@
         "role": "Advisor Acadêmico",
         "title": "Professor UNIVAP",
         "bio": "Professor de Ciência da Computação na UNIVAP e pesquisador em IA. Advisor acadêmico do evento.",
-        "image": "/images/organizers/roberto-mendes.jpg",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "UNIVAP",
         "social": {
           "linkedin": "https://linkedin.com/in/robertomendes"
@@ -111,7 +111,7 @@
         "role": "Advisor de Diversidade",
         "title": "Women Techmakers Lead",
         "bio": "Líder do Women Techmakers São Paulo e defensora da diversidade na tecnologia.",
-        "image": "/images/organizers/laura-ferreira.jpg",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
         "company": "Women Techmakers",
         "social": {
           "linkedin": "https://linkedin.com/in/lauraferreira",
