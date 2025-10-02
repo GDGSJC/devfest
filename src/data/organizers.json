@@ -1,0 +1,139 @@
+{
+  "organizers": {
+    "event": {
+      "name": "DevFest São José dos Campos 2025",
+      "organizer": "Google Developer Groups São José dos Campos",
+      "date": "2025-11-29",
+      "venue": "UNIFESP - Universidade Federal de São Paulo",
+      "expectedAttendees": 300
+    },
+    "team": [
+      {
+        "id": 1,
+        "name": "João Silva",
+        "role": "Organizador Geral",
+        "title": "GDG São José dos Campos Leader",
+        "bio": "Desenvolvedor full-stack com mais de 10 anos de experiência. Líder do GDG SJC desde 2020, organizando eventos e workshops para a comunidade tech local.",
+        "image": "/images/organizers/joao-silva.jpg",
+        "company": "Google Developer Expert",
+        "social": {
+          "linkedin": "https://linkedin.com/in/joaosilva",
+          "twitter": "https://twitter.com/joaosilva",
+          "github": "https://github.com/joaosilva"
+        },
+        "responsibilities": ["Coordenação geral", "Relacionamento com palestrantes", "Visão estratégica do evento"]
+      },
+      {
+        "id": 2,
+        "name": "Maria Santos",
+        "role": "Coordenadora de Conteúdo",
+        "title": "Content Manager & Developer Relations",
+        "bio": "Especialista em Developer Relations e criação de conteúdo técnico. Responsável por curar as palestras e garantir a qualidade do conteúdo do evento.",
+        "image": "/images/organizers/maria-santos.jpg",
+        "company": "Microsoft MVP",
+        "social": {
+          "linkedin": "https://linkedin.com/in/mariasantos",
+          "twitter": "https://twitter.com/mariasantos"
+        },
+        "responsibilities": ["Curadoria de conteúdo", "Seleção de palestrantes", "Coordenação das trilhas"]
+      },
+      {
+        "id": 3,
+        "name": "Pedro Oliveira",
+        "role": "Coordenador de Logística",
+        "title": "Event Operations Manager",
+        "bio": "Especialista em produção de eventos tech com mais de 15 anos de experiência. Responsável por toda a logística e operações do DevFest.",
+        "image": "/images/organizers/pedro-oliveira.jpg",
+        "company": "Freelancer",
+        "social": {
+          "linkedin": "https://linkedin.com/in/pedrooliveira"
+        },
+        "responsibilities": ["Logística do evento", "Coordenação de fornecedores", "Gestão do local"]
+      },
+      {
+        "id": 4,
+        "name": "Ana Costa",
+        "role": "Coordenadora de Marketing",
+        "title": "Digital Marketing Specialist",
+        "bio": "Profissional de marketing digital focada em eventos de tecnologia. Responsável pela estratégia de comunicação e divulgação do DevFest.",
+        "image": "/images/organizers/ana-costa.jpg",
+        "company": "Tech Marketing Agency",
+        "social": {
+          "linkedin": "https://linkedin.com/in/anacosta",
+          "instagram": "https://instagram.com/anacosta"
+        },
+        "responsibilities": ["Marketing digital", "Redes sociais", "Comunicação com imprensa"]
+      },
+      {
+        "id": 5,
+        "name": "Carlos Rodrigues",
+        "role": "Coordenador de Patrocínios",
+        "title": "Partnership & Sponsorship Manager",
+        "bio": "Executivo de vendas e parcerias com experiência em eventos corporativos. Responsável por atrair e gerenciar patrocinadores do evento.",
+        "image": "/images/organizers/carlos-rodrigues.jpg",
+        "company": "Business Development",
+        "social": {
+          "linkedin": "https://linkedin.com/in/carlosrodrigues"
+        },
+        "responsibilities": ["Captação de patrocínios", "Relacionamento com parceiros", "Contratos comerciais"]
+      },
+      {
+        "id": 6,
+        "name": "Fernanda Lima",
+        "role": "Coordenadora de Voluntários",
+        "title": "Community Engagement Manager",
+        "bio": "Gestora de comunidades e recursos humanos. Responsável por recrutar, treinar e coordenar a equipe de voluntários do evento.",
+        "image": "/images/organizers/fernanda-lima.jpg",
+        "company": "HR Consultant",
+        "social": {
+          "linkedin": "https://linkedin.com/in/fernandalima",
+          "twitter": "https://twitter.com/fernandalima"
+        },
+        "responsibilities": ["Gestão de voluntários", "Treinamento da equipe", "Coordenação de atividades"]
+      }
+    ],
+    "advisors": [
+      {
+        "id": 7,
+        "name": "Dr. Roberto Mendes",
+        "role": "Advisor Acadêmico",
+        "title": "Professor UNIVAP",
+        "bio": "Professor de Ciência da Computação na UNIVAP e pesquisador em IA. Advisor acadêmico do evento.",
+        "image": "/images/organizers/roberto-mendes.jpg",
+        "company": "UNIVAP",
+        "social": {
+          "linkedin": "https://linkedin.com/in/robertomendes"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Laura Ferreira",
+        "role": "Advisor de Diversidade",
+        "title": "Women Techmakers Lead",
+        "bio": "Líder do Women Techmakers São Paulo e defensora da diversidade na tecnologia.",
+        "image": "/images/organizers/laura-ferreira.jpg",
+        "company": "Women Techmakers",
+        "social": {
+          "linkedin": "https://linkedin.com/in/lauraferreira",
+          "twitter": "https://twitter.com/lauraferreira"
+        }
+      }
+    ],
+    "contact": {
+      "general": "gdgsaojosedoscampos@gmail.com",
+      "speakers": "gdgsaojosedoscampos@gmail.com",
+      "sponsors": "gdgsaojosedoscampos@gmail.com",
+      "volunteers": "gdgsaojosedoscampos@gmail.com",
+      "press": "gdgsaojosedoscampos@gmail.com"
+    },
+    "social": {
+      "website": "https://gdgsjc.github.io",
+      "instagram": "https://instagram.com/gdg_sjc",
+      "twitter": "https://x.com/GDG_SJC",
+      "linkedin": "https://linkedin.com/company/gdg-sao-jose-dos-campos",
+      "github": "https://github.com/gdgsjc",
+      "youtube": "https://youtube.com/gdgsjc",
+      "meetup": "https://meetup.com/gdgsjc"
+    }
+  }
+}

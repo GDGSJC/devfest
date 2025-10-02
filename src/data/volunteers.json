@@ -1,0 +1,140 @@
+{
+  "volunteers": {
+    "info": {
+      "title": "Faça Parte da Nossa Equipe!",
+      "description": "O DevFest é feito por pessoas apaixonadas por tecnologia que dedicam seu tempo para criar uma experiência incrível para todos os participantes. Junte-se a nós!",
+      "contactEmail": "voluntarios@gdgsjc.org",
+      "registrationDeadline": "2025-09-30",
+      "orientationDate": "2025-10-05"
+    },
+    "benefits": [
+      {
+        "icon": "Heart",
+        "title": "Contribua com a comunidade tech",
+        "description": "Ajude a fortalecer o ecossistema tecnológico da região"
+      },
+      {
+        "icon": "Users",
+        "title": "Networking com profissionais",
+        "description": "Conecte-se com desenvolvedores, palestrantes e líderes tech"
+      },
+      {
+        "icon": "Calendar",
+        "title": "Acesso gratuito ao evento",
+        "description": "Participe de todas as palestras e atividades sem custo"
+      },
+      {
+        "icon": "Award",
+        "title": "Certificado de voluntário",
+        "description": "Comprove sua participação e contribuição com a comunidade"
+      },
+      {
+        "icon": "Coffee",
+        "title": "Kit exclusivo de voluntário",
+        "description": "Camiseta, adesivos e brindes especiais para a equipe"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Experiência de organização",
+        "description": "Aprenda sobre produção de eventos e gestão de comunidade"
+      }
+    ],
+    "roles": [
+      {
+        "id": 1,
+        "title": "Recepção e Credenciamento",
+        "description": "Recepcionar participantes, entregar crachás e kits do evento",
+        "requirements": ["Comunicativo", "Pontual", "Proativo"],
+        "timeCommitment": "4-6 horas",
+        "spots": 8,
+        "skills": ["Atendimento ao público", "Organização"]
+      },
+      {
+        "id": 2,
+        "title": "Apoio Técnico",
+        "description": "Auxiliar palestrantes com equipamentos, microfones e apresentações",
+        "requirements": ["Conhecimento técnico básico", "Disponibilidade integral"],
+        "timeCommitment": "8 horas",
+        "spots": 4,
+        "skills": ["Troubleshooting", "Equipamentos A/V", "Suporte técnico"]
+      },
+      {
+        "id": 3,
+        "title": "Social Media",
+        "description": "Cobrir o evento nas redes sociais, tirar fotos e criar conteúdo",
+        "requirements": ["Conhecimento em redes sociais", "Smartphone/câmera"],
+        "timeCommitment": "6-8 horas",
+        "spots": 3,
+        "skills": ["Fotografia", "Redes sociais", "Criação de conteúdo"]
+      },
+      {
+        "id": 4,
+        "title": "Logística e Organização",
+        "description": "Organizar espaços, materiais e auxiliar na coordenação geral",
+        "requirements": ["Organizado", "Proativo", "Boa comunicação"],
+        "timeCommitment": "8 horas",
+        "spots": 6,
+        "skills": ["Organização", "Coordenação", "Gestão de tempo"]
+      },
+      {
+        "id": 5,
+        "title": "Apoio aos Palestrantes",
+        "description": "Acompanhar palestrantes, auxiliar com necessidades e horários",
+        "requirements": ["Inglês básico", "Comunicativo", "Flexível"],
+        "timeCommitment": "6-8 horas",
+        "spots": 4,
+        "skills": ["Relacionamento interpessoal", "Organização", "Idiomas"]
+      },
+      {
+        "id": 6,
+        "title": "Coffee Break e Alimentação",
+        "description": "Organizar coffee breaks, almoço e controlar fluxo de pessoas",
+        "requirements": ["Organizado", "Atencioso", "Proativo"],
+        "timeCommitment": "4-6 horas",
+        "spots": 5,
+        "skills": ["Organização", "Atendimento", "Controle de fluxo"]
+      }
+    ],
+    "requirements": {
+      "general": [
+        "Ter mais de 16 anos",
+        "Disponibilidade no dia do evento (12/10/2025)",
+        "Participar da reunião de orientação",
+        "Comprometimento e pontualidade"
+      ],
+      "preferred": [
+        "Experiência anterior com eventos",
+        "Conhecimento básico de tecnologia",
+        "Perfil colaborativo e comunicativo",
+        "Flexibilidade para diferentes atividades"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2025-08-15",
+        "title": "Abertura das inscrições",
+        "description": "Início do período de candidaturas para voluntários"
+      },
+      {
+        "date": "2025-09-30",
+        "title": "Encerramento das inscrições",
+        "description": "Último dia para se candidatar"
+      },
+      {
+        "date": "2025-10-02",
+        "title": "Confirmação dos selecionados",
+        "description": "Comunicação aos voluntários selecionados"
+      },
+      {
+        "date": "2025-10-05",
+        "title": "Reunião de orientação",
+        "description": "Briefing sobre responsabilidades e cronograma"
+      },
+      {
+        "date": "2025-10-12",
+        "title": "Dia do evento",
+        "description": "DevFest São José dos Campos"
+      }
+    ]
+  }
+}

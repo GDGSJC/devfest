@@ -1,0 +1,124 @@
+{
+  "sponsors": {
+    "diamond": [
+      {
+        "id": 1,
+        "name": "Google",
+        "logo": "/images/sponsors/google.png",
+        "website": "https://google.com",
+        "description": "Patrocinador principal do evento",
+        "benefits": [
+          "Logo em destaque no site",
+          "Booth premium no evento",
+          "Apresentação de 15 minutos",
+          "Acesso VIP para networking"
+        ]
+      }
+    ],
+    "gold": [
+      {
+        "id": 2,
+        "name": "Microsoft",
+        "logo": "/images/sponsors/microsoft.png",
+        "website": "https://microsoft.com",
+        "description": "Parceiro tecnológico estratégico"
+      },
+      {
+        "id": 3,
+        "name": "Amazon Web Services",
+        "logo": "/images/sponsors/aws.png",
+        "website": "https://aws.amazon.com",
+        "description": "Líder em serviços de nuvem"
+      },
+      {
+        "id": 4,
+        "name": "Meta",
+        "logo": "/images/sponsors/meta.png",
+        "website": "https://meta.com",
+        "description": "Inovação em realidade virtual e social"
+      }
+    ],
+    "silver": [
+      {
+        "id": 5,
+        "name": "JetBrains",
+        "logo": "/images/sponsors/jetbrains.png",
+        "website": "https://jetbrains.com",
+        "description": "Ferramentas de desenvolvimento profissional"
+      },
+      {
+        "id": 6,
+        "name": "GitHub",
+        "logo": "/images/sponsors/github.png",
+        "website": "https://github.com",
+        "description": "Plataforma de desenvolvimento colaborativo"
+      },
+      {
+        "id": 7,
+        "name": "Vercel",
+        "logo": "/images/sponsors/vercel.png",
+        "website": "https://vercel.com",
+        "description": "Plataforma de deploy e hosting frontend"
+      },
+      {
+        "id": 8,
+        "name": "MongoDB",
+        "logo": "/images/sponsors/mongodb.png",
+        "website": "https://mongodb.com",
+        "description": "Banco de dados NoSQL líder de mercado"
+      },
+      {
+        "id": 9,
+        "name": "Docker",
+        "logo": "/images/sponsors/docker.png",
+        "website": "https://docker.com",
+        "description": "Containerização e DevOps"
+      },
+      {
+        "id": 10,
+        "name": "Stripe",
+        "logo": "/images/sponsors/stripe.png",
+        "website": "https://stripe.com",
+        "description": "Infraestrutura de pagamentos online"
+      }
+    ]
+  },
+  "sponsorshipTiers": {
+    "diamond": {
+      "name": "Patrocinador Diamante",
+      "price": "R$ 25.000",
+      "color": "#b9f2ff",
+      "benefits": [
+        "Logo em destaque no site e materiais",
+        "Booth premium no evento",
+        "Apresentação de 15 minutos",
+        "4 ingressos VIP inclusos",
+        "Acesso exclusivo para networking",
+        "Menção nas redes sociais",
+        "Logo na certificação dos participantes"
+      ]
+    },
+    "gold": {
+      "name": "Patrocinador Ouro",
+      "price": "R$ 15.000",
+      "color": "#ffd700",
+      "benefits": [
+        "Logo no site e materiais",
+        "Booth no evento",
+        "2 ingressos inclusos",
+        "Menção nas redes sociais",
+        "Logo na certificação dos participantes"
+      ]
+    },
+    "silver": {
+      "name": "Patrocinador Prata",
+      "price": "R$ 8.000",
+      "color": "#c0c0c0",
+      "benefits": [
+        "Logo no site",
+        "1 ingresso incluso",
+        "Menção nas redes sociais"
+      ]
+    }
+  }
+}
