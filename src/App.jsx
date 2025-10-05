@@ -60,7 +60,7 @@ const App = () => {
                 <ExternalLink className="icon" />
                 Garantir Ingresso
               </a>
-              <a href="#sobre" className="btn btn-secondary">Saiba Mais</a>
+              <a href="#palestrantes" className="btn btn-secondary">Saiba Mais</a>
             </div>
           </div>
         </div>
