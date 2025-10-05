@@ -73,24 +73,25 @@ const App = () => {
           <div className="tracks-grid">
             <div className="track-card">
               <div className="track-icon web">🌐</div>
-              <h3>Web & Frontend</h3>
-              <p>Descubra as últimas tendências em desenvolvimento web, frameworks modernos e melhores práticas de UX/UI.</p>
+              <h3>Experts</h3>
+              <p>Descubra as últimas tendências em desenvolvimento por especialistas da área, 
+              </p>
               <ul className="track-topics">
-                <li>React & Next.js</li>
-                <li>Vue.js & Angular</li>
-                <li>Web Performance</li>
-                <li>Progressive Web Apps</li>
+                <li>GDE (Google Developer Expert)</li>
+                <li>Web Development</li>
+                <li>Cloud (Google Cloud Platform)</li>
+                <li>IA (Inteligência Artificial)</li>
               </ul>
             </div>
             <div className="track-card">
               <div className="track-icon mobile">📱</div>
-              <h3>Mobile & Flutter</h3>
-              <p>Mergulhe no mundo do desenvolvimento mobile com Flutter, Android nativo e as melhores práticas mobile.</p>
+              <h3>Start</h3>
+              <p>Mergulhe no mundo do desenvolvimento e descubra as melhoras praticas para sua carreira e as como usar as tecnologias do momento.</p>
               <ul className="track-topics">
-                <li>Flutter Avançado</li>
-                <li>Android Jetpack Compose</li>
-                <li>Mobile Architecture</li>
-                <li>App Store Optimization</li>
+                <li>Dicas de carreira</li>
+                <li>Networking</li>
+                <li>Mentoria</li>
+                <li>Inovação</li>
               </ul>
             </div>
             <div className="track-card">
@@ -196,7 +197,7 @@ const App = () => {
       <section className="section patrocinadores">
         <div className="container">
           <h2 className="section-title">Patrocinadores</h2>
-          {(sponsorsData.sponsors.diamond.length > 0 || sponsorsData.sponsors.gold.length > 0 || sponsorsData.sponsors.silver.length > 0) ? (
+          {(sponsorsData.sponsors.diamond?.length > 0 || sponsorsData.sponsors.gold?.length > 0 || sponsorsData.sponsors.silver?.length > 0) ? (
             <>
               <div className="sponsors-tiers">
             <div className="sponsor-tier">
@@ -269,7 +270,7 @@ const App = () => {
       <section className="section comunidades">
         <div className="container">
           <h2 className="section-title">Comunidades Parceiras</h2>
-          {communitiesData.partnerCommunities.length > 0 ? (
+          {communitiesData.partnerCommunities?.length > 0 ? (
             <div className="communities-grid">
               {communitiesData.partnerCommunities.map((community) => (
               <div key={community.id} className="community-card">

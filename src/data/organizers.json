@@ -10,16 +10,16 @@
     "team": [
       {
         "id": 1,
-        "name": "João Silva",
-        "role": "Organizador Geral",
-        "title": "GDG São José dos Campos Leader",
-        "bio": "Desenvolvedor full-stack com mais de 10 anos de experiência. Líder do GDG SJC desde 2020, organizando eventos e workshops para a comunidade tech local.",
-        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
+        "name": "Fred Peixoto",
+        "role": "Organizer",
+        "title": "GDG São José dos Campos",
+        "bio": "Desenvolvedor 15 anos de experiência. Organizador do GDG SJC desde 2018, organizando eventos e workshops para a comunidade tech local.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQExPdpUbIQESg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715806066720?e=1762387200&v=beta&t=F3iz12cZGdiTL22GcogjFwvrDrsdtItdLFyq_HNC2mM",
         "company": "Google Developer Expert",
         "social": {
-          "linkedin": "https://linkedin.com/in/joaosilva",
-          "twitter": "https://twitter.com/joaosilva",
-          "github": "https://github.com/joaosilva"
+          "linkedin": "https://linkedin.com/in/fredpeixoto",
+          "twitter": "https://twitter.com/_fredpeixoto",
+          "github": "https://github.com/fredmpeixoto"
         },
         "responsibilities": ["Coordenação geral", "Relacionamento com palestrantes", "Visão estratégica do evento"]
       },
@@ -90,33 +90,6 @@
           "twitter": "https://twitter.com/fernandalima"
         },
         "responsibilities": ["Gestão de voluntários", "Treinamento da equipe", "Coordenação de atividades"]
-      }
-    ],
-    "advisors": [
-      {
-        "id": 7,
-        "name": "Dr. Roberto Mendes",
-        "role": "Advisor Acadêmico",
-        "title": "Professor UNIVAP",
-        "bio": "Professor de Ciência da Computação na UNIVAP e pesquisador em IA. Advisor acadêmico do evento.",
-        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "UNIVAP",
-        "social": {
-          "linkedin": "https://linkedin.com/in/robertomendes"
-        }
-      },
-      {
-        "id": 8,
-        "name": "Laura Ferreira",
-        "role": "Advisor de Diversidade",
-        "title": "Women Techmakers Lead",
-        "bio": "Líder do Women Techmakers São Paulo e defensora da diversidade na tecnologia.",
-        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "Women Techmakers",
-        "social": {
-          "linkedin": "https://linkedin.com/in/lauraferreira",
-          "twitter": "https://twitter.com/lauraferreira"
-        }
       }
     ],
     "contact": {
