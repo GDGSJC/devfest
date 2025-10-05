@@ -13,9 +13,9 @@
         "name": "Fred Peixoto",
         "role": "Organizer",
         "title": "GDG São José dos Campos",
-        "bio": "Desenvolvedor 15 anos de experiência. Organizador do GDG SJC desde 2018, organizando eventos e workshops para a comunidade tech local.",
+        "bio": "Desenvolvedor Full Stack Sênior com mais de 15 anos de experiência. Apaixonado por arquitetura de software e boas práticas como DDD, atuo com tecnologias como Angular, .NET e Node.js para entregar projetos de ponta a ponta. Entusiasta do aprendizado contínuo e da contribuição para a comunidade dev.",
         "image": "https://media.licdn.com/dms/image/v2/D4D03AQExPdpUbIQESg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715806066720?e=1762387200&v=beta&t=F3iz12cZGdiTL22GcogjFwvrDrsdtItdLFyq_HNC2mM",
-        "company": "Google Developer Expert",
+        "company": "Google Developer Group",
         "social": {
           "linkedin": "https://linkedin.com/in/fredpeixoto",
           "twitter": "https://twitter.com/_fredpeixoto",
@@ -25,71 +25,63 @@
       },
       {
         "id": 2,
-        "name": "Maria Santos",
-        "role": "Coordenadora de Conteúdo",
-        "title": "Content Manager & Developer Relations",
-        "bio": "Especialista em Developer Relations e criação de conteúdo técnico. Responsável por curar as palestras e garantir a qualidade do conteúdo do evento.",
-        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "Microsoft MVP",
+        "name": "Kassia Moura",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Engenheira da Computação com mais de 6 anos de experiência, especialista em transformação ágil, DevOps e ferramentas Atlassian (Jira, Confluence). Ajudo empresas a otimizar seus processos de TI e a promover uma cultura de inovação e agilidade. Certificado PSM I e PSD I.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQEXnwuW1JPp3g/profile-displayphoto-scale_400_400/B4DZkvXo.VJIAk-/0/1757436352288?e=1762387200&v=beta&t=6EtGixEa9csCbgi2bS9SinQGzyLoxQlfonELpImZ6pw",
+        "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://linkedin.com/in/mariasantos",
-          "twitter": "https://twitter.com/mariasantos"
-        },
-        "responsibilities": ["Curadoria de conteúdo", "Seleção de palestrantes", "Coordenação das trilhas"]
+          "linkedin": "https://www.linkedin.com/in/kassiamoura/"
+        }
       },
       {
         "id": 3,
-        "name": "Pedro Oliveira",
-        "role": "Coordenador de Logística",
-        "title": "Event Operations Manager",
-        "bio": "Especialista em produção de eventos tech com mais de 15 anos de experiência. Responsável por toda a logística e operações do DevFest.",
-        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "Freelancer",
+        "name": "Aryel Capelo",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional de tecnologia com 10+ anos de experiência, especialista em sistemas e infraestrutura de TI. Focada em garantir a estabilidade e segurança de ambientes corporativos através da administração de servidores, redes e firewalls. Líder do Women Techmakers em São José dos Campos.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQGPpoxmId0-hg/profile-displayphoto-scale_400_400/B4DZfTR2baHMAg-/0/1751596363183?e=1762387200&v=beta&t=5m1CLpPpMX6PZwViJO7PYmQZBia0SKTZnUpczJ2LowI",
+        "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://linkedin.com/in/pedrooliveira"
-        },
-        "responsibilities": ["Logística do evento", "Coordenação de fornecedores", "Gestão do local"]
+          "linkedin": "https://www.linkedin.com/in/julianaconde/"
+        }
       },
       {
         "id": 4,
-        "name": "Ana Costa",
-        "role": "Coordenadora de Marketing",
-        "title": "Digital Marketing Specialist",
-        "bio": "Profissional de marketing digital focada em eventos de tecnologia. Responsável pela estratégia de comunicação e divulgação do DevFest.",
-        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "Tech Marketing Agency",
+        "name": "Juliana Conde",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Desenvolvedor Sênior com 12+ anos de experiência em tecnologia e educação. Ajudo a impulsionar a carreira de pessoas desenvolvedoras com conteúdo sobre DevEx (Github, Copilots). Sou Docker Captain e líder de comunidades técnicas como Github e Google Developers Group.",
+        "image": "https://media.licdn.com/dms/image/v2/D4D03AQFPMf5jeVfQog/profile-displayphoto-scale_400_400/B4DZllJwntHsAg-/0/1758338681975?e=1762387200&v=beta&t=x09FUYj4TcQgbI7yZ1SXwafZdJPzcvxt0KaMSBpHD8g",
+        "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://linkedin.com/in/anacosta",
-          "instagram": "https://instagram.com/anacosta"
-        },
-        "responsibilities": ["Marketing digital", "Redes sociais", "Comunicação com imprensa"]
+          "linkedin": "https://www.linkedin.com/in/aryelccapelo/"
+        }
       },
       {
         "id": 5,
-        "name": "Carlos Rodrigues",
-        "role": "Coordenador de Patrocínios",
-        "title": "Partnership & Sponsorship Manager",
-        "bio": "Executivo de vendas e parcerias com experiência em eventos corporativos. Responsável por atrair e gerenciar patrocinadores do evento.",
-        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "Business Development",
+        "name": "Bruna Bazanini",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional formada em Análise e Desenvolvimento de Sistemas, com experiência em ambientes ágeis. Atuo em projetos SAP para o Brasil e América Latina, colaborando com frentes de Automação de Testes e Gestão de Talentos. Sou voluntária no GDG São José dos Campos, onde ajudo a fortalecer a comunidade de tecnologia local.",
+        "image": "https://media.licdn.com/dms/image/v2/C4D03AQEE0j0xHOzeFA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1553648460636?e=1762387200&v=beta&t=PwKK6inzR6-0FBdNxwximhjzd-8kIZemmVSFVWGyjI8",
+        "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://linkedin.com/in/carlosrodrigues"
-        },
-        "responsibilities": ["Captação de patrocínios", "Relacionamento com parceiros", "Contratos comerciais"]
+          "linkedin": "https://www.linkedin.com/in/bruna-bazanini/"
+        }
       },
       {
         "id": 6,
-        "name": "Fernanda Lima",
-        "role": "Coordenadora de Voluntários",
-        "title": "Community Engagement Manager",
-        "bio": "Gestora de comunidades e recursos humanos. Responsável por recrutar, treinar e coordenar a equipe de voluntários do evento.",
-        "image": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop&crop=face&auto=format&q=80",
-        "company": "HR Consultant",
+        "name": "Bruna Bazanini",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional de TI com 7+ anos de experiência e certificação ITIL V4F. Especialista em suporte pré-vendas e gestão de processos, com foco em excelência no atendimento e conformidade com a LGPD. Como Embaixadora do Women Techmakers e GDG SJC, lidero iniciativas para ampliar a participação feminina na tecnologia.",
+        "image": "https://media.licdn.com/dms/image/v2/C4D03AQH-5r3IXZNlcw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1631578661331?e=1762387200&v=beta&t=JQsDM4ALdpbY8UXyfkfIf8jGPbszODMNyyNiLmygBhk",
+        "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://linkedin.com/in/fernandalima",
-          "twitter": "https://twitter.com/fernandalima"
-        },
-        "responsibilities": ["Gestão de voluntários", "Treinamento da equipe", "Coordenação de atividades"]
+          "linkedin": "https://www.linkedin.com/in/maisa-ceruti/"
+        }
       }
     ],
     "contact": {

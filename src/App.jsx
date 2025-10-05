@@ -25,7 +25,7 @@ const App = () => {
                 <a href="#trilhas">Trilhas</a>
                 <a href="#palestrantes">Palestrantes</a>
                 <a href="#local">Local</a>
-                <a href="#ingressos" className="btn btn-primary">Ingressos</a>
+                <a href="#ingressos" className="btn btn-primary text-color-white">Ingressos</a>
               </div>
             </div>
           </div>
@@ -83,6 +83,17 @@ const App = () => {
                 <li>IA (Inteligência Artificial)</li>
               </ul>
             </div>
+             <div className="track-card">
+              <div className="track-icon cloud">☁️</div>
+              <h3>Professional</h3>
+              <p>Explore o o uso de tecnologias no desenvolvimento para o dia a dia.</p>
+              <ul className="track-topics">
+                <li>Google Cloud Platform</li>
+                <li>Kubernetes & Docker</li>
+                <li>Serverless Computing</li>
+                <li>AI/ML no Cloud</li>
+              </ul>
+            </div>
             <div className="track-card">
               <div className="track-icon mobile">📱</div>
               <h3>Start</h3>
@@ -94,17 +105,7 @@ const App = () => {
                 <li>Inovação</li>
               </ul>
             </div>
-            <div className="track-card">
-              <div className="track-icon cloud">☁️</div>
-              <h3>Cloud & DevOps</h3>
-              <p>Explore o Google Cloud Platform, containerização, CI/CD e as tecnologias que estão transformando a infraestrutura.</p>
-              <ul className="track-topics">
-                <li>Google Cloud Platform</li>
-                <li>Kubernetes & Docker</li>
-                <li>Serverless Computing</li>
-                <li>AI/ML no Cloud</li>
-              </ul>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -140,6 +141,7 @@ const App = () => {
                   {speaker.social.twitter && <a href={speaker.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>}
                   {speaker.social.linkedin && <a href={speaker.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>}
                   {speaker.social.github && <a href={speaker.social.github} target="_blank" rel="noopener noreferrer"><Github size={20} /></a>}
+                  {speaker.social.instagram && <a href={speaker.social.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>}
                 </div>
               </div>
             ))}
