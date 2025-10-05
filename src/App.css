@@ -31,7 +31,12 @@
 .logo-text {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--primary-color);
+  background: var(--gradient-multicolor);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientMove 6s ease-in-out infinite;
 }
 
 .nav-links {
@@ -53,7 +58,9 @@
 
 /* Hero Styles */
 .hero {
-  background: var(--gradient-bg);
+  background: var(--gradient-header);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease-in-out infinite;
   color: white;
   padding: 140px 0 80px;
   text-align: center;
@@ -145,6 +152,31 @@
   color: var(--primary-color);
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/* Individual Track Colors */
+.track-card:nth-child(1) {
+  border-top: 4px solid var(--google-blue);
+}
+
+.track-card:nth-child(1) h3 {
+  color: var(--google-blue);
+}
+
+.track-card:nth-child(2) {
+  border-top: 4px solid var(--google-green);
+}
+
+.track-card:nth-child(2) h3 {
+  color: var(--google-green);
+}
+
+.track-card:nth-child(3) {
+  border-top: 4px solid var(--google-red);
+}
+
+.track-card:nth-child(3) h3 {
+  color: var(--google-red);
 }
 
 .track-card p {
@@ -290,6 +322,19 @@
   color: var(--secondary-color);
   width: 24px;
   height: 24px;
+}
+
+/* Individual Benefit Colors */
+.benefit:nth-child(1) .icon {
+  color: var(--google-red);
+}
+
+.benefit:nth-child(2) .icon {
+  color: var(--google-blue);
+}
+
+.benefit:nth-child(3) .icon {
+  color: var(--google-green);
 }
 
 .volunteers-image {
@@ -642,7 +687,9 @@
 
 /* CTA Ingressos Styles */
 .cta-ingressos {
-  background: var(--gradient-bg);
+  background: var(--gradient-cta);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease-in-out infinite;
   color: white;
   text-align: center;
 }
