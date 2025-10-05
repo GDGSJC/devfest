@@ -18,6 +18,7 @@
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://linkedin.com/in/fredpeixoto",
+          "instagram": "https://twitter.com/fredmpeixoto",
           "twitter": "https://twitter.com/_fredpeixoto",
           "github": "https://github.com/fredmpeixoto"
         },
@@ -44,7 +45,8 @@
         "image": "https://media.licdn.com/dms/image/v2/D4D03AQGPpoxmId0-hg/profile-displayphoto-scale_400_400/B4DZfTR2baHMAg-/0/1751596363183?e=1762387200&v=beta&t=5m1CLpPpMX6PZwViJO7PYmQZBia0SKTZnUpczJ2LowI",
         "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://www.linkedin.com/in/julianaconde/"
+          "instagram": "https://www.instagram.com/aryelccapelo/",
+          "linkedin": "https://www.linkedin.com/in/aryelccapelo"
         }
       },
       {
@@ -56,7 +58,7 @@
         "image": "https://media.licdn.com/dms/image/v2/D4D03AQFPMf5jeVfQog/profile-displayphoto-scale_400_400/B4DZllJwntHsAg-/0/1758338681975?e=1762387200&v=beta&t=x09FUYj4TcQgbI7yZ1SXwafZdJPzcvxt0KaMSBpHD8g",
         "company": "Google Developer Group",
         "social": {
-          "linkedin": "https://www.linkedin.com/in/aryelccapelo/"
+          "linkedin": "https://www.linkedin.com/in/julianaconde/"
         }
       },
       {
@@ -86,7 +88,7 @@
     ],
     "contact": {
       "general": "gdgsaojosedoscampos@gmail.com",
-      "speakers": "gdgsaojosedoscampos@gmail.com",
+      "instagram": "https://instagram.com/gdg_sjc",
       "sponsors": "gdgsaojosedoscampos@gmail.com",
       "volunteers": "gdgsaojosedoscampos@gmail.com",
       "press": "gdgsaojosedoscampos@gmail.com"

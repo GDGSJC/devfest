@@ -378,6 +378,7 @@ const App = () => {
                 <p className="organizer-title">{organizer.title}</p>
                 <p className="organizer-bio">{organizer.bio}</p>
                 <div className="organizer-social">
+                  {organizer.social.instagram && <a href={organizer.social.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>}
                   {organizer.social.linkedin && <a href={organizer.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>}
                   {organizer.social.twitter && <a href={organizer.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>}
                   {organizer.social.github && <a href={organizer.social.github} target="_blank" rel="noopener noreferrer"><Github size={20} /></a>}
@@ -450,8 +451,8 @@ const App = () => {
               <h4>Contato</h4>
               <ul>
                 <li>{organizersData.organizers.contact.general}</li>
-                <li>{organizersData.organizers.contact.sponsors}</li>
-                <li>{organizersData.organizers.contact.volunteers}</li>
+                {/* <li>{organizersData.organizers.contact.sponsors}</li>
+                <li>{organizersData.organizers.contact.volunteers}</li> */}
               </ul>
             </div>
           </div>
