@@ -25,7 +25,7 @@
   --white: #ffffff;
   
   /* Google Developer Gradients */
-  --gradient-bg: linear-gradient(135deg, var(--google-blue) 0%, var(--google-green) 100%);
+  --gradient-bg: linear-gradient(135deg, var(--google-blue) 0%, var(--google-blue) 100%);
   --gradient-header: linear-gradient(135deg, var(--google-blue) 0%, var(--google-red) 50%, var(--google-yellow) 100%);
   --gradient-cta: linear-gradient(135deg, var(--google-red) 0%, var(--google-yellow) 100%);
   --gradient-accent: linear-gradient(135deg, var(--google-green) 0%, var(--google-yellow) 100%);
