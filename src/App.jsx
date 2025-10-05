@@ -74,34 +74,32 @@ const App = () => {
             <div className="track-card">
               <div className="track-icon web">🌐</div>
               <h3>Experts</h3>
-              <p>Descubra as últimas tendências em desenvolvimento por especialistas da área, 
+              <p>Descubra as últimas tendências em desenvolvimento por especialistas da área.
               </p>
               <ul className="track-topics">
                 <li>GDE (Google Developer Expert)</li>
                 <li>Web Development</li>
-                <li>Cloud (Google Cloud Platform)</li>
                 <li>IA (Inteligência Artificial)</li>
               </ul>
             </div>
              <div className="track-card">
               <div className="track-icon cloud">☁️</div>
               <h3>Professional</h3>
-              <p>Explore o o uso de tecnologias no desenvolvimento para o dia a dia.</p>
+              <p>Explore uso de tecnologias no desenvolvimento para o dia a dia no trabalho.
+              </p>
               <ul className="track-topics">
-                <li>Google Cloud Platform</li>
-                <li>Kubernetes & Docker</li>
-                <li>Serverless Computing</li>
+                <li>Backend</li>
+                <li>Frontend</li>
                 <li>AI/ML no Cloud</li>
               </ul>
             </div>
             <div className="track-card">
               <div className="track-icon mobile">📱</div>
               <h3>Start</h3>
-              <p>Mergulhe no mundo do desenvolvimento e descubra as melhoras praticas para sua carreira e as como usar as tecnologias do momento.</p>
+              <p>Mergulhe no mundo do desenvolvimento e descubra as melhoras praticas para sua carreira.</p>
               <ul className="track-topics">
                 <li>Dicas de carreira</li>
                 <li>Networking</li>
-                <li>Mentoria</li>
                 <li>Inovação</li>
               </ul>
             </div>
