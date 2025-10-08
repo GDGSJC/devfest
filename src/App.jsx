@@ -132,7 +132,10 @@ const App = () => {
                 {speaker.talk && (
                   <div className="speaker-talk">
                     <h4>{speaker.talk.title}</h4>
-                    <p className="talk-time">{speaker.talk.time} - {speaker.talk.duration}</p>
+                <p className="speaker-bio">{speaker.talk.description}</p>
+                {speaker.talk.time && speaker.talk.duration && (
+                  <p className="talk-time">{speaker.talk.time} - {speaker.talk.duration}</p>
+                )}
                   </div>
                 )}
                 <div className="speaker-social">

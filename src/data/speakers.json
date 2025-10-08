@@ -1,5 +1,164 @@
 {
   "speakers": [
+    {
+      "name": "Victor Pugliese",
+      "role": "Google Developer Expert | Ph.D. Candidate",
+      "company": "Instituto de Pesquisas Lisboa",
+      "bio": "Victor é Google Developer Expert (GDE) em Inteligência Artificial e Doutorando em Ciência da Computação pela UNIFESP, com Mestrado pelo ITA. Com mais de 10 anos de experiência na indústria e mais de 15 publicações científicas, ele une o melhor dos dois mundos: a profundidade da pesquisa acadêmica e a aplicação prática da tecnologia. Recentemente, atuou como Pesquisador Visitante no GAIPS, grupo de pesquisa do Instituto Superior Técnico da Universidade de Lisboa, contribuindo para avanços em IA e aprendizado de máquina. 🤖✨",
+      "image": "images/speakers/victor.jpg",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/victorpug-exe/",
+        "instagram": "https://www.instagram.com/victorpug.exe/"
+      },
+      "talk": {
+        "title": "Uma introdução ao Gemini Robotics",
+        "description": "Descubra a poderosa fusão entre Inteligência Artificial (IA) e sistemas robóticos com o Gemini. Uma visão geral sobre como o modelo capacita robôs a raciocinar, planejar e executar tarefas complexas em ambientes reais."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    },
+    {
+      "name": "Em Breve",
+      "role": "...",
+      "company": "...",
+      "bio": "...",
+      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "track": "web",
+      "social": {} , 
+      "talk": {
+        "title": "Em Breve",
+        "description": "..."
+      }
+    }
     
   ]
 }
