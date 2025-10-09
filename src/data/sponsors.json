@@ -5,7 +5,7 @@
         "id": 1,
         "name": "Google",
         "logo": "images/sponsors/google.jpeg",
-        "website": "https://google.com",
+        "website": "https://developers.google.com/",
         "description": "Patrocinador principal do evento",
         "benefits": [
           "Logo em destaque no site",
@@ -13,6 +13,23 @@
           "Apresentação de 15 minutos",
           "Acesso VIP para networking"
         ]
+      }
+    ],
+      "silver": [
+      {
+        "name": "Hashi Doces e Salgados",
+        "logo": "images/sponsors/hashi.jpeg",
+        "website": "https://www.instagram.com/hashidocesesalgados/"
+      },
+      {
+        "name": "Guts Design",
+        "logo": "images/sponsors/guts.jpeg",
+        "website": "https://www.instagram.com/gutsdesignbr"
+      },
+      {
+        "name": "Unifesp",
+        "logo": "images/sponsors/unifesp.jpeg",
+        "website": "https://unifesp.br/campus/sjc/"
       }
     ]
   },

@@ -269,6 +269,7 @@ const App = () => {
               <div className="sponsors-grid diamond">
                 {sponsorsData.sponsors?.diamond.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
+                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
                     <img 
                       src={sponsor.logo} 
                       alt={sponsor.name} 
@@ -276,6 +277,7 @@ const App = () => {
                         e.target.src = `https://via.placeholder.com/300x150/b9f2ff/4285f4?text=${encodeURIComponent(sponsor.name)}`
                       }} 
                     />
+                    </a>
                   </div>
                 ))}
               </div>
@@ -287,13 +289,16 @@ const App = () => {
               <div className="sponsors-grid gold">
                 {sponsorsData.sponsors?.gold?.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
-                    <img 
-                      src={sponsor.logo} 
-                      alt={sponsor.name} 
-                      onError={(e) => {
-                        e.target.src = `https://via.placeholder.com/250x125/ffd700/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                      }} 
+                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+
+                      <img 
+                        src={sponsor.logo} 
+                        alt={sponsor.name} 
+                        onError={(e) => {
+                          e.target.src = `https://via.placeholder.com/250x125/ffd700/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                        }} 
                     />
+                    </a>
                   </div>
                 ))}
               </div>
@@ -305,13 +310,16 @@ const App = () => {
               <div className="sponsors-grid silver">
                 {sponsorsData.sponsors?.silver?.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
-                    <img 
-                      src={sponsor.logo} 
-                      alt={sponsor.name} 
-                      onError={(e) => {
-                        e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                      }} 
+                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+
+                      <img 
+                        src={sponsor.logo} 
+                        alt={sponsor.name} 
+                        onError={(e) => {
+                          e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                        }} 
                     />
+                    </a>
                   </div>
                 ))}
               </div>
