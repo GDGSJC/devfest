@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Calendar, MapPin, Clock, Users, Heart, ExternalLink, Github, Twitter, Instagram, Linkedin } from 'lucide-react'
 import './App.css'
 
@@ -8,6 +8,66 @@ import sponsorsData from './data/sponsors.json'
 import communitiesData from './data/communities.json'
 import volunteersData from './data/volunteers.json'
 import organizersData from './data/organizers.json'
+
+// DevFest Countdown Timer Component
+function DevFestCountdown() {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const eventDate = new Date('2025-11-29T09:00:00')
+      const now = new Date()
+      const difference = eventDate - now
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24))
+        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24)
+        const minutes = Math.floor((difference / 1000 / 60) % 60)
+        const seconds = Math.floor((difference / 1000) % 60)
+        
+        setTimeLeft({ days, hours, minutes, seconds })
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+      }
+    }
+
+    calculateTimeLeft()
+    const interval = setInterval(calculateTimeLeft, 1000)
+    
+    return () => clearInterval(interval)
+  }, [])
+
+  const isEventPassed = timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0
+
+  return (
+    <div className="devfest-countdown">
+      <h3 className="countdown-title">Faltam</h3>
+      <div className="countdown-display">
+        <div className="countdown-item">
+          <span className="countdown-number">{timeLeft.days}</span>
+          <span className="countdown-label">Dias</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-number">{timeLeft.hours}</span>
+          <span className="countdown-label">Horas</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-number">{timeLeft.minutes}</span>
+          <span className="countdown-label">Min</span>
+        </div>
+        <div className="countdown-item">
+          <span className="countdown-number">{timeLeft.seconds}</span>
+          <span className="countdown-label">Seg</span>
+        </div>
+      </div>
+      {isEventPassed && (
+        <div className="event-started">
+          🎉 O DevFest começou!
+        </div>
+      )}
+    </div>
+  )
+}
 
 const App = () => {
   return (
@@ -55,6 +115,7 @@ const App = () => {
                 <span>9h às 17h</span>
               </div>
             </div>
+            <DevFestCountdown />
             <div className="hero-actions">
               <a href="#ingressos" className="btn btn-primary">
                 <ExternalLink className="icon" />
@@ -204,9 +265,9 @@ const App = () => {
             <>
               <div className="sponsors-tiers">
             <div className="sponsor-tier">
-              <h3>Patrocinador Diamante</h3>
+              {sponsorsData.sponsors?.diamond?.length > 0 && <h3>Patrocinador Diamante</h3>}
               <div className="sponsors-grid diamond">
-                {sponsorsData.sponsors.diamond.map((sponsor) => (
+                {sponsorsData.sponsors?.diamond.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
                     <img 
                       src={sponsor.logo} 
@@ -220,9 +281,11 @@ const App = () => {
               </div>
             </div>
             <div className="sponsor-tier">
-              <h3>Patrocinador Ouro</h3>
+            {
+              sponsorsData.sponsors?.gold?.length > 0 && <h3>Patrocinador Ouro</h3>
+            }
               <div className="sponsors-grid gold">
-                {sponsorsData.sponsors.gold.map((sponsor) => (
+                {sponsorsData.sponsors?.gold?.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
                     <img 
                       src={sponsor.logo} 
@@ -236,9 +299,11 @@ const App = () => {
               </div>
             </div>
             <div className="sponsor-tier">
-              <h3>Patrocinador Prata</h3>
+            {
+              sponsorsData.sponsors?.silver?.length > 0 && <h3>Patrocinador Prata</h3>
+            }
               <div className="sponsors-grid silver">
-                {sponsorsData.sponsors.silver.map((sponsor) => (
+                {sponsorsData.sponsors?.silver?.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
                     <img 
                       src={sponsor.logo} 

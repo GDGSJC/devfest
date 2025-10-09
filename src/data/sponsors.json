@@ -1,5 +1,20 @@
 {
   "sponsors": {
+      "diamond": [
+      {
+        "id": 1,
+        "name": "Google",
+        "logo": "images/sponsors/google.jpeg",
+        "website": "https://google.com",
+        "description": "Patrocinador principal do evento",
+        "benefits": [
+          "Logo em destaque no site",
+          "Booth premium no evento",
+          "Apresentação de 15 minutos",
+          "Acesso VIP para networking"
+        ]
+      }
+    ]
   },
   "sponsorshipTiers": {
     "diamond": {
