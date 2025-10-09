@@ -265,7 +265,7 @@ const App = () => {
             <>
               <div className="sponsors-tiers">
             <div className="sponsor-tier">
-              {sponsorsData.sponsors?.diamond?.length > 0 && <h3>Patrocinador Diamante</h3>}
+              {sponsorsData.sponsors?.diamond?.length > 0 && <h3>Cota Parque Tecnológico</h3>}
               <div className="sponsors-grid diamond">
                 {sponsorsData.sponsors?.diamond.map((sponsor) => (
                   <div key={sponsor.id} className="sponsor-card">
@@ -282,7 +282,7 @@ const App = () => {
             </div>
             <div className="sponsor-tier">
             {
-              sponsorsData.sponsors?.gold?.length > 0 && <h3>Patrocinador Ouro</h3>
+              sponsorsData.sponsors?.gold?.length > 0 && <h3>Cota Ponte Estaiada</h3>
             }
               <div className="sponsors-grid gold">
                 {sponsorsData.sponsors?.gold?.map((sponsor) => (
@@ -300,7 +300,7 @@ const App = () => {
             </div>
             <div className="sponsor-tier">
             {
-              sponsorsData.sponsors?.silver?.length > 0 && <h3>Patrocinador Prata</h3>
+              sponsorsData.sponsors?.silver?.length > 0 && <h3>Cota Exchange</h3>
             }
               <div className="sponsors-grid silver">
                 {sponsorsData.sponsors?.silver?.map((sponsor) => (
