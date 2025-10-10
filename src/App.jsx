@@ -134,7 +134,7 @@ const App = () => {
           <div className="tracks-grid">
             <div className="track-card">
               <div className="track-icon web">🌐</div>
-              <h3>Experts</h3>
+              <h3>Principal</h3>
               <p>Descubra as últimas tendências em desenvolvimento por especialistas da área.
               </p>
               <ul className="track-topics">
@@ -145,7 +145,7 @@ const App = () => {
             </div>
              <div className="track-card">
               <div className="track-icon cloud">☁️</div>
-              <h3>Professional</h3>
+              <h3>Experts</h3>
               <p>Explore uso de tecnologias no desenvolvimento para o dia a dia no trabalho.
               </p>
               <ul className="track-topics">
