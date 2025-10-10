@@ -1,0 +1,25 @@
+{
+  "partnerCommunities": [
+    {
+      "name": "Jug Vale",
+      "logo": "images/communities/jug-vale.jpg",
+      "social": {
+        "instagram": "https://www.instagram.com/jugvale/"
+      }
+    },
+    {
+      "name": "Dev JR",
+      "logo": "images/communities/devjr.png",
+      "social": {
+        "instagram": "https://www.instagram.com/devjrbr/"
+      }
+    },
+    {
+      "name": "Easy Podcast",
+      "logo": "images/communities/easyTechPodcast.png",
+      "social": {
+        "instagram": "https://www.instagram.com/easytech.podcast/"
+      }
+    }
+  ]
+}

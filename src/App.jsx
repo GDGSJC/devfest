@@ -349,7 +349,7 @@ const App = () => {
           {communitiesData.partnerCommunities?.length > 0 ? (
             <div className="communities-grid">
               {communitiesData.partnerCommunities.map((community) => (
-              <div key={community.id} className="community-card">
+              <div key={community.id} className="community-card ">
                 <img 
                   src={community.logo} 
                   alt={community.name} 
@@ -360,7 +360,7 @@ const App = () => {
                 <h3>{community.name}</h3>
                 <p>{community.description}</p>
                 <div className="community-info">
-                  <span className="member-count">{community.members.toLocaleString()} membros</span>
+                  {/* <span className="member-count">{community.members.toLocaleString()} membros</span> */}
                   <span className="location">{community.location}</span>
                 </div>
                 <div className="community-links">

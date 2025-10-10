@@ -1,5 +1,11 @@
 {
   "partnerCommunities": [
-    
+    {
+      "name": "Jug Vale",
+      "logo": "images/communities/jug-vale.jpg",
+      "social": {
+        "instagram": "https://www.instagram.com/jugvale/"
+      }
+    }
   ]
 }
