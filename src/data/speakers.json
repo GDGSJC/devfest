@@ -17,16 +17,19 @@
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Julio Arruda",
+      "role": "9x Microsoft MVP | Github Star | Docker Captain",
+      "company": "GFT Technologies",
+      "bio": "Julio é AI Impact Lead, atuando na idealização de projetos, criação e liderança de equipes de desenvolvimento, com foco em IA generativa para solucionar problemas complexos do mundo real.Além disso, é Microsoft MVP, GitHub Star, Instrutor Oficial do LinkedIn Learning, YouTuber e palestrante, compartilhando seu conhecimento em DevOps, ALM, cibersegurança, ethical hacking e computação em nuvem. Com diversas publicações, certificações e reconhecimentos, sua missão é capacitar e inspirar profissionais a adotarem as melhores práticas de tecnologia, entregando qualidade e valor aos seus clientes.",
+      "image": "https://avatars.githubusercontent.com/u/5204009?v=4",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/julioarrudac/",
+        "instagram": "https://www.instagram.com/julioarrudac/"
+      },
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Da Ideia ao Clique: Como o Vibe Coding Aproxima Negócio e Tecnologia",
+        "description": "No mundo atual, a distância entre negócio e tecnologia precisa ser reduzida ao máximo. Com o Vibe Coding, os Product Owners deixam de ser apenas escritores de requisitos e passam a criar protótipos funcionais que aceleram a validação de ideias e a comunicação com stakeholders. Nesta palestra, você vai descobrir como essa abordagem transforma a prototipação em um processo ágil, colaborativo e contínuo encurtando o caminho da ideia ao clique."
       }
     },
     {
