@@ -6,6 +6,13 @@
       "social": {
         "instagram": "https://www.instagram.com/jugvale/"
       }
+    },
+    {
+      "name": "Easy Podcast",
+      "logo": "images/communities/easyTechPodcast.png",
+      "social": {
+        "instagram": "https://www.instagram.com/easytech.podcast/"
+      }
     }
   ]
 }
