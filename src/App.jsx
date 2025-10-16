@@ -115,6 +115,8 @@ const App = () => {
                 <span>9h às 17h</span>
               </div>
             </div>
+
+            <small>* Evento sem fins lucrativos</small>
             <DevFestCountdown />
             <div className="hero-actions">
               <a href="#ingressos" className="btn btn-primary">

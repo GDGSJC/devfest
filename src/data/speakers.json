@@ -2,7 +2,7 @@
   "speakers": [
     {
       "name": "Victor Pugliese",
-      "role": "Google Developer Expert | Ph.D. Candidate",
+      "role": "Google Developer Expert IA | Ph.D. Candidate",
       "company": "Instituto de Pesquisas Lisboa",
       "bio": "Victor é Google Developer Expert (GDE) em Inteligência Artificial e Doutorando em Ciência da Computação pela UNIFESP, com Mestrado pelo ITA. Com mais de 10 anos de experiência na indústria e mais de 15 publicações científicas, ele une o melhor dos dois mundos: a profundidade da pesquisa acadêmica e a aplicação prática da tecnologia. Recentemente, atuou como Pesquisador Visitante no GAIPS, grupo de pesquisa do Instituto Superior Técnico da Universidade de Lisboa, contribuindo para avanços em IA e aprendizado de máquina. 🤖✨",
       "image": "images/speakers/victor.jpg",
@@ -33,16 +33,19 @@
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Fernando Sedrez",
+      "role": "Google Developer Expert Cloud | Data Expert",
+      "company": "Globo",
+      "bio": "Fernando Sedrez é Staff Data Engineer na Globo. Ele atua como Tech Lead, Palestrante, Mentor e é um Google Developer Expert em Data Cloud. Sua carreira progrediu de Analista de Sistemas para Engenheiro de Dados, também auxiliando pessoas a construir seu primeiro MVP e participando como founding engineer em startup, até sua atual posição. Com bacharelado em Ciência da Computação e especialização em Análise e Desenvolvimento de Sistemas, master em Data Science & IA. Sua paixão é compartilhar conhecimento sobre Big Data e Cloud com a comunidade.",
+      "image": "https://avatars.githubusercontent.com/u/1216898?v=4",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/fmsedrez/",
+        "instagram": "https://www.instagram.com/fmsedrez/"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Do zero ao RAG: Plataforma de agentes de AI da Globo",
+        "description": "Explore a criação de uma plataforma de agentes na Globo usando tecnologias do Google Cloud. Nesta sessão, vamos mergulhar na arquitetura e nos componentes necessários para construir um sistema de agentes que colaboram para resolver problemas complexos."
       }
     },
     {
