@@ -13,6 +13,13 @@
       "social": {
         "instagram": "https://www.instagram.com/easytech.podcast/"
       }
+    },
+    {
+      "name": "Dev JR",
+      "logo": "images/communities/devjr.png",
+      "social": {
+        "instagram": "https://www.instagram.com/devjrbr/"
+      }
     }
   ]
 }

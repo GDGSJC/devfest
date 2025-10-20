@@ -30,6 +30,11 @@
         "name": "Unifesp",
         "logo": "images/sponsors/unifesp.jpeg",
         "website": "https://unifesp.br/campus/sjc/"
+      },
+      {
+        "name": "MV Cultura Maker",
+        "logo": "images/sponsors/mv-maker.png",
+        "website": "https://mvculturamaker.com.br/"
       }
     ]
   },
