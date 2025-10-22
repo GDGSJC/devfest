@@ -49,16 +49,19 @@
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Maíra D’Eleutério",
+      "role": "Microsoft MVP | COO | Team Leader",
+      "company": "OnChange",
+      "bio": "✨ Maíra D’Eleutério é Microsoft MVP e especialista em automação de processos alinhada ao negócio com as ferramentas de produtividade M365. 💻Empresária, COO, Team Leader e mãe, Maíra é um exemplo de liderança e inovação — mostrando que é possível transformar realidades com tecnologia, propósito e equilíbrio. 💙",
+      "image": "images/speakers/maira.jpeg",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "instagram": "https://www.instagram.com/mdeleuterio/",
+        "linkedin": "https://www.linkedin.com/in/mairadeleuterio"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Transforme suas ideias em aplicativos com o Power Platform e o Copilot",
+        "description": "Em breve..."
       }
     },
     {
