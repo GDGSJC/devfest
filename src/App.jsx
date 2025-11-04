@@ -108,7 +108,7 @@ const App = () => {
               </div>
               <div className="info-item">
                 <MapPin className="icon" />
-                <span>Parque Tecnológico - São José dos Campos</span>
+                <span>PiT - Parque Tecnológico - São José dos Campos</span>
               </div>
               <div className="info-item">
                 <Clock className="icon" />
@@ -388,7 +388,7 @@ const App = () => {
           <h2 className="section-title">Local do Evento</h2>
           <div className="venue-content">
             <div className="venue-info">
-              <h3>PIT - Parque Tecnológico, São José dos Campos - SP</h3>
+              <h3>PiT - Parque Tecnológico, São José dos Campos - SP</h3>
               <p className="venue-address">
                 <MapPin className="icon" />
                Av Dr. Altino Bondesan, 500 - Eugênio de Melo, São José dos Campos - SP, 12247-016
