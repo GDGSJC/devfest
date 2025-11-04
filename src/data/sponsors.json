@@ -26,17 +26,20 @@
         "logo": "images/sponsors/guts.jpeg",
         "website": "https://www.instagram.com/gutsdesignbr"
       },
-      {
-        "name": "PIT",
-        "logo": "images/sponsors/pitsjc.png",
-        "website": "https://pitsjc.org.br/"
-      },
+     
       {
         "name": "MV Cultura Maker",
         "logo": "images/sponsors/mv-maker.png",
         "website": "https://mvculturamaker.com.br/"
       }
-    ]
+    ],
+      "support": [
+ {
+        "name": "PIT",
+        "logo": "images/sponsors/pitsjc.png",
+        "website": "https://pitsjc.org.br/"
+      }
+      ]
   },
   "sponsorshipTiers": {
     "diamond": {

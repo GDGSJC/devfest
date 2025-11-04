@@ -326,6 +326,27 @@ const App = () => {
                 ))}
               </div>
             </div>
+            <div className="sponsor-tier">
+            {
+              sponsorsData.sponsors?.support?.length > 0 && <h3>Apoio</h3>
+            }
+              <div className="sponsors-grid support">
+                {sponsorsData.sponsors?.support?.map((sponsor) => (
+                  <div key={sponsor.id} className="sponsor-card">
+                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
+
+                      <img 
+                        src={sponsor.logo} 
+                        alt={sponsor.name} 
+                        onError={(e) => {
+                          e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                        }} 
+                    />
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
           <div className="become-sponsor">
             <h3>Seja um Patrocinador</h3>
