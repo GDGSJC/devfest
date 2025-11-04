@@ -61,113 +61,117 @@
       } , 
       "talk": {
         "title": "Transforme suas ideias em aplicativos com o Power Platform e o Copilot",
-        "description": "Em breve..."
+        "description": "Transforme suas ideias em aplicativos com o Power Platform e o Copilot Com o Copilot, a produtividade ganha um novo significado — inclusive para quem já escreve código todos os dias! 💻✨ Nesta palestra inspiradora, vamos explorar como integrar o Copilot à Power Platform e ao Microsoft 365 para criar soluções digitais de forma ágil, automatizar processos e aumentar a eficiência no dia a dia. ⚙️🤖 Descubra como a Inteligência Artificial pode ser sua parceira estratégica, ajudando você a transformar ideias em aplicativos e protótipos de maneira simples, prática e poderosa."      }
+    },
+    {
+      "name": "Victor Alencar",
+      "role": "Principal Engineer",
+      "company": "Payabli |  Canadá",
+      "bio": "Sou Victor, natural do Brasil, Casado, Principal Engineer na Payabli, vivendo no Canada. Com 12 anos de experiência em Engenharia de Software, desde integrações de sistemas de pagamentos, pipelines de transformação de dados e interpretação de DNA, para streaming de videos, ja tive a oportunidade de trabalhar em diversos setores em indústrias. Atualmente trabalhando em projetos e inovações relacionadas a AI e ML.",
+      "image": "images/speakers/victor-alencar.jpeg",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/victoraalencar/",
+        "twitter": "https://x.com/valencar_"
+      } , 
+      "talk": {
+        "title": "AI e ML para Detecção de Fraudes com Google Cloud",
+        "description": "Criar sistemas de detecção de fraude em pagamentos usando Google Cloud, com foco em baixo custo e alta eficiência. Vamos explorar data pipelines com BigQuery e Dataflow, treinar e operar modelos no Vertex AI, e integrar regras e condições na ML para detectar anomalias em tempo real. Baseado em experiência prática em Análise de Risco e projetos nos EUA e Canadá, mostraremos como equilibrar performance, escalabilidade e custos em soluções de fraude. A ideia é apresentar como o modelo pode ser usado para Fraudes, mas também abrirá espaços para expandir outras ideias e aplicações de ML e AI."
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Diógenes Ramos",
+      "role": "Red Team | Security Analyst | Professor",
+      "company": "OWASP SJC Chapter",
+      "bio": "Especialista em segurança cibernética e líder do capítulo OWASP em São José dos Campos, atua na coordenação de equipes técnicas e na condução de avaliações de segurança, incluindo testes de penetração e operações de Red Team. É tecnólogo em Redes de Computadores, pós-graduado em Segurança Cibernética e Hacking Ético e mestre em Gestão e Desenvolvimento Regional. Possui certificações reconhecidas no mercado, como CEH Master (Certified Ethical Hacker), ITIL Foundation, além de credenciais em Linux e Microsoft.",
+      "image": "images/speakers/diogenes.jpg",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/diogenes-r-9a0427a/"
+      } ,   
+  "talk": {
+    "title": "Shift Left Security: integrando MobSF ao ciclo de desenvolvimento Android",
+    "description": "Esta palestra aborda o conceito de **Shift Left Security** em aplicativos Android, enfatizando a importância de antecipar a segurança. Utilizando o **Mobile Security Framework (MobSF)**, uma ferramenta open source, demonstraremos como realizar análises estáticas e dinâmicas, interpretar relatórios e priorizar correções. Você aprenderá sobre os riscos do **OWASP Mobile Top 10** e estratégias práticas para **integrar o MobSF ao seu pipeline de CI/CD**, capacitando desenvolvedores Android a fortalecer seus aplicativos desde as fases iniciais, antes da publicação na loja."
+  }
+
+    },
+    {
+      "name": "Andresa Valério",
+      "role": "Software Engineer",
+      "company": "PiniOn",
+      "bio": "Andresa Valério é desenvolvedora back-end com 3 anos de experiência em engenharia de software, especializada em Python, FastAPI e bancos de dados relacionais e não relacionais (PostgreSQL e MongoDB). Atualmente atua na área de tecnologia do PiniOn. Graduada em Ciência e Tecnologia pela UNIFESP, tem interesse em boas práticas de segurança, arquitetura de software e paradigmas de linguagens de programação.",
+      "image": "images/speakers/andresa.png",
+      "track": "web",
+      "social": {
+        "instagram": "https://instagram.com/andresavaler.io",
+        "linkedin": "https://www.linkedin.com/in/andresavalerio/",
+        "github": "https://github.com/andresavalerio"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Arquitetando APIs Multi-Tenant Modernas com PostgreSQL e RLS",
+        "description": "Nesta apresentação, exploramos como projetar e implementar APIs modernas com suporte a multi-tenancy de forma segura e eficiente utilizando PostgreSQL e o recurso de Row-Level Security (RLS). A palestra aborda desde os conceitos fundamentais de multi-tenancy e os diferentes modelos de isolamento de dados até a aplicação prática do RLS para controlar o acesso a registros em nível de linha. Também são discutidos exemplos reais de implementação, mostrando como o RLS pode simplificar a lógica de segurança da aplicação e reduzir complexidade no código da API."
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Bruno Correia",
+      "role": "Full Stack Software Developer",
+      "company": "Just Travel",
+      "bio": "Sou um dev full stack pleno, sempre trabalhei no ambiente web e com foco em soluções e-commerce, gosto muito de trocar conhecimentos com outras pessoas de diferentes níveis, senioridades, ambientes.",
+      "image": "images/speakers/bruno.webp",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/brunociao/"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Comunicação Web Real-Time (WebSockets, SSE, Polling)",
+        "description": "Nesta palestra vou compartilhar aprendizados práticos sobre comunicação em tempo real na web, explorando estratégias como short/long polling, WebSockets e Server-Sent Events (SSE), com foco em quando e por que escolher cada uma. Além da teoria, trago um case real da integração do método de pagamento NuPay (Nubank) em um checkout de e-commerce, destacando desafios, armadilhas (como o uso do Date.now() no client-side) e soluções aplicadas. E também se possível vou querer trazer uma pequena aplicacão de apoio para vermos na prática cada método. O conteúdo é voltado para desenvolvedores fullstack, frontend e backend que lidam com fluxos sensíveis a tempo (como pagamentos, notificações e atualizações em tempo real) e busca oferecer não só conceitos, mas também exemplos práticos e insights aplicáveis no dia a dia."
       }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Luana Jacudi",
+      "role": "Advogada | Mentora de Startups no PIT",
+      "company": "Jacudi Advocacia",
+      "bio": "Advogada de Negócios Digitais e Inovação, especializada em Privacidade e Proteção de Dados. Mentora e Coordenadora de Parcerias na startup social Atitude Infinita. Mentora no Parque de Inovação Tecnológica - PIT de São José dos Campos/SP. Como ex-conciliadora do TJRJ, acredita que a solução quase sempre está na conversa. Pós-graduada em Direito, Inovação e Tecnologia – porque o Direito precisa estar em constante evolução.",
+      "image": "images/speakers/luana.jpg",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/luanajacudi/"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
-      }
+        "title": "LGPD na Prática: Guia de Sobrevivência para Desenvolvedores e Fundadores de SaaS`",
+        "description": "A conformidade com a LGPD começa na sua IDE, não no escritório de advocacia. Para fundadores de SaaS e desenvolvedores, entender a lei é necessário para evitar riscos e construir produtos que geram confiança. Nesta palestra, você terá um guia prático para implementar os pilares da proteção de dados diretamente em seu código e arquitetura. Vamos cobrir desde o conceito de Privacy by Design e a gestão técnica do consentimento, até como utilizar o ecossistema Microsoft como um acelerador de conformidade para proteger sua aplicação. Saia desta sessão com um checklist para tornar seu software mais seguro e alinhado à legislação."      }
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Daniel Reck",
+      "role": "Sales Director | Chief Sales Officer",
+      "company": "Google",
+      "bio": "Sou um executivo atuando alguns anos como acelerador de negócios dos clientes, usando a tecnologia como protagonista. Estou como Sales Specialist em Data & Analytics no Google Cloud para contas estratégicas do Google Cloud no Brasil.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D03AQE1xE_pWjRrmQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711029824314?e=1763596800&v=beta&t=GB6AXAV3Wc1lJH4-cxu8QJNo3_ngxErLWQjrcL_BgZ8",
       "track": "web",
-      "social": {} , 
-      "talk": {
-        "title": "Em Breve",
-        "description": "..."
-      }
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/reckdanielkrce"
+      } , 
+     
+  "talk": {
+    "title": "Explorando os dados no BigQuery com Data Agents",
+    "description": "Descubra o potencial dos **Agentes de Dados** para transformar a produtividade e a entrega de valor no seu negócio. Esta sessão mostrará as novas funcionalidades e como a **Inteligência Artificial** pode adicionar superpoderes às tarefas do dia-a-dia.\n\nVocê aprenderá como os agentes de dados podem:\n\n* **Agilizar tarefas** diárias, garantindo que o valor chegue ao business muito mais rápido.\n* Ajudar na entrega de projetos com **qualidade e agilidade**.\n* Aumentar significativamente a **produtividade individual** ao integrar a IA nas rotinas de trabalho."
+  
+}
     },
     {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
+      "name": "Adriano Barbosa",
+      "role": "Gerente de Produto",
+      "company": "Kaffa Tech",
+      "bio": "Adriano Barbosa é Gerente de Produto na Codex Utilities, com 14 anos em GIS, DEV, dados e regulação. Hoje toca produtos e projetos no mercado e autorais.",
+      "image": "images/speakers/adriano.jpeg",
       "track": "web",
-      "social": {} , 
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/asbarbosa/"
+      } , 
       "talk": {
-        "title": "Em Breve",
-        "description": "..."
-      }
-    },
-    {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
-      "track": "web",
-      "social": {} , 
-      "talk": {
-        "title": "Em Breve",
-        "description": "..."
-      }
-    },
-    {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
-      "track": "web",
-      "social": {} , 
-      "talk": {
-        "title": "Em Breve",
-        "description": "..."
-      }
-    },
-    {
-      "name": "Em Breve",
-      "role": "...",
-      "company": "...",
-      "bio": "...",
-      "image": "https://images.unsplash.com/photo-1494790108755-2616b612b372?w=240&h=240&fit=crop&crop=face&auto=format&q=80",
-      "track": "web",
-      "social": {} , 
-      "talk": {
-        "title": "Em Breve",
-        "description": "..."
+        "title": "Prompt-to-Prod: como lançar um produto em horas usando IA, Git e Cloudflare",
+        "description": "Como construir um produto em poucas haras combinando IA como par-programmer, Cloudflare Pages e um fluxo simples de Git. Usando um case real criado desta forma https://caminho-da-ro-a.pages.dev/"
       }
     }
-    
   ]
 }

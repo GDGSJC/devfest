@@ -108,7 +108,7 @@ const App = () => {
               </div>
               <div className="info-item">
                 <MapPin className="icon" />
-                <span>UNIFESP - São José dos Campos</span>
+                <span>Parque Tecnológico - São José dos Campos</span>
               </div>
               <div className="info-item">
                 <Clock className="icon" />
@@ -388,10 +388,10 @@ const App = () => {
           <h2 className="section-title">Local do Evento</h2>
           <div className="venue-content">
             <div className="venue-info">
-              <h3>Instituto de Ciência e Tecnologia (ICT-Unifesp), São José dos Campos - SP</h3>
+              <h3>PIT - Parque Tecnológico, São José dos Campos - SP</h3>
               <p className="venue-address">
                 <MapPin className="icon" />
-                Avenida Cesare Monsueto Giulio Lattes, 1201, São José dos Campos, SP
+               Av Dr. Altino Bondesan, 500 - Eugênio de Melo, São José dos Campos - SP, 12247-016
               </p>
               <div className="venue-details">
                 <div className="detail">
@@ -408,7 +408,7 @@ const App = () => {
                 </div>
               </div>
               <div className="venue-actions">
-                <a href="https://www.google.com/maps/search/Instituto+de+Ci%C3%AAncia+e+Tecnologia+(ICT-Unifesp),+Avenida+Cesare+Monsueto+Giulio+Lattes,+1201,+S%C3%A3o+Jos%C3%A9+dos+Campos,+SP" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                <a href="https://maps.app.goo.gl/S3wQCMDDo93VcHyK6" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                   <MapPin className="icon" />
                   Ver no Maps
                 </a>
@@ -418,7 +418,7 @@ const App = () => {
             <div className="venue-map">
             {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.1716933331522!2d-45.79320709999999!3d-23.1639329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4c4961eca80b%3A0xb5c1abfb834a72ab!2sInstitute%20of%20Science%20and%20Technology%20(ICT-UNIFESP)!5e0!3m2!1sen!2sbr!4v1759418037260!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.1716933331522!2d-45.79320709999999!3d-23.1639329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4c4961eca80b%3A0xb5c1abfb834a72ab!2sInstitute%20of%20Science%20and%20Technology%20(ICT-UNIFESP)!5e0!3m2!1sen!2sbr!4v1759418037260!5m2!1sen!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.4067360876925!2d-45.790250099999994!3d-23.155350699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4c345d24cd69%3A0x3baf325177feb8a0!2sTechnology%20Park%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos!5e0!3m2!1sen!2sbr!4v1762292115479!5m2!1sen!2sbr"
                 width="100%"
                 height="300"
                 style={{border: 0, borderRadius: '12px'}}
