@@ -20,7 +20,7 @@
       "name": "Julio Arruda",
       "role": "9x Microsoft MVP | Github Star | Docker Captain",
       "company": "GFT Technologies",
-      "bio": "Julio é AI Impact Lead, atuando na idealização de projetos, criação e liderança de equipes de desenvolvimento, com foco em IA generativa para solucionar problemas complexos do mundo real.Além disso, é Microsoft MVP, GitHub Star, Instrutor Oficial do LinkedIn Learning, YouTuber e palestrante, compartilhando seu conhecimento em DevOps, ALM, cibersegurança, ethical hacking e computação em nuvem. Com diversas publicações, certificações e reconhecimentos, sua missão é capacitar e inspirar profissionais a adotarem as melhores práticas de tecnologia, entregando qualidade e valor aos seus clientes.",
+      "bio": "Julio é Wynxx Lead, atuando na idealização de projetos, criação e liderança de equipes de desenvolvimento, com foco em IA generativa para solucionar problemas complexos do mundo real.Além disso, é Microsoft MVP, GitHub Star, Instrutor Oficial do LinkedIn Learning, YouTuber e palestrante, compartilhando seu conhecimento em DevOps, ALM, cibersegurança, ethical hacking e computação em nuvem. Com diversas publicações, certificações e reconhecimentos, sua missão é capacitar e inspirar profissionais a adotarem as melhores práticas de tecnologia, entregando qualidade e valor aos seus clientes.",
       "image": "https://avatars.githubusercontent.com/u/5204009?v=4",
       "track": "web",
       "social": {
@@ -113,10 +113,10 @@
       }
     },
     {
-      "name": "Bruno Correia",
+      "name": "Bruno Corrêa",
       "role": "Full Stack Software Developer",
       "company": "Just Travel",
-      "bio": "Sou um dev full stack pleno, sempre trabalhei no ambiente web e com foco em soluções e-commerce, gosto muito de trocar conhecimentos com outras pessoas de diferentes níveis, senioridades, ambientes.",
+      "bio": "Bruno é desenvolvedor full stack com experiência em soluções web e foco no ecossistema de e-commerce. Atua na construção de produtos que equilibram performance, escalabilidade e boa experiência do usuário. Entusiasta por aprendizado contínuo e troca de conhecimento, gosta de explorar temas que conectam front e back-end, sempre com uma abordagem prática e acessível para diferentes níveis de experiência.",
       "image": "images/speakers/bruno.webp",
       "track": "web",
       "social": {
@@ -124,7 +124,7 @@
       } , 
       "talk": {
         "title": "Comunicação Web Real-Time (WebSockets, SSE, Polling)",
-        "description": "Nesta palestra vou compartilhar aprendizados práticos sobre comunicação em tempo real na web, explorando estratégias como short/long polling, WebSockets e Server-Sent Events (SSE), com foco em quando e por que escolher cada uma. Além da teoria, trago um case real da integração do método de pagamento NuPay (Nubank) em um checkout de e-commerce, destacando desafios, armadilhas (como o uso do Date.now() no client-side) e soluções aplicadas. E também se possível vou querer trazer uma pequena aplicacão de apoio para vermos na prática cada método. O conteúdo é voltado para desenvolvedores fullstack, frontend e backend que lidam com fluxos sensíveis a tempo (como pagamentos, notificações e atualizações em tempo real) e busca oferecer não só conceitos, mas também exemplos práticos e insights aplicáveis no dia a dia."
+        "description": "Nesta palestra, será compartilhado aprendizados práticos sobre comunicação em tempo real na web, explorando diferentes estratégias — como polling, WebSockets e Server-Sent Events (SSE) — com foco em quando e por que escolher cada uma. Além da teoria, ele apresenta um case real da integração do método de pagamento NuPay (Nubank) em um checkout de e-commerce que transaciona milhões de reais em pagamentos por dia, destacando desafios enfrentados, armadilhas comuns (como o uso incorreto do Date.now() no client-side) e as soluções aplicadas. Para tornar o conteúdo ainda mais dinâmico, haverá uma demonstração prática comparando os métodos em ação. Voltada a desenvolvedores full stack, frontend e backend, a palestra oferece não apenas conceitos, mas também insights aplicáveis no dia a dia de quem lida com fluxos sensíveis a tempo — como pagamentos, notificações e atualizações em tempo real."
       }
     },
     {

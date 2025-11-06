@@ -168,6 +168,22 @@ const App = () => {
             </div>
            
           </div>
+          <br />
+            <div className="track-card">
+              <div className="track-icon mobile">👶</div>
+              <h3>Kids</h3>
+              <p>Pensando em um ambiente incluso, vocês podem trazer suas crianças!</p>
+              <ul className="track-topics">
+                <li> 👶  0 a 3 anos: podem curtir o evento junto com os pais.</li>
+                <li> 🎨  4 a 5 anos: participam da Trilha Criativa, com atividades de desenho e expressão artística.</li>
+                <li> ⚙️  6 anos ou mais: vão se divertir na Trilha Maker, com oficinas de ciência e tecnologia em parceria com a MV Cultura Maker.</li>
+                <li> * Os pais são 100% responsáveis pelas crianças durante o evento.</li>
+                <li> ** É necessário que a criança esteja registrada no evento para participar das atividades.</li>
+                <li> *** O ingresso Kids é gratuito e exclusivo para crianças de participantes inscritos no evento.</li>
+                <li> **** 🔹 Observação: Para adquirir o ingresso da criança, é necessário informar o número de inscrição do responsável.
+Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a vaga da criança.</li>
+              </ul>
+            </div>
         </div>
       </section>
 

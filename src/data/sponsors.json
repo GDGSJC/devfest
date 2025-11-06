@@ -15,6 +15,21 @@
         ]
       }
     ],
+      "gold": [
+      {
+        "id": 1,
+        "name": "Nimbie",
+        "logo": "images/sponsors/nimble.png",
+        "website": "https://br.nimbleevolution.com/jornada-agil-atlassian/",
+        "description": "Patrocinador principal do evento",
+        "benefits": [
+          "Logo em destaque no site",
+          "Booth premium no evento",
+          "Apresentação de 15 minutos",
+          "Acesso VIP para networking"
+        ]
+      }
+    ],
       "silver": [
       {
         "name": "Hashi Doces e Salgados",
