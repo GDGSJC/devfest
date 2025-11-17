@@ -70,6 +70,105 @@ function DevFestCountdown() {
 }
 
 const App = () => {
+  const [activeTrack, setActiveTrack] = useState('agenda-geral')
+
+  // Event schedule data
+  const eventSchedule = [
+    { time: '09H00', activity: 'Credenciamento', description: 'Recepção dos participantes e entrega de materiais' },
+    { time: '10H00', activity: 'Abertura', description: 'Cerimônia de abertura oficial do evento' },
+    { time: '10H25', activity: 'Início das palestras', description: 'Início das apresentações nas três trilhas simultâneas' },
+    { time: '12H00', activity: 'Almoço', description: 'Intervalo para almoço (por conta dos participantes)', note: '*' },
+    { time: '14H00', activity: 'Retorno Palestras + Início Trilhas', description: 'Continuação das apresentações' },
+    { time: '16H50', activity: 'Encerramento + Sorteios', description: 'Cerimônia de encerramento e premiação' }
+  ]
+
+  // Kids track activities (6-15 anos)
+  const kidsActivities = [
+    {
+      time: '10H25',
+      activity: 'Oficina de Programação',
+      description: 'Desenvolvimento de uma história animada',
+      type: 'programming'
+    },
+    {
+      time: '11H00', 
+      activity: 'Oficina Maker',
+      description: 'Montagem da Caixinha Porta Trecos',
+      type: 'maker'
+    },
+    {
+      time: '14H00',
+      activity: 'Oficina de Programação', 
+      description: 'Criação de um jogo',
+      type: 'programming'
+    },
+    {
+      time: '14H50',
+      activity: 'Oficina Maker',
+      description: 'Montagem do Ventilador Maker',
+      type: 'maker'
+    },
+    {
+      time: '16H00',
+      activity: 'Oficina de Programação',
+      description: 'com Arduino e Protoboard com leds',
+      type: 'programming'
+    }
+  ]
+
+  // Kids Little track activities (2-5 anos)
+  const kidsLittleActivities = [
+    {
+      time: '10H00 - 17H00',
+      activity: 'Robótica Estrutural',
+      description: 'É a montagem de estruturas com peças específicas sem uso de programação ou eletrônicos, que desenvolvem múltiplas habilidades nas crianças.',
+      instructor: 'Nathalia Braga',
+      type: 'robotics'
+    }
+  ]
+
+  // Get available tracks with scheduled talks
+  const availableTracks = [
+    {
+      id: 'agenda-geral',
+      name: 'AGENDA GERAL',
+      icon: '📅',
+      type: 'schedule'
+    },
+    {
+      id: 'web',
+      name: 'TRILHA PRINCIPAL', 
+      icon: '🌐',
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'web' && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'experts', 
+      name: 'TRILHA EXPERTS',
+      icon: '⚙️',
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'experts' && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'start',
+      name: 'TRILHA START',
+      icon: '🚀',
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'start' && speaker.talk && speaker.talk.time)
+    },
+        {
+      id: 'kids',
+      name: 'TRILHA KIDS',
+      subtitle: '6 A 15 ANOS',
+      icon: '👶',
+      type: 'kids'
+    },
+    {
+      id: 'kids-little',
+      name: 'TRILHA KIDS',
+      subtitle: '2 A 5 ANOS',
+      icon: '🎨',
+      type: 'kids-little'
+    },
+  ].filter(track => track.type === 'schedule' || track.type === 'kids' || track.type === 'kids-little' || (track.speakers && track.speakers.length > 0))
+
   return (
     <div className="App">
       {/* Header */}
@@ -84,6 +183,7 @@ const App = () => {
               <div className="nav-links">
                 <a href="#trilhas">Trilhas</a>
                 <a href="#palestrantes">Palestrantes</a>
+                <a href="#agenda">Agenda</a>
                 <a href="#local">Local</a>
                 <a href="#ingressos" className="btn btn-primary text-color-white">Ingressos</a>
               </div>
@@ -508,6 +608,236 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
         </div>
       </section>
 
+      {/* Agenda Section */}
+      <section id="agenda" className="section agenda">
+        <div className="container">
+          <h2 className="section-title">Agenda</h2>
+          
+          {availableTracks.length > 0 ? (
+            <div className="agenda-tabs-container">
+              {/* Tabs Navigation */}
+              <div className="tabs-navigation">
+                {availableTracks.map((track) => (
+                  <button
+                    key={track.id}
+                    className={`tab-button ${activeTrack === track.id ? 'active' : ''} ${track.type === 'kids' || track.type === 'kids-little' ? 'kids-tab' : ''}`}
+                    onClick={() => setActiveTrack(track.id)}
+                  >
+                    <span className="tab-icon">{track.icon}</span>
+                    <div className="tab-text">
+                      <span className="tab-name">{track.name}</span>
+                      {track.subtitle && (
+                        <span className="tab-subtitle">{track.subtitle}</span>
+                      )}
+                    </div>
+                    {track.type !== 'schedule' && track.type !== 'kids' && track.type !== 'kids-little' && (
+                      <span className="tab-count">{track.speakers.length}</span>
+                    )}
+                  </button>
+                ))}
+              </div>
+
+              {/* Tab Content */}
+              <div className="tab-content">
+                {availableTracks.map((track) => (
+                  <div
+                    key={track.id}
+                    className={`agenda-track ${activeTrack === track.id ? 'active' : ''}`}
+                  >
+                    <div className="agenda-content">
+                      {/* Agenda Geral */}
+                      {track.type === 'schedule' ? (
+                        <div className="general-schedule">
+                          <div className="schedule-header">
+                            <h3>Programação do DevFest São José dos Campos 2025</h3>
+                            <p>29 de Novembro - PiT Parque Tecnológico</p>
+                          </div>
+                          <div className="schedule-grid">
+                            {eventSchedule.map((item, index) => (
+                              <div key={index} className="schedule-item general-item">
+                                <div className="schedule-time">
+                                  <span className="time general-time">{item.time}</span>
+                                </div>
+                                <div className="schedule-content general-content">
+                                  <div className="activity-info">
+                                    <h3>{item.activity}</h3>
+                                    <p>{item.description}</p>
+                                    {item.note && (
+                                      <p className="activity-note">* por conta dos participantes</p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="coffee-break-info">
+                            <p><strong>Coffee break garantido:</strong> 9h e 15h35</p>
+                          </div>
+                        </div>
+                      ) : track.type === 'kids' ? (
+                        /* Trilha Kids */
+                        <div className="kids-schedule">
+                          <div className="schedule-header">
+                            <h3>Trilha Kids - Atividades para crianças</h3>
+                            <p>Com <strong>Marcus Valerio</strong> ou <strong>Tio Marquinhos</strong></p>
+                            <div className="partnership-info">
+                              <img src="/images/mv-cultura-maker-logo.png" alt="MV Cultura Maker" className="partner-logo" 
+                                   onError={(e) => {
+                                     e.target.src = 'https://via.placeholder.com/120x60/34a853/ffffff?text=MV+CULTURA+MAKER'
+                                   }} />
+                            </div>
+                          </div>
+                          <div className="instructor-section">
+                            <div className="instructor-card">
+                              <div className="instructor-avatar">
+                                <img src="/images/speakers/marcus.jpeg" alt="Marcus Valerio" 
+                                     onError={(e) => {
+                                       e.target.src = `https://ui-avatars.com/api/?name=Marcus+Valerio&size=120&background=34a853&color=ffffff&bold=true&format=png`
+                                     }} />
+                              </div>
+                              <div className="instructor-info">
+                                <h4>Marcus Valerio</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="schedule-grid">
+                            {kidsActivities.map((item, index) => (
+                              <div key={index} className={`schedule-item kids-item ${item.type}`}>
+                                <div className="schedule-time">
+                                  <span className="time kids-time">{item.time}</span>
+                                </div>
+                                <div className="schedule-content kids-content">
+                                  <div className="activity-info">
+                                    <h3>
+                                      <span className={`activity-type ${item.type}`}>
+                                        {item.type === 'programming' ? '💻' : '🔧'}
+                                      </span>
+                                      {item.activity}
+                                    </h3>
+                                    <p>{item.description}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="kids-info">
+                            <p><strong>Idades:</strong> 6 a 15 anos</p>
+                            <p><strong>Responsabilidade:</strong> Os pais são 100% responsáveis pelas crianças durante o evento</p>
+                          </div>
+                        </div>
+                      ) : track.type === 'kids-little' ? (
+                        /* Trilha Kids Little (2-5 anos) */
+                        <div className="kids-little-schedule">
+                          <div className="schedule-header">
+                            <h3>Trilha Kids - Atividades para crianças pequenas</h3>
+                            <p>Com <strong>Nathalia Braga</strong></p>
+                            <div className="partnership-info">
+                              <img src="/images/unimate-maker-logo.png" alt="Unimate Maker" className="partner-logo unimate" 
+                                   onError={(e) => {
+                                     e.target.src = 'https://via.placeholder.com/150x80/ff6b9d/ffffff?text=UNIMATE+MAKER'
+                                   }} />
+                            </div>
+                          </div>
+                          <div className="instructor-section">
+                            <div className="instructor-card">
+                              <div className="instructor-avatar">
+                                <img src="/images/speakers/natalia.jpeg" alt="Nathalia Braga" 
+                                     onError={(e) => {
+                                       e.target.src = `https://ui-avatars.com/api/?name=Nathalia+Braga&size=120&background=ff6b9d&color=ffffff&bold=true&format=png`
+                                     }} />
+                              </div>
+                              <div className="instructor-info">
+                                <h4>Nathalia Braga</h4>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="schedule-grid">
+                            {kidsLittleActivities.map((item, index) => (
+                              <div key={index} className="schedule-item kids-little-item robotics">
+                                <div className="schedule-time">
+                                  <span className="time kids-little-time">{item.time}</span>
+                                </div>
+                                <div className="schedule-content kids-little-content">
+                                  <div className="activity-info">
+                                    <h3>
+                                      <span className="activity-type robotics">🤖</span>
+                                      {item.activity}
+                                    </h3>
+                                    <p className="activity-description">{item.description}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="kids-little-info">
+                            <p><strong>Idades:</strong> 2 a 5 anos</p>
+                            <p><strong>Atividade:</strong> Robótica Estrutural contínua durante todo o evento</p>
+                            <p><strong>Responsabilidade:</strong> Os pais são 100% responsáveis pelas crianças durante o evento</p>
+                          </div>
+                        </div>
+                      ) : (
+                        /* Trilhas de Palestrantes */
+                        <>
+                          <div className="schedule-grid">
+                            {track.speakers
+                              .sort((a, b) => {
+                                const timeA = a.talk.time.replace('H', ':');
+                                const timeB = b.talk.time.replace('H', ':');
+                                return timeA.localeCompare(timeB);
+                              })
+                              .map((speaker) => (
+                              <div key={speaker.name} className="schedule-item">
+                                <div className="schedule-time">
+                                  <span className="speaker-name">{speaker.name.toUpperCase()}</span>
+                                  <span className="time">{speaker.talk.time}</span>
+                                </div>
+                                <div className="schedule-content">
+                                  <div className="speaker-avatar">
+                                    <img 
+                                      src={speaker.image} 
+                                      alt={speaker.name} 
+                                      onError={(e) => {
+                                        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`
+                                      }} 
+                                    />
+                                  </div>
+                                  <div className="talk-info">
+                                    <h3>{speaker.talk.title}</h3>
+                                    {/* <p>{speaker.talk.description}</p> */}
+                                    {speaker.talk.duration && (
+                                      <p className="talk-duration">Duração: {speaker.talk.duration}</p>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Footer da agenda */}
+              <div className="agenda-footer">
+                <div className="sponsor-logos">
+                  <img src="/images/gdg-logo.png" alt="GDG SJC" className="sponsor-logo gdg" 
+                       onError={(e) => e.target.style.display = 'none'} />
+                  <img src="/images/wtm-logo.png" alt="WTM SJC" className="sponsor-logo wtm" 
+                       onError={(e) => e.target.style.display = 'none'} />
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>A programação detalhada com horários será divulgada em breve.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* CTA Ingressos Section */}
       <section id="ingressos" className="section cta-ingressos">
         <div className="container">
@@ -556,6 +886,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
               <ul>
                 <li><a href="#trilhas">Trilhas</a></li>
                 <li><a href="#palestrantes">Palestrantes</a></li>
+                <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#local">Local</a></li>
                 <li><a href="#ingressos">Ingressos</a></li>
               </ul>
