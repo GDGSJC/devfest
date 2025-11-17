@@ -14,7 +14,7 @@
         "role": "Organizer",
         "title": "GDG São José dos Campos",
         "bio": "Desenvolvedor Full Stack Sênior com mais de 15 anos de experiência. Apaixonado por arquitetura de software e boas práticas como DDD, atuo com tecnologias como Angular, .NET e Node.js para entregar projetos de ponta a ponta. Entusiasta do aprendizado contínuo e da contribuição para a comunidade dev.",
-        "image": "https://media.licdn.com/dms/image/v2/D4D03AQExPdpUbIQESg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1715806066720?e=1762387200&v=beta&t=F3iz12cZGdiTL22GcogjFwvrDrsdtItdLFyq_HNC2mM",
+        "image": "images/organizer/fred.jpeg",
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://linkedin.com/in/fredpeixoto",
@@ -30,7 +30,7 @@
         "role": "Organizer",
         "title": "GDG & WTM São José dos Campos",
         "bio": "Engenheira da Computação com mais de 9 anos de experiência, especialista em transformação ágil, DevOps e ferramentas Atlassian (Jira, Confluence). Ajudo empresas a otimizar seus processos de TI e a promover uma cultura de inovação e agilidade. Certificado PSM I e PSD I.",
-        "image": "https://media.licdn.com/dms/image/v2/D4D03AQEXnwuW1JPp3g/profile-displayphoto-scale_400_400/B4DZkvXo.VJIAk-/0/1757436352288?e=1762387200&v=beta&t=6EtGixEa9csCbgi2bS9SinQGzyLoxQlfonELpImZ6pw",
+        "image": "images/organizer/kassia.png",
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://www.linkedin.com/in/kassiamoura/"
@@ -55,7 +55,7 @@
         "role": "Organizer",
         "title": "GDG & WTM São José dos Campos",
         "bio": "Desenvolvedora Sênior com 12+ anos de experiência em tecnologia e educação. Ajudo a impulsionar a carreira de pessoas desenvolvedoras com conteúdo sobre DevEx (Github, Copilots). Sou Docker Captain, GitHub Star e líder de comunidades técnicas como Github e Google Developers Group.",
-        "image": "https://media.licdn.com/dms/image/v2/D4D03AQFPMf5jeVfQog/profile-displayphoto-scale_400_400/B4DZllJwntHsAg-/0/1758338681975?e=1762387200&v=beta&t=x09FUYj4TcQgbI7yZ1SXwafZdJPzcvxt0KaMSBpHD8g",
+        "image": "images/organizer/juliana.jpeg",
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://www.linkedin.com/in/julianaconde/"
@@ -67,7 +67,7 @@
         "role": "Organizer",
         "title": "GDG & WTM São José dos Campos",
         "bio": "Profissional formada em Análise e Desenvolvimento de Sistemas, com experiência em ambientes ágeis. Atuo em projetos SAP para o Brasil e América Latina, colaborando com frentes de Automação de Testes e Gestão de Talentos. Sou voluntária no GDG São José dos Campos, onde ajudo a fortalecer a comunidade de tecnologia local.",
-        "image": "https://media.licdn.com/dms/image/v2/C4D03AQEE0j0xHOzeFA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1553648460636?e=1762387200&v=beta&t=PwKK6inzR6-0FBdNxwximhjzd-8kIZemmVSFVWGyjI8",
+        "image": "images/organizer/bruna.jpeg",
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://www.linkedin.com/in/bruna-bazanini/"
@@ -79,7 +79,7 @@
         "role": "Organizer",
         "title": "GDG & WTM São José dos Campos",
         "bio": "Profissional de TI com 13 anos de experiência na área. Especialista em soluções HPE Aruba Networking com foco em suporte pré-vendas, dimensionamento de soluções para infraestrutura, gestão de processos e desenvolvimento de projetos. Como Embaixadora do Women Techmakers e GDG SJC, lidera iniciativas para ampliar a participação feminina na tecnologia, inspirando outras mulheres a acreditarem em seu potencial e reforçando a ideia de que este espaço é para todas!",
-        "image": "https://media.licdn.com/dms/image/v2/C4D03AQH-5r3IXZNlcw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1631578661331?e=1762387200&v=beta&t=JQsDM4ALdpbY8UXyfkfIf8jGPbszODMNyyNiLmygBhk",
+        "image": "images/organizer/maisa.jpeg",
         "company": "Google Developer Group",
         "social": {
           "linkedin": "https://www.linkedin.com/in/maisa-ceruti/"

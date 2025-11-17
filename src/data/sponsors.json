@@ -41,17 +41,21 @@
         "logo": "images/sponsors/guts.jpeg",
         "website": "https://www.instagram.com/gutsdesignbr"
       },
-     
       {
         "name": "MV Cultura Maker",
         "logo": "images/sponsors/mv-maker.png",
+        "website": "https://mvculturamaker.com.br/"
+      },
+      {
+        "name": "MV Cultura Maker",
+        "logo": "images/sponsors/mv-maker-kid.jpeg",
         "website": "https://mvculturamaker.com.br/"
       }
     ],
       "support": [
  {
         "name": "PIT",
-        "logo": "images/sponsors/pitsjc.png",
+        "logo": "images/sponsors/pit-logo.jpeg",
         "website": "https://pitsjc.org.br/"
       }
       ]
