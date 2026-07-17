@@ -229,6 +229,28 @@ const App = () => {
         </div>
       </section>
 
+      {/* Video do Último Ano */}
+      <section className="section last-year-video">
+        <div className="container">
+          <div className="last-year-video-card">
+            <div className="last-year-video-content">
+              <h2 className="section-title">Veja como foi o último ano</h2>
+              <p>
+                Reviva a energia do DevFest passado e descubra o que torna esse encontro tão especial para a comunidade.
+              </p>
+            </div>
+            <div className="last-year-video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/z8Y_sI15u28?start=2"
+                title="DevFest São José dos Campos - Último ano"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Trilhas Section */}
       <section id="trilhas" className="section trilhas">
         <div className="container">

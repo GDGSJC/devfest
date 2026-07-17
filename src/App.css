@@ -63,9 +63,10 @@
 
 /* Hero Styles */
 .hero {
-  background: var(--gradient-header);
-  background-size: 300% 300%;
-  animation: gradientMove 12s ease-in-out infinite;
+  /* Use last-year group photo as hero background with a dark overlay for contrast */
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.35)), url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center center;
   color: white;
   padding: 140px 0 80px;
   text-align: center;
@@ -231,6 +232,59 @@
   
   .countdown-title {
     font-size: 1.3rem;
+  }
+}
+
+/* Last Year Video Styles */
+.last-year-video {
+  background: var(--light-color);
+}
+
+.last-year-video-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.last-year-video-content h2 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.last-year-video-content p {
+  color: var(--gray-color);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.last-year-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.last-year-video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .last-year-video-card {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .last-year-video-content h2 {
+    text-align: center;
   }
 }
 
