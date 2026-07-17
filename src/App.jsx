@@ -71,6 +71,7 @@ function DevFestCountdown() {
 
 const App = () => {
   const [activeTrack, setActiveTrack] = useState('agenda-geral')
+  const showAgendaDetails = false
 
   // Event schedule data
   const eventSchedule = [
@@ -309,12 +310,11 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
         </div>
       </section>
 
-       {/* Agenda Section */}
+      {/* Agenda Section */}
       <section id="agenda" className="section agenda">
         <div className="container">
           <h2 className="section-title">Agenda</h2>
-          
-          {availableTracks.length > 0 ? (
+          {showAgendaDetails ? (
             <div className="agenda-tabs-container">
               {/* Tabs Navigation */}
               <div className="tabs-navigation">
@@ -382,7 +382,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                             <h3>Trilha Kids - Atividades para crianças</h3>
                             <p>Com <strong>Marcus Valerio</strong> ou <strong>Tio Marquinhos</strong></p>
                             <div className="partnership-info">
-                              <img src="/images/mv-cultura-maker-logo.png" alt="MV Cultura Maker" className="partner-logo" 
+                              <img src="/images/mv-cultura-maker-logo.png" alt="MV Cultura Maker" className="partner-logo"
                                    onError={(e) => {
                                      e.target.src = 'https://via.placeholder.com/120x60/34a853/ffffff?text=MV+CULTURA+MAKER'
                                    }} />
@@ -391,7 +391,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                           <div className="instructor-section">
                             <div className="instructor-card">
                               <div className="instructor-avatar">
-                                <img src="/images/speakers/marcus.jpeg" alt="Marcus Valerio" 
+                                <img src="/images/speakers/marcus.jpeg" alt="Marcus Valerio"
                                      onError={(e) => {
                                        e.target.src = `https://ui-avatars.com/api/?name=Marcus+Valerio&size=120&background=34a853&color=ffffff&bold=true&format=png`
                                      }} />
@@ -433,7 +433,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                             <h3>Trilha Kids - Atividades para crianças pequenas</h3>
                             <p>Com <strong>Nathalia Braga</strong></p>
                             <div className="partnership-info">
-                              <img src="/images/unimate-maker-logo.png" alt="Unimate Maker" className="partner-logo unimate" 
+                              <img src="/images/unimate-maker-logo.png" alt="Unimate Maker" className="partner-logo unimate"
                                    onError={(e) => {
                                      e.target.src = 'https://via.placeholder.com/150x80/ff6b9d/ffffff?text=UNIMATE+MAKER'
                                    }} />
@@ -442,7 +442,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                           <div className="instructor-section">
                             <div className="instructor-card">
                               <div className="instructor-avatar">
-                                <img src="/images/speakers/natalia.jpeg" alt="Nathalia Braga" 
+                                <img src="/images/speakers/natalia.jpeg" alt="Nathalia Braga"
                                      onError={(e) => {
                                        e.target.src = `https://ui-avatars.com/api/?name=Nathalia+Braga&size=120&background=ff6b9d&color=ffffff&bold=true&format=png`
                                      }} />
@@ -494,17 +494,16 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                                 </div>
                                 <div className="schedule-content">
                                   <div className="speaker-avatar">
-                                    <img 
-                                      src={speaker.image} 
-                                      alt={speaker.name} 
+                                    <img
+                                      src={speaker.image}
+                                      alt={speaker.name}
                                       onError={(e) => {
                                         e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`
-                                      }} 
+                                      }}
                                     />
                                   </div>
                                   <div className="talk-info">
                                     <h3>{speaker.talk.title}</h3>
-                                    {/* <p>{speaker.talk.description}</p> */}
                                     {speaker.talk.duration && (
                                       <p className="talk-duration">Duração: {speaker.talk.duration}</p>
                                     )}
@@ -523,9 +522,9 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
               {/* Footer da agenda */}
               <div className="agenda-footer">
                 <div className="sponsor-logos">
-                  <img src="/images/gdg-logo.png" alt="GDG SJC" className="sponsor-logo gdg" 
+                  <img src="/images/gdg-logo.png" alt="GDG SJC" className="sponsor-logo gdg"
                        onError={(e) => e.target.style.display = 'none'} />
-                  <img src="/images/wtm-logo.png" alt="WTM SJC" className="sponsor-logo wtm" 
+                  <img src="/images/wtm-logo.png" alt="WTM SJC" className="sponsor-logo wtm"
                        onError={(e) => e.target.style.display = 'none'} />
                 </div>
               </div>
@@ -604,9 +603,9 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                   </div>
                 ))}
               </div>
-              <a href={`mailto:${volunteersData.volunteers.info.contactEmail}`} className="btn btn-primary">
-                Quero Ser Voluntário
-              </a>
+              <button type="button" className="btn btn-primary" disabled>
+                Em breve
+              </button>
             </div>
             <div className="volunteers-image">
               <img 
