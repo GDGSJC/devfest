@@ -1,0 +1,106 @@
+{
+  "sponsors": {
+      "diamond": [
+      {
+        "id": 1,
+        "name": "Google",
+        "logo": "images/sponsors/google.jpeg",
+        "website": "https://developers.google.com/",
+        "description": "Patrocinador principal do evento",
+        "benefits": [
+          "Logo em destaque no site",
+          "Booth premium no evento",
+          "Apresentação de 15 minutos",
+          "Acesso VIP para networking"
+        ]
+      }
+    ],
+      "gold": [
+      {
+        "id": 1,
+        "name": "Nimbie",
+        "logo": "images/sponsors/nimble.png",
+        "website": "https://br.nimbleevolution.com/jornada-agil-atlassian/",
+        "description": "Patrocinador principal do evento",
+        "benefits": [
+          "Logo em destaque no site",
+          "Booth premium no evento",
+          "Apresentação de 15 minutos",
+          "Acesso VIP para networking"
+        ]
+      }
+    ],
+      "silver": [
+      {
+        "name": "Hashi Doces e Salgados",
+        "logo": "images/sponsors/hashi.jpeg",
+        "website": "https://www.instagram.com/hashidocesesalgados/"
+      },
+      {
+        "name": "Guts Design",
+        "logo": "images/sponsors/guts.jpeg",
+        "website": "https://www.instagram.com/gutsdesignbr"
+      },
+      {
+        "name": "MV Cultura Maker",
+        "logo": "images/sponsors/mv-maker.png",
+        "website": "https://mvculturamaker.com.br/"
+      },
+      {
+        "name": "MV Cultura Maker",
+        "logo": "images/sponsors/mv-maker-kid.jpeg",
+        "website": "https://www.instagram.com/unimatemaker"
+      },
+      {
+        "name": "Unimar",
+        "logo": "images/sponsors/unimar.jpeg",
+        "website": "https://unimaread.com.br/"
+      }
+    ],
+      "support": [
+ {
+        "name": "PIT",
+        "logo": "images/sponsors/pit-logo.jpeg",
+        "website": "https://pitsjc.org.br/"
+      }
+      ]
+  },
+  "sponsorshipTiers": {
+    "diamond": {
+      "name": "Patrocinador Diamante",
+      "price": "R$ 25.000",
+      "color": "#b9f2ff",
+      "benefits": [
+        "Logo em destaque no site e materiais",
+        "Booth premium no evento",
+        "Apresentação de 15 minutos",
+        "4 ingressos VIP inclusos",
+        "Acesso exclusivo para networking",
+        "Menção nas redes sociais",
+        "Logo na certificação dos participantes"
+      ]
+    },
+    "gold": {
+      "name": "Patrocinador Ouro",
+      "price": "R$ 15.000",
+      "color": "#ffd700",
+      "benefits": [
+        "Logo no site e materiais",
+        "Booth no evento",
+        "2 ingressos inclusos",
+        "Menção nas redes sociais",
+        "Logo na certificação dos participantes"
+      ]
+    },
+    "silver": {
+      "name": "Patrocinador Prata",
+      "price": "R$ 8.000",
+      "color": "#c0c0c0",
+      "benefits": [
+        "Logo no site",
+        "1 ingresso incluso",
+        "Menção nas redes sociais"
+      ]
+    }
+  }
+}

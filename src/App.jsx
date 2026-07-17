@@ -3,11 +3,11 @@ import { Calendar, MapPin, Clock, Users, Heart, ExternalLink, Github, Twitter, I
 import './App.css'
 
 // Import JSON data
-import speakersData from './data/speakers.json'
-import sponsorsData from './data/sponsors.json'
-import communitiesData from './data/communities.json'
-import volunteersData from './data/volunteers.json'
-import organizersData from './data/organizers.json'
+import speakersData from './data/devfest2026/speakers.json'
+import sponsorsData from './data/devfest2026/sponsors.json'
+import communitiesData from './data/devfest2026/communities.json'
+import volunteersData from './data/devfest2026/volunteers.json'
+import organizersData from './data/devfest2026/organizers.json'
 
 // DevFest Countdown Timer Component
 function DevFestCountdown() {
@@ -15,7 +15,7 @@ function DevFestCountdown() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2025-11-29T09:00:00')
+      const eventDate = new Date('2026-12-05T09:00:00')
       const now = new Date()
       const difference = eventDate - now
 
@@ -196,15 +196,15 @@ const App = () => {
       <section className="hero">
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">DevFest São José dos Campos 2025</h1>
+            <h1 className="hero-title">DevFest São José dos Campos 2026</h1>
             <p className="hero-subtitle">
-              O maior evento de tecnologia da região! Junte-se a nós para um dia repleto de 
-              aprendizado, networking e inovação com três trilhas simultâneas.
+              Prepare-se para um novo ciclo de aprendizado, networking e inovação com a comunidade tech da região.
+              O DevFest 2026 reunirá especialistas, comunidades e participantes em um dia completo de conteúdo e conexão.
             </p>
             <div className="hero-info">
               <div className="info-item">
                 <Calendar className="icon" />
-                <span>29 de Novembro, 2025</span>
+                <span>5 de Dezembro, 2026</span>
               </div>
               <div className="info-item">
                 <MapPin className="icon" />
@@ -212,7 +212,7 @@ const App = () => {
               </div>
               <div className="info-item">
                 <Clock className="icon" />
-                <span>9h às 17h</span>
+                <span>09h às 17h</span>
               </div>
             </div>
 
@@ -328,8 +328,8 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                       {track.type === 'schedule' ? (
                         <div className="general-schedule">
                           <div className="schedule-header">
-                            <h3>Programação do DevFest São José dos Campos 2025</h3>
-                            <p>29 de Novembro - PiT Parque Tecnológico</p>
+                            <h3>Programação do DevFest São José dos Campos 2026</h3>
+                            <p>5 de Dezembro - PiT Parque Tecnológico</p>
                           </div>
                           <div className="schedule-grid">
                             {eventSchedule.map((item, index) => (
@@ -852,9 +852,9 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                 <span className="price-info">Inclui coffee breaks e kit do evento</span>
               </div>
             </div>
-            <a href="https://www.sympla.com.br/evento/devfest-sao-jose-dos-campos-2025/3127936" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-large">
+            <a href="#ingressos" className="btn btn-primary btn-large">
               <ExternalLink className="icon" />
-              Comprar Ingresso
+              Inscrições em breve
             </a>
             <p className="ticket-note">* Temos ingressos solidários para pessoas em situação de vulnerabilidade, entre contato pelas redes sociais ou email</p>
           </div>
@@ -903,7 +903,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 GDG São José dos Campos. Todos os direitos reservados.</p>
+            <p>&copy; 2026 GDG São José dos Campos. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

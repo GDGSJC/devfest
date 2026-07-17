@@ -1,0 +1,199 @@
+{
+  "speakers": [
+    {
+      "name": "Victor Pugliese",
+      "role": "Google Developer Expert IA | Ph.D. Candidate",
+      "company": "Instituto de Pesquisas Lisboa",
+      "bio": "Victor é Google Developer Expert (GDE) em Inteligência Artificial e Doutorando em Ciência da Computação pela UNIFESP, com Mestrado pelo ITA. Com mais de 10 anos de experiência na indústria e mais de 15 publicações científicas, ele une o melhor dos dois mundos: a profundidade da pesquisa acadêmica e a aplicação prática da tecnologia. Recentemente, atuou como Pesquisador Visitante no GAIPS, grupo de pesquisa do Instituto Superior Técnico da Universidade de Lisboa, contribuindo para avanços em IA e aprendizado de máquina. 🤖✨",
+      "image": "images/speakers/victor.jpg",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/victorpug-exe/",
+        "instagram": "https://www.instagram.com/victorpug.exe/"
+      },
+      "talk": {
+        "title": "Uma introdução ao Gemini Robotics",
+        "description": "Descubra a poderosa fusão entre Inteligência Artificial (IA) e sistemas robóticos com o Gemini. Uma visão geral sobre como o modelo capacita robôs a raciocinar, planejar e executar tarefas complexas em ambientes reais.",
+        "time": "10H25",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Julio Arruda",
+      "role": "9x Microsoft MVP | Github Star | Docker Captain",
+      "company": "GFT Technologies",
+      "bio": "Julio é Wynxx Lead, atuando na idealização de projetos, criação e liderança de equipes de desenvolvimento, com foco em IA generativa para solucionar problemas complexos do mundo real.Além disso, é Microsoft MVP, GitHub Star, Instrutor Oficial do LinkedIn Learning, YouTuber e palestrante, compartilhando seu conhecimento em DevOps, ALM, cibersegurança, ethical hacking e computação em nuvem. Com diversas publicações, certificações e reconhecimentos, sua missão é capacitar e inspirar profissionais a adotarem as melhores práticas de tecnologia, entregando qualidade e valor aos seus clientes.",
+      "image": "https://avatars.githubusercontent.com/u/5204009?v=4",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/julioarrudac/",
+        "instagram": "https://www.instagram.com/julioarrudac/"
+      },
+      "talk": {
+        "title": "Da Ideia ao Clique: Como o Vibe Coding Aproxima Negócio e Tecnologia",
+        "description": "No mundo atual, a distância entre negócio e tecnologia precisa ser reduzida ao máximo. Com o Vibe Coding, os Product Owners deixam de ser apenas escritores de requisitos e passam a criar protótipos funcionais que aceleram a validação de ideias e a comunicação com stakeholders. Nesta palestra, você vai descobrir como essa abordagem transforma a prototipação em um processo ágil, colaborativo e contínuo encurtando o caminho da ideia ao clique.",
+        "time": "16H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Fernando Sedrez",
+      "role": "Google Developer Expert Cloud | Data Expert",
+      "company": "Globo",
+      "bio": "Fernando Sedrez é Staff Data Engineer na Globo. Ele atua como Tech Lead, Palestrante, Mentor e é um Google Developer Expert em Data Cloud. Sua carreira progrediu de Analista de Sistemas para Engenheiro de Dados, também auxiliando pessoas a construir seu primeiro MVP e participando como founding engineer em startup, até sua atual posição. Com bacharelado em Ciência da Computação e especialização em Análise e Desenvolvimento de Sistemas, master em Data Science & IA. Sua paixão é compartilhar conhecimento sobre Big Data e Cloud com a comunidade.",
+      "image": "https://avatars.githubusercontent.com/u/1216898?v=4",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/fmsedrez/",
+        "instagram": "https://www.instagram.com/fmsedrez/"
+      }, 
+      "talk": {
+        "title": "Do zero ao RAG: Plataforma de agentes de AI da Globo",
+        "description": "Explore a criação de uma plataforma de agentes na Globo usando tecnologias do Google Cloud. Nesta sessão, vamos mergulhar na arquitetura e nos componentes necessários para construir um sistema de agentes que colaboram para resolver problemas complexos.",
+        "time": "11H15",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Maíra D’Eleutério",
+      "role": "Microsoft MVP | COO | Team Leader",
+      "company": "OnChange",
+      "bio": "✨ Maíra D’Eleutério é Microsoft MVP e especialista em automação de processos alinhada ao negócio com as ferramentas de produtividade M365. 💻Empresária, COO, Team Leader e mãe, Maíra é um exemplo de liderança e inovação — mostrando que é possível transformar realidades com tecnologia, propósito e equilíbrio. 💙",
+      "image": "images/speakers/maira.jpeg",
+      "track": "web",
+      "social": {
+        "instagram": "https://www.instagram.com/mdeleuterio/",
+        "linkedin": "https://www.linkedin.com/in/mairadeleuterio"
+      } , 
+      "talk": {
+        "title": "Transforme suas ideias em aplicativos com o Power Platform e o Copilot",
+        "description": "Transforme suas ideias em aplicativos com o Power Platform e o Copilot Com o Copilot, a produtividade ganha um novo significado — inclusive para quem já escreve código todos os dias! 💻✨ Nesta palestra inspiradora, vamos explorar como integrar o Copilot à Power Platform e ao Microsoft 365 para criar soluções digitais de forma ágil, automatizar processos e aumentar a eficiência no dia a dia. ⚙️🤖 Descubra como a Inteligência Artificial pode ser sua parceira estratégica, ajudando você a transformar ideias em aplicativos e protótipos de maneira simples, prática e poderosa.",
+        "time": "14H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Victor Alencar",
+      "role": "Principal Engineer",
+      "company": "Payabli |  Canadá",
+      "bio": "Sou Victor, natural do Brasil, Casado, Principal Engineer na Payabli, vivendo no Canada. Com 12 anos de experiência em Engenharia de Software, desde integrações de sistemas de pagamentos, pipelines de transformação de dados e interpretação de DNA, para streaming de videos, ja tive a oportunidade de trabalhar em diversos setores em indústrias. Atualmente trabalhando em projetos e inovações relacionadas a AI e ML.",
+      "image": "images/speakers/victor-alencar.jpeg",
+      "track": "web",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/victoraalencar/",
+        "twitter": "https://x.com/valencar_"
+      }, 
+      "talk": {
+        "title": "AI e ML para Detecção de Fraudes com Google Cloud",
+        "description": "Criar sistemas de detecção de fraude em pagamentos usando Google Cloud, com foco em baixo custo e alta eficiência. Vamos explorar data pipelines com BigQuery e Dataflow, treinar e operar modelos no Vertex AI, e integrar regras e condições na ML para detectar anomalias em tempo real. Baseado em experiência prática em Análise de Risco e projetos nos EUA e Canadá, mostraremos como equilibrar performance, escalabilidade e custos em soluções de fraude. A ideia é apresentar como o modelo pode ser usado para Fraudes, mas também abrirá espaços para expandir outras ideias e aplicações de ML e AI.",
+        "time": "14H50",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Diógenes Ramos",
+      "role": "Red Team | Security Analyst | Professor",
+      "company": "OWASP SJC Chapter",
+      "bio": "Especialista em segurança cibernética e líder do capítulo OWASP em São José dos Campos, atua na coordenação de equipes técnicas e na condução de avaliações de segurança, incluindo testes de penetração e operações de Red Team. É tecnólogo em Redes de Computadores, pós-graduado em Segurança Cibernética e Hacking Ético e mestre em Gestão e Desenvolvimento Regional. Possui certificações reconhecidas no mercado, como CEH Master (Certified Ethical Hacker), ITIL Foundation, além de credenciais em Linux e Microsoft.",
+      "image": "images/speakers/diogenes.jpg",
+      "track": "experts",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/diogenes-r-9a0427a/"
+      },   
+      "talk": {
+        "title": "Shift Left Security: integrando MobSF ao ciclo de desenvolvimento Android",
+        "description": "Esta palestra aborda o conceito de **Shift Left Security** em aplicativos Android, enfatizando a importância de antecipar a segurança. Utilizando o **Mobile Security Framework (MobSF)**, uma ferramenta open source, demonstraremos como realizar análises estáticas e dinâmicas, interpretar relatórios e priorizar correções. Você aprenderá sobre os riscos do **OWASP Mobile Top 10** e estratégias práticas para **integrar o MobSF ao seu pipeline de CI/CD**, capacitando desenvolvedores Android a fortalecer seus aplicativos desde as fases iniciais, antes da publicação na loja.",
+        "time": "14H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Andresa Valério",
+      "role": "Software Engineer",
+      "company": "PiniOn",
+      "bio": "Andresa Valério é desenvolvedora back-end com 3 anos de experiência em engenharia de software, especializada em Python, FastAPI e bancos de dados relacionais e não relacionais (PostgreSQL e MongoDB). Atualmente atua na área de tecnologia do PiniOn. Graduada em Ciência e Tecnologia pela UNIFESP, tem interesse em boas práticas de segurança, arquitetura de software e paradigmas de linguagens de programação.",
+      "image": "images/speakers/andresa.png",
+      "track": "experts",
+      "social": {
+        "instagram": "https://instagram.com/andresavaler.io",
+        "linkedin": "https://www.linkedin.com/in/andresavalerio/",
+        "github": "https://github.com/andresavalerio"
+      }, 
+      "talk": {
+        "title": "Arquitetando APIs Multi-Tenant Modernas com PostgreSQL e RLS",
+        "description": "Nesta apresentação, exploramos como projetar e implementar APIs modernas com suporte a multi-tenancy de forma segura e eficiente utilizando PostgreSQL e o recurso de Row-Level Security (RLS). A palestra aborda desde os conceitos fundamentais de multi-tenancy e os diferentes modelos de isolamento de dados até a aplicação prática do RLS para controlar o acesso a registros em nível de linha. Também são discutidos exemplos reais de implementação, mostrando como o RLS pode simplificar a lógica de segurança da aplicação e reduzir complexidade no código da API.",
+        "time": "14H50",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Bruno Corrêa",
+      "role": "Full Stack Software Developer",
+      "company": "Just Travel",
+      "bio": "Bruno é desenvolvedor full stack com experiência em soluções web e foco no ecossistema de e-commerce. Atua na construção de produtos que equilibram performance, escalabilidade e boa experiência do usuário. Entusiasta por aprendizado contínuo e troca de conhecimento, gosta de explorar temas que conectam front e back-end, sempre com uma abordagem prática e acessível para diferentes níveis de experiência.",
+      "image": "images/speakers/bruno.webp",
+      "track": "experts",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/brunociao/"
+      }, 
+      "talk": {
+        "title": "Comunicação Web Real-Time (WebSockets, SSE, Polling)",
+        "description": "Nesta palestra, será compartilhado aprendizados práticos sobre comunicação em tempo real na web, explorando diferentes estratégias — como polling, WebSockets e Server-Sent Events (SSE) — com foco em quando e por que escolher cada uma. Além da teoria, ele apresenta um case real da integração do método de pagamento NuPay (Nubank) em um checkout de e-commerce que transaciona milhões de reais em pagamentos por dia, destacando desafios enfrentados, armadilhas comuns (como o uso incorreto do Date.now() no client-side) e as soluções aplicadas. Para tornar o conteúdo ainda mais dinâmico, haverá uma demonstração prática comparando os métodos em ação. Voltada a desenvolvedores full stack, frontend e backend, a palestra oferece não apenas conceitos, mas também insights aplicáveis no dia a dia de quem lida com fluxos sensíveis a tempo — como pagamentos, notificações e atualizações em tempo real.",
+        "time": "16H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Luana Jacudi",
+      "role": "Advogada | Mentora de Startups no PIT",
+      "company": "Jacudi Advocacia",
+      "bio": "Advogada de Negócios Digitais e Inovação, especializada em Privacidade e Proteção de Dados. Mentora e Coordenadora de Parcerias na startup social Atitude Infinita. Mentora no Parque de Inovação Tecnológica - PIT de São José dos Campos/SP. Como ex-conciliadora do TJRJ, acredita que a solução quase sempre está na conversa. Pós-graduada em Direito, Inovação e Tecnologia – porque o Direito precisa estar em constante evolução.",
+      "image": "images/speakers/luana.jpg",
+      "track": "start",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/luanajacudi/"
+      } , 
+      "talk": {
+        "title": "LGPD na Prática: Guia de Sobrevivência para Desenvolvedores e Fundadores de SaaS`",
+        "description": "A conformidade com a LGPD começa na sua IDE, não no escritório de advocacia. Para fundadores de SaaS e desenvolvedores, entender a lei é necessário para evitar riscos e construir produtos que geram confiança. Nesta palestra, você terá um guia prático para implementar os pilares da proteção de dados diretamente em seu código e arquitetura. Vamos cobrir desde o conceito de Privacy by Design e a gestão técnica do consentimento, até como utilizar o ecossistema Microsoft como um acelerador de conformidade para proteger sua aplicação. Saia desta sessão com um checklist para tornar seu software mais seguro e alinhado à legislação.",
+        "time": "14H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Daniel Reck",
+      "role": "Sales Director | Chief Sales Officer",
+      "company": "Google",
+      "bio": "Sou um executivo atuando alguns anos como acelerador de negócios dos clientes, usando a tecnologia como protagonista. Estou como Sales Specialist em Data & Analytics no Google Cloud para contas estratégicas do Google Cloud no Brasil.",
+      "image": "https://media.licdn.com/dms/image/v2/D4D03AQE1xE_pWjRrmQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1711029824314?e=1763596800&v=beta&t=GB6AXAV3Wc1lJH4-cxu8QJNo3_ngxErLWQjrcL_BgZ8",
+      "track": "start",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/reckdanielkrce"
+      } , 
+     
+      "talk": {
+        "title": "Explorando os dados no BigQuery com Data Agents",
+        "description": "Descubra o potencial dos **Agentes de Dados** para transformar a produtividade e a entrega de valor no seu negócio. Esta sessão mostrará as novas funcionalidades e como a **Inteligência Artificial** pode adicionar superpoderes às tarefas do dia-a-dia.\n\nVocê aprenderá como os agentes de dados podem:\n\n* **Agilizar tarefas** diárias, garantindo que o valor chegue ao business muito mais rápido.\n* Ajudar na entrega de projetos com **qualidade e agilidade**.\n* Aumentar significativamente a **produtividade individual** ao integrar a IA nas rotinas de trabalho.",
+        "time": "16H00",
+        "duration": "45 min"
+      }
+    },
+    {
+      "name": "Adriano Barbosa",
+      "role": "Gerente de Produto",
+      "company": "Kaffa Tech",
+      "bio": "Adriano Barbosa é Gerente de Produto na Codex Utilities, com 14 anos em GIS, DEV, dados e regulação. Hoje toca produtos e projetos no mercado e autorais.",
+      "image": "images/speakers/adriano.jpeg",
+      "track": "start",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/asbarbosa/"
+      } , 
+      "talk": {
+        "title": "Prompt-to-Prod: como lançar um produto em horas usando IA, Git e Cloudflare",
+        "description": "Como construir um produto em poucas haras combinando IA como par-programmer, Cloudflare Pages e um fluxo simples de Git. Usando um case real criado desta forma https://caminho-da-ro-a.pages.dev/",
+        "time": "14H50",
+        "duration": "45 min"
+      }
+    }
+  ]
+}

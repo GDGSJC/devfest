@@ -1,6 +1,6 @@
-# DevFest São José dos Campos 2025
+# DevFest São José dos Campos 2026
 
-Landing page oficial do DevFest São José dos Campos 2025, evento organizado pelo Google Developer Groups São José dos Campos.
+Landing page oficial do DevFest São José dos Campos 2026, evento organizado pelo Google Developer Groups São José dos Campos.
 
 ## 🚀 Sobre o Evento
 

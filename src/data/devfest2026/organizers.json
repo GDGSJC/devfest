@@ -1,0 +1,106 @@
+{
+  "organizers": {
+    "event": {
+      "name": "DevFest São José dos Campos 2026",
+      "organizer": "Google Developer Groups São José dos Campos",
+      "date": "2026-12-05",
+      "venue": "PiT - Parque Tecnológico",
+      "expectedAttendees": 400
+    },
+    "team": [
+      {
+        "id": 1,
+        "name": "Fred Peixoto",
+        "role": "Organizer",
+        "title": "GDG São José dos Campos",
+        "bio": "Desenvolvedor Full Stack Sênior com mais de 15 anos de experiência. Apaixonado por arquitetura de software e boas práticas como DDD, atuo com tecnologias como Angular, .NET e Node.js para entregar projetos de ponta a ponta. Entusiasta do aprendizado contínuo e da contribuição para a comunidade dev.",
+        "image": "images/organizer/fred.jpeg",
+        "company": "Google Developer Group",
+        "social": {
+          "linkedin": "https://linkedin.com/in/fredpeixoto",
+          "instagram": "https://twitter.com/fredmpeixoto",
+          "twitter": "https://twitter.com/_fredpeixoto",
+          "github": "https://github.com/fredmpeixoto"
+        },
+        "responsibilities": ["Coordenação geral", "Relacionamento com palestrantes", "Visão estratégica do evento"]
+      },
+      {
+        "id": 2,
+        "name": "Kassia Moura",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Engenheira da Computação com mais de 9 anos de experiência, especialista em transformação ágil, DevOps e ferramentas Atlassian (Jira, Confluence). Ajudo empresas a otimizar seus processos de TI e a promover uma cultura de inovação e agilidade. Certificado PSM I e PSD I.",
+        "image": "images/organizer/kassia.png",
+        "company": "Google Developer Group",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/kassiamoura/"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Aryel Capelo",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional de tecnologia com 10+ anos de experiência, especialista em sistemas e infraestrutura de TI. Focada em garantir a estabilidade e segurança de ambientes corporativos através da administração de servidores, redes e firewalls. Líder do Women Techmakers em São José dos Campos.",
+        "image": "images/communities/aryel.jpeg",
+        "company": "Google Developer Group",
+        "social": {
+          "instagram": "https://www.instagram.com/aryelccapelo/",
+          "linkedin": "https://www.linkedin.com/in/aryelccapelo"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Juliana Conde",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Desenvolvedora Sênior com 12+ anos de experiência em tecnologia e educação. Ajudo a impulsionar a carreira de pessoas desenvolvedoras com conteúdo sobre DevEx (Github, Copilots). Sou Docker Captain, GitHub Star e líder de comunidades técnicas como Github e Google Developers Group.",
+        "image": "images/organizer/juliana.jpeg",
+        "company": "Google Developer Group",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/julianaconde/"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Bruna Bazanini",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional formada em Análise e Desenvolvimento de Sistemas, com experiência em ambientes ágeis. Atuo em projetos SAP para o Brasil e América Latina, colaborando com frentes de Automação de Testes e Gestão de Talentos. Sou voluntária no GDG São José dos Campos, onde ajudo a fortalecer a comunidade de tecnologia local.",
+        "image": "images/organizer/bruna.jpeg",
+        "company": "Google Developer Group",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/bruna-bazanini/"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Maisa Ceruti",
+        "role": "Organizer",
+        "title": "GDG & WTM São José dos Campos",
+        "bio": "Profissional de TI com 13 anos de experiência na área. Especialista em soluções HPE Aruba Networking com foco em suporte pré-vendas, dimensionamento de soluções para infraestrutura, gestão de processos e desenvolvimento de projetos. Como Embaixadora do Women Techmakers e GDG SJC, lidera iniciativas para ampliar a participação feminina na tecnologia, inspirando outras mulheres a acreditarem em seu potencial e reforçando a ideia de que este espaço é para todas!",
+        "image": "images/organizer/maisa.jpeg",
+        "company": "Google Developer Group",
+        "social": {
+          "linkedin": "https://www.linkedin.com/in/maisa-ceruti/"
+        }
+      }
+    ],
+    "contact": {
+      "general": "gdgsaojosedoscampos@gmail.com",
+      "instagram": "https://instagram.com/gdg_sjc",
+      "sponsors": "gdgsaojosedoscampos@gmail.com",
+      "volunteers": "gdgsaojosedoscampos@gmail.com",
+      "press": "gdgsaojosedoscampos@gmail.com"
+    },
+    "social": {
+      "website": "https://gdgsjc.github.io",
+      "instagram": "https://instagram.com/gdg_sjc",
+      "twitter": "https://x.com/GDG_SJC",
+      "linkedin": "https://linkedin.com/company/gdg-sao-jose-dos-campos",
+      "github": "https://github.com/gdgsjc",
+      "youtube": "https://youtube.com/gdgsjc",
+      "meetup": "https://meetup.com/gdgsjc"
+    }
+  }
+}
