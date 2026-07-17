@@ -60,30 +60,6 @@
         "social": {
           "linkedin": "https://www.linkedin.com/in/julianaconde/"
         }
-      },
-      {
-        "id": 5,
-        "name": "Bruna Bazanini",
-        "role": "Organizer",
-        "title": "GDG & WTM São José dos Campos",
-        "bio": "Profissional formada em Análise e Desenvolvimento de Sistemas, com experiência em ambientes ágeis. Atuo em projetos SAP para o Brasil e América Latina, colaborando com frentes de Automação de Testes e Gestão de Talentos. Sou voluntária no GDG São José dos Campos, onde ajudo a fortalecer a comunidade de tecnologia local.",
-        "image": "images/organizer/bruna.jpeg",
-        "company": "Google Developer Group",
-        "social": {
-          "linkedin": "https://www.linkedin.com/in/bruna-bazanini/"
-        }
-      },
-      {
-        "id": 6,
-        "name": "Maisa Ceruti",
-        "role": "Organizer",
-        "title": "GDG & WTM São José dos Campos",
-        "bio": "Profissional de TI com 13 anos de experiência na área. Especialista em soluções HPE Aruba Networking com foco em suporte pré-vendas, dimensionamento de soluções para infraestrutura, gestão de processos e desenvolvimento de projetos. Como Embaixadora do Women Techmakers e GDG SJC, lidera iniciativas para ampliar a participação feminina na tecnologia, inspirando outras mulheres a acreditarem em seu potencial e reforçando a ideia de que este espaço é para todas!",
-        "image": "images/organizer/maisa.jpeg",
-        "company": "Google Developer Group",
-        "social": {
-          "linkedin": "https://www.linkedin.com/in/maisa-ceruti/"
-        }
       }
     ],
     "contact": {

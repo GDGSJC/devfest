@@ -9,19 +9,10 @@
       }
     ],
     "gold": [
-      {
-        "id": 1,
-        "name": "Nimbie",
-        "logo": "images/sponsors/nimble.png",
-        "website": "https://br.nimbleevolution.com/jornada-agil-atlassian/"
-      }
+     
     ],
     "silver": [
-      {
-        "name": "MV Cultura Maker",
-        "logo": "images/sponsors/mv-maker.png",
-        "website": "https://mvculturamaker.com.br/"
-      }
+     
     ],
     "support": [
       {
@@ -37,10 +28,8 @@
       "price": "R$ 25.000",
       "color": "#b9f2ff",
       "benefits": [
-        "Logo em destaque no site e materiais",
-        "Booth premium no evento",
-        "Apresentação de 15 minutos",
-        "Acesso VIP para networking"
+        "Logo em destaque",
+        "Booth premium e palestra de 15 min"
       ]
     },
     "gold": {
@@ -49,8 +38,7 @@
       "color": "#ffd700",
       "benefits": [
         "Logo no site e materiais",
-        "Booth no evento",
-        "2 ingressos inclusos"
+        "Booth e 2 ingressos inclusos"
       ]
     },
     "silver": {

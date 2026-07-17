@@ -763,7 +763,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
               <div className="venue-details">
                 <div className="detail">
                   <Users className="icon" />
-                  <span>Capacidade para 300+ pessoas</span>
+                  <span>Capacidade para 500+ pessoas</span>
                 </div>
                 <div className="detail">
                   <Calendar className="icon" />

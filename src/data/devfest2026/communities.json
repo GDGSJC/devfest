@@ -1,22 +1,5 @@
 {
   "partnerCommunities": [
-    {
-      "name": "Jug Vale",
-      "logo": "images/communities/jug-vale.jpg",
-      "description": "Comunidade local dedicada a Java e tecnologia backend.",
-      "location": "Vale do Paraíba",
-      "social": {
-        "instagram": "https://www.instagram.com/jugvale/"
-      }
-    },
-    {
-      "name": "Dev JR",
-      "logo": "images/communities/devjr.png",
-      "description": "Comunidade voltada para desenvolvimento e networking entre iniciantes e profissionais.",
-      "location": "São José dos Campos",
-      "social": {
-        "instagram": "https://www.instagram.com/devjrbr/"
-      }
-    }
+    
   ]
 }

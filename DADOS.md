@@ -6,11 +6,13 @@ Este projeto agora utiliza arquivos JSON separados para gerenciar todo o conteú
 
 ```
 src/data/
-├── speakers.json       # Dados dos palestrantes
-├── sponsors.json       # Patrocinadores por categoria
-├── communities.json    # Comunidades parceiras
-├── volunteers.json     # Informações sobre voluntários
-└── organizers.json     # Equipe organizadora e contatos
+├── speakers.json           # Dados dos palestrantes da versão atual
+├── sponsors.json           # Patrocinadores por categoria da versão atual
+├── communities.json        # Comunidades parceiras da versão atual
+├── volunteers.json         # Informações sobre voluntários da versão atual
+├── organizers.json         # Equipe organizadora e contatos da versão atual
+├── devfest2025/            # Arquivo de backup com os dados do evento anterior
+└── devfest2026/            # Novo pacote de dados para o DevFest 2026
 ```
 
 ## 🎤 speakers.json
