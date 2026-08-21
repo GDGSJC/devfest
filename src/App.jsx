@@ -873,9 +873,9 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                 <span className="price-info">Inclui coffee breaks e kit do evento</span>
               </div>
             </div>
-            <a href="#ingressos" className="btn btn-primary btn-large">
+            <a href="https://www.sympla.com.br/evento/devfest-sao-jose-dos-campos-2026/3523450" className="btn btn-primary btn-large">
               <ExternalLink className="icon" />
-              Inscrições em breve
+              Compra ingresso
             </a>
             <p className="ticket-note">* Temos ingressos solidários para pessoas em situação de vulnerabilidade, entre contato pelas redes sociais ou email</p>
           </div>
