@@ -604,12 +604,14 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                 ))}
               </div>
               <button type="button" className="btn btn-primary" disabled>
-                Em breve
+                <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
+                  Quero ser voluntário
+                </a>
               </button>
             </div>
             <div className="volunteers-image">
               <img 
-                src="/images/volunteers.jpg" 
+                src="/images/voluntary.jpeg" 
                 alt="Voluntários" 
                 onError={(e) => {
                   e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=faces&auto=format&q=80'
