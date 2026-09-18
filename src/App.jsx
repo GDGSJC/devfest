@@ -258,7 +258,7 @@ const App = () => {
           <h2 className="section-title">Trilhas Simultâneas</h2>
           <div className="tracks-grid">
             <div className="track-card">
-              <div className="track-icon web">🌐</div>
+              <div className="track-icon principal">🚀</div>
               <h3>Principal</h3>
               <p>Descubra as últimas tendências em desenvolvimento por especialistas da área.
               </p>
@@ -269,7 +269,7 @@ const App = () => {
               </ul>
             </div>
              <div className="track-card">
-              <div className="track-icon cloud">☁️</div>
+              <div className="track-icon experts">💻</div>
               <h3>Experts</h3>
               <p>Explore uso de tecnologias no desenvolvimento para o dia a dia no trabalho.
               </p>
@@ -280,13 +280,34 @@ const App = () => {
               </ul>
             </div>
             <div className="track-card">
-              <div className="track-icon mobile">📱</div>
+              <div className="track-icon start">🌱</div>
               <h3>Start</h3>
               <p>Mergulhe no mundo do desenvolvimento e descubra as melhoras praticas para sua carreira.</p>
               <ul className="track-topics">
                 <li>Dicas de carreira</li>
                 <li>Networking</li>
                 <li>Inovação</li>
+              </ul>
+            </div>
+            <div className="track-card">
+              <div className="track-icon cluster">💡</div>
+              <h3>Cluster TIC</h3>
+              <p>Trilha organizada pelo PIT, Parque de Inovação Tecnológica São José dos Campos .</p>
+              <ul className="track-topics">
+                <li> Tecnologia </li>
+                <li> Inovação </li>
+                <li> Empreendedorismo </li>
+              </ul>
+            </div>
+            <div className="track-card">
+              <div className="track-icon community">👥</div>
+              <h3>Community</h3>
+              <p>Das comunidades de desenvolvedores parceiras diretamente para o DevFest.</p>
+              <ul className="track-topics">
+                <li> Comunidades de desenvolvedores </li>
+                <li> Experiências de desenvolvimento </li>
+                <li> Tecnologia </li>
+                
               </ul>
             </div>
            
