@@ -632,7 +632,7 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
             </div>
             <div className="volunteers-image">
               <img 
-                src="/images/voluntary.jpeg" 
+                src="/images/voluntary-1.jpeg" 
                 alt="Voluntários" 
                 onError={(e) => {
                   e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=faces&auto=format&q=80'
