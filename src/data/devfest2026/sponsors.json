@@ -12,6 +12,22 @@
      
     ],
     "silver": [
+      {
+        "id": 2,
+        "name": "Microsoft",
+        "logo": "images/sponsors/mv-maker-kid.jpeg"
+      }, 
+      {
+        "id": 2,
+        "name": "Microsoft",
+        "logo": "images/sponsors/mv-maker.png"
+      },
+      {
+        "id": 2,
+        "name": "Microsoft",
+        "logo": "images/sponsors/on-change.jpeg",
+        "website": "https://www.microsoft.com/"
+      }
      
     ],
     "support": [
