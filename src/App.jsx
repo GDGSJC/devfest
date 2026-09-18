@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Calendar, MapPin, Clock, Users, Heart, ExternalLink, Github, Twitter, Instagram, Linkedin } from 'lucide-react'
+import { Calendar, MapPin, Clock, Users, Heart, ExternalLink, Github, Twitter, Instagram, Linkedin, Mic, Award } from 'lucide-react'
 import './App.css'
 
 // Import JSON data
@@ -604,6 +604,45 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
               <p>Os palestrantes serão anunciados em breve. Fique ligado!</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Call for Speakers Section */}
+      <section id="call-for-speakers" className="section call-for-speakers" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
+        <div className="container">
+          <h2 className="section-title">Call for Speakers</h2>
+          <div className="volunteers-content">
+            <div className="volunteers-text">
+              <h3>Tem conhecimento para compartilhar?</h3>
+              <p>O DevFest SJC está em busca de palestrantes incríveis! Submeta sua palestra e venha compartilhar suas ideias com a comunidade de tecnologia da região.</p>
+              <div className="volunteer-benefits">
+                <div className="benefit">
+                  <Mic className="icon" />
+                  <span>Destaque na comunidade</span>
+                </div>
+                <div className="benefit">
+                  <Users className="icon" />
+                  <span>Networking e troca de ideias</span>
+                </div>
+                <div className="benefit">
+                  <Award className="icon" />
+                  <span>Acesso VIP e brindes exclusivos</span>
+                </div>
+              </div>
+              <button type="button" className="btn btn-primary" disabled>
+                <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
+                  Quero submeter palestra
+                </a>
+              </button>
+            </div>
+            <div className="volunteers-image">
+              <img 
+                src="images/speaker.jpeg" 
+                alt="Palestrante no palco" 
+                style={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
