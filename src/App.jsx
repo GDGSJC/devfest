@@ -663,10 +663,11 @@ Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a va
                   </div>
                 ))}
               </div>
-              <button type="button" className="btn btn-primary" disabled>
-                <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
+              <button type="button" className="btn" disabled>
+              Quero ser voluntário
+                {/* <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
                   Quero ser voluntário
-                </a>
+                </a> */}
               </button>
             </div>
             <div className="volunteers-image">
