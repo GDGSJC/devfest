@@ -6,6 +6,12 @@
         "name": "Google",
         "logo": "images/sponsors/google.jpeg",
         "website": "https://developers.google.com/"
+      },
+      {
+        "id": 2,
+        "name": "Fala Boss",
+        "logo": "images/sponsors/fala-boss.png",
+        "website": "https://falaboss.com/empregador/pagina-inicial"
       }
     ],
     "gold": [

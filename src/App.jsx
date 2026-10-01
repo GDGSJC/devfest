@@ -312,22 +312,60 @@ const App = () => {
             </div>
            
           </div>
-          <br />
-            <div className="track-card">
-              <div className="track-icon mobile">👶</div>
-              <h3>Kids</h3>
-              <p>Pensando em um ambiente incluso, vocês podem trazer suas crianças!</p>
-              <ul className="track-topics">
-                <li> 👶  0 a 3 anos: podem curtir o evento junto com os pais.</li>
-                <li> 🎨  4 a 5 anos: participam da Trilha Criativa, com atividades de desenho e expressão artística.</li>
-                <li> ⚙️  6 anos ou mais: vão se divertir na Trilha Maker, com oficinas de ciência e tecnologia em parceria com a MV Cultura Maker.</li>
-                <li> * Os pais são 100% responsáveis pelas crianças durante o evento.</li>
-                <li> ** É necessário que a criança esteja registrada no evento para participar das atividades.</li>
-                <li> *** O ingresso Kids é gratuito e exclusivo para crianças de participantes inscritos no evento.</li>
-                <li> **** 🔹 Observação: Para adquirir o ingresso da criança, é necessário informar o número de inscrição do responsável.
-Por isso, o adulto deve realizar sua inscrição primeiro antes de garantir a vaga da criança.</li>
-              </ul>
+        </div>
+      </section>
+
+
+      {/* Trilha Kids Section */}
+      <section id="trilha-kids-destaque" className="section trilha-kids-destaque">
+        <div className="container">
+          <h2 className="section-title">Trilha Kids</h2>
+          <div className="volunteers-content">
+          <div className="volunteers-image">
+              <img 
+                src="images/kid-track.jpeg" 
+                alt="Trilha Kids" 
+                style={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+              />
             </div>
+            <div className="volunteers-text">
+              <h3>Ambiente Inclusivo 👶🎨⚙️</h3>
+              <p>Pensando em um ambiente incluso, vocês podem trazer suas crianças!</p>
+              <ul style={{ textAlign: 'left', marginTop: '16px', lineHeight: '1.6' }}>
+                <li><strong>0 a 3 anos:</strong> podem curtir o evento junto com os pais.</li>
+                <li><strong>4 a 5 anos:</strong> participam da Trilha Criativa, com atividades de desenho e expressão artística.</li>
+                <li><strong>6 anos ou mais:</strong> vão se divertir na Trilha Maker, com oficinas de ciência e tecnologia.</li>
+              </ul>
+              <br/>
+              <small style={{ display: 'block', textAlign: 'left', color: '#666' }}>
+                * Os pais são 100% responsáveis pelas crianças durante o evento.<br/>
+                ** O ingresso Kids é gratuito e exclusivo para crianças de participantes inscritos.<br/>
+                *** Para adquirir o ingresso da criança, é necessário informar o número de inscrição do responsável.
+              </small>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+      {/* Hub de Carreiras Section */}
+      <section id="hub-carreiras" className="section hub-carreiras" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
+        <div className="container">
+          <h2 className="section-title">Hub de Carreiras Cluster TIC</h2>
+          <div className="volunteers-content">
+            <div className="volunteers-text">
+              <h3>Impulsione o seu futuro!</h3>
+              <p>Um espaço dedicado à sua carreira, onde você poderá conhecer novas empresas e descobrir grandes oportunidades no mercado de tecnologia.</p>
+            </div>
+            <div className="volunteers-image">
+              <img 
+                src="images/hub-carrear.jpeg" 
+                alt="Hub de Carreiras Cluster TIC" 
+                style={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -548,7 +548,12 @@
 }
 
 .sponsors-grid.diamond {
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.sponsors-grid.diamond .sponsor-card img {
+  max-width: 300px;
+  max-height: 150px;
 }
 
 .sponsors-grid.gold {
