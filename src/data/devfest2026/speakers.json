@@ -1,5 +1,91 @@
 {
   "speakers": [
-    
+    {
+      "id": 1,
+      "name": "Teo Calvo",
+      "role": "",
+      "company": "",
+      "bio": "Estatístico, Twitch Partner, GeForce Partner, GitHub Star, Google AI Community Builder e LinkedIn Top Voice, Téo tem uma trajetória passando por empresas como Globo, Gamers Club, Via Varejo, Grupo Boticário e SAS Institute.",
+      "image": "/images/speakers/teo.jpeg",
+      "track": "",
+      "isGuest": true,
+      "social": {
+        "linkedin": "https://linkedin.com/in/teocalvo"
+      },
+      "talk": {
+        "title": "",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Victor Pugliese",
+      "role": "",
+      "company": "",
+      "bio": "Google Developer Expert em AI e Cloud, organizador do GDG Caraguatatuba e um dos nomes que vêm ajudando a comunidade brasileira a explorar, na prática, as possibilidades da Inteligência Artificial. 🚀\n\nCom uma trajetória que conecta IA, Cloud, desenvolvimento e educação, Victor é daqueles que transformam tecnologia complexa em conhecimento que dá vontade de colocar em prática",
+      "image": "/images/speakers/victor.jpeg",
+      "track": "",
+      "isGuest": true,
+      "social": {},
+      "talk": {
+        "title": "",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Pokemão BR",
+      "role": "",
+      "company": "",
+      "bio": "Desenvolvedor, criador de conteúdo, evangelista da comunidade PHP e conhecido por transformar o dia a dia da vida de dev em conteúdo, conversa e, claro, muito humor. 😂🔥\n\nCom uma trajetória forte na comunidade de desenvolvimento, PokemaoBr é daqueles nomes que conseguem falar de tecnologia de um jeito leve, divertido e muito próximo da realidade de quem vive no mundo DEV",
+      "image": "/images/speakers/pokemon.jpeg",
+      "track": "",
+      "isGuest": true,
+      "social": {},
+      "talk": {
+        "title": "",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "Juliano Kimura",
+      "role": "",
+      "company": "",
+      "bio": "Com mais de 20 anos de carreira, Juliano é especialista em Inteligência Artificial, Redes Sociais, Inovação e Transformação Digital.\nAtualmente, é Head de Ecossistema da AI Brasil, além de ter sido palestrante do Facebook Brasil e ter recebido, por duas vezes, o reconhecimento de Melhor Profissional de Redes Sociais pela Abiacom.\nAutor de “O Livro Secreto das Redes Sociais”, Juliano também acumula uma trajetória de mais de 1.000 palestras, levando temas complexos de tecnologia para uma linguagem prática e acessível.",
+      "image": "/images/speakers/Kimura.jpeg",
+      "track": "",
+      "isGuest": true,
+      "social": {},
+      "talk": {
+        "title": "",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 5,
+      "name": "Ahirton Lopes",
+      "role": "",
+      "company": "",
+      "bio": "Ahirton é Data & AI Manager, 6x Microsoft MVP, 2x Google Developer Expert e LinkedIn Top Voice, além de atuar há anos com Inteligência Artificial, Machine Learning e Data Engineering.",
+      "image": "/images/speakers/Ahirton.jpeg",
+      "track": "",
+      "isGuest": true,
+      "social": {},
+      "talk": {
+        "title": "",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    }
   ]
 }
