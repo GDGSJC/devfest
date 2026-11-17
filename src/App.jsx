@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Calendar, MapPin, Clock, Users, Heart, ExternalLink, Github, Twitter, Instagram, Linkedin, Mic, Award } from 'lucide-react'
 import './App.css'
 
@@ -71,7 +71,50 @@ function DevFestCountdown() {
 
 const App = () => {
   const [activeTrack, setActiveTrack] = useState('agenda-geral')
+  const [selectedSpeaker, setSelectedSpeaker] = useState(null)
+  const speakerDialogRef = useRef(null)
   const showAgendaDetails = true
+
+  const openSpeakerDialog = (speaker) => {
+    setSelectedSpeaker(speaker)
+    if (speakerDialogRef.current && !speakerDialogRef.current.open) {
+      speakerDialogRef.current.showModal()
+    }
+  }
+
+  useEffect(() => {
+    const dialog = speakerDialogRef.current
+    if (!dialog) return
+
+    const handleClose = () => {
+      dialog.returnValue = ''
+    }
+    dialog.addEventListener('close', handleClose)
+
+    // Fallback for browsers without closedby="any" support
+    let cleanupLightDismiss = () => {}
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      const handleBackdropClick = (event) => {
+        if (event.target !== dialog) return
+        const rect = dialog.getBoundingClientRect()
+        const isDialogContent = (
+          rect.top <= event.clientY &&
+          event.clientY <= rect.top + rect.height &&
+          rect.left <= event.clientX &&
+          event.clientX <= rect.left + rect.width
+        )
+        if (isDialogContent) return
+        dialog.close()
+      }
+      dialog.addEventListener('click', handleBackdropClick)
+      cleanupLightDismiss = () => dialog.removeEventListener('click', handleBackdropClick)
+    }
+
+    return () => {
+      dialog.removeEventListener('close', handleClose)
+      cleanupLightDismiss()
+    }
+  }, [])
 
   // Event schedule data
   const eventSchedule = [
@@ -128,6 +171,16 @@ const App = () => {
     }
   ]
 
+  const getSpeakerTracks = (speaker) => {
+    if (!speaker || !speaker.track) return []
+    return (Array.isArray(speaker.track) ? speaker.track : [speaker.track]).filter(Boolean)
+  }
+
+  const speakerHasTrack = (speaker, ...targetTracks) => {
+    const tracks = getSpeakerTracks(speaker)
+    return targetTracks.some(target => tracks.includes(target))
+  }
+
   // Get available tracks with scheduled talks
   const availableTracks = [
     {
@@ -140,31 +193,37 @@ const App = () => {
       id: 'principal',
       name: 'TRILHA PRINCIPAL', 
       icon: '🚀',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Principal' && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Principal') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'expert', 
       name: 'TRILHA EXPERTS',
       icon: '💻',
-      speakers: speakersData.speakers.filter(speaker => (speaker.track === 'Expert' || speaker.track === 'Experts') && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Expert', 'Experts') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'junior',
       name: 'TRILHA JUNIOR',
       icon: '🌱',
-      speakers: speakersData.speakers.filter(speaker => (speaker.track === 'Junior' || speaker.track === 'Start') && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'community',
       name: 'TRILHA COMMUNITY',
       icon: '👥',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Community' && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Community') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'workshop',
       name: 'WORKSHOP',
       icon: '🛠️',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Workshop' && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Workshop') && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'pit',
+      name: 'TRILHA PIT',
+      icon: '💡',
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'PIT', 'Trilha PIT') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'kids',
@@ -182,21 +241,28 @@ const App = () => {
     },
   ].filter(track => track.type === 'schedule' || track.type === 'kids' || track.type === 'kids-little' || (track.speakers && track.speakers.length > 0))
 
-  const renderTrackSpeakers = (trackName) => {
-    const trackSpeakers = speakersData.speakers.filter(speaker => speaker.track === trackName)
+  const renderTrackSpeakers = (...trackNames) => {
+    const trackSpeakers = speakersData.speakers.filter(speaker => speakerHasTrack(speaker, ...trackNames))
     return (
       <div className="track-speakers-photos">
         {trackSpeakers.map((speaker) => (
-          <img
+          <button
             key={speaker.id}
-            src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`}
-            alt={speaker.name}
+            type="button"
+            className="track-speaker-avatar-btn"
+            onClick={() => openSpeakerDialog(speaker)}
+            aria-label={`Ver detalhes de ${speaker.name}`}
             title={speaker.name}
-            className="track-speaker-avatar"
-            onError={(e) => {
-              e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`
-            }}
-          />
+          >
+            <img
+              src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`}
+              alt={speaker.name}
+              className="track-speaker-avatar"
+              onError={(e) => {
+                e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`
+              }}
+            />
+          </button>
         ))}
       </div>
     )
@@ -342,9 +408,13 @@ const App = () => {
               </ul>
             </div>
             <div className="track-card">
-              <div className="track-speakers-photos">
-                <img src="images/sponsors/pit-logo.jpeg" alt="Trilha PIT" className="track-pit-logo" />
-              </div>
+              {speakersData.speakers.some(s => speakerHasTrack(s, 'PIT', 'Trilha PIT')) ? (
+                renderTrackSpeakers('PIT', 'Trilha PIT')
+              ) : (
+                <div className="track-speakers-photos">
+                  <img src="images/sponsors/pit-logo.jpeg" alt="Trilha PIT" className="track-pit-logo" />
+                </div>
+              )}
               <h3>Trilha PIT</h3>
               <p>Trilha organizada pelo PIT, Parque de Inovação Tecnológica São José dos Campos.</p>
               <ul className="track-topics">
@@ -392,7 +462,7 @@ const App = () => {
 
 
       {/* Hub de Carreiras Section */}
-      <section id="hub-carreiras" className="section hub-carreiras" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
+      {/* <section id="hub-carreiras" className="section hub-carreiras" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
         <div className="container">
           <h2 className="section-title">Hub de Carreiras Cluster TIC</h2>
           <div className="volunteers-content">
@@ -409,7 +479,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Agenda Section */}
       <section id="agenda" className="section agenda">
@@ -646,8 +716,13 @@ const App = () => {
           {speakersData.speakers.length > 0 ? (
             <div className="speakers-grid">
               {speakersData.speakers.map((speaker) => (
-              <div key={speaker.id} className="speaker-card">
-                <div className="speaker-image">
+              <div onClick={() => openSpeakerDialog(speaker)} key={speaker.id} className="speaker-card">
+                <button
+                  type="button"
+                  className="speaker-image speaker-image-btn"
+                  onClick={() => openSpeakerDialog(speaker)}
+                  aria-label={`Ver detalhes de ${speaker.name}`}
+                >
                   <img 
                     src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`} 
                     alt={speaker.name} 
@@ -655,11 +730,15 @@ const App = () => {
                       e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
                     }} 
                   />
-                </div>
-                {speaker.track && (
-                  <span className={`speaker-track-badge track-${speaker.track.toLowerCase()}`}>
-                    {speaker.track === 'Workshop' ? 'Workshop' : `Trilha ${speaker.track}`}
-                  </span>
+                </button>
+                {getSpeakerTracks(speaker).length > 0 && (
+                  <div className="speaker-tracks">
+                    {getSpeakerTracks(speaker).map((track) => (
+                      <span key={track} className={`speaker-track-badge track-${track.toLowerCase()}`}>
+                        {track === 'Workshop' ? 'Workshop' : `Trilha ${track}`}
+                      </span>
+                    ))}
+                  </div>
                 )}
                 <h3>{speaker.name}</h3>
                 {speaker.role && <p className="speaker-role">{speaker.role}</p>}
@@ -700,88 +779,7 @@ const App = () => {
         </div>
       </section>
 
-      {/* Call for Speakers Section */}
-      <section id="call-for-speakers" className="section call-for-speakers" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
-        <div className="container">
-          <h2 className="section-title">Call for Speakers</h2>
-          <div className="volunteers-content">
-            <div className="volunteers-text">
-              <h3>Tem conhecimento para compartilhar?</h3>
-              <p>O DevFest SJC está em busca de palestrantes incríveis! Submeta sua palestra e venha compartilhar suas ideias com a comunidade de tecnologia da região.</p>
-              <div className="volunteer-benefits">
-                <div className="benefit">
-                  <Mic className="icon" />
-                  <span>Destaque na comunidade</span>
-                </div>
-                <div className="benefit">
-                  <Users className="icon" />
-                  <span>Networking e troca de ideias</span>
-                </div>
-                <div className="benefit">
-                  <Award className="icon" />
-                  <span>Acesso VIP e brindes exclusivos</span>
-                </div>
-              </div>
-              <button type="button" className="btn" disabled>
-                Submissões de palestras encerradas
-              </button>
-              <p className="form-closed-notice">
-                As submissões para o Call for Speakers já foram encerradas. Agradecemos a todos que enviaram suas propostas!
-              </p>
-            </div>
-            <div className="volunteers-image">
-              <img 
-                src="images/speaker.jpeg" 
-                alt="Palestrante no palco" 
-                style={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Voluntários Section */}
-      <section className="section voluntarios">
-        <div className="container">
-          <h2 className="section-title">Voluntários</h2>
-          {volunteersData.volunteers.roles && volunteersData.volunteers.roles.length > 0 ? (
-            <div className="volunteers-content">
-            <div className="volunteers-text">
-              <h3>{volunteersData.volunteers.info.title}</h3>
-              <p>{volunteersData.volunteers.info.description}</p>
-              <div className="volunteer-benefits">
-                {volunteersData.volunteers.benefits.slice(0, 3).map((benefit, index) => (
-                  <div key={index} className="benefit">
-                    <Heart className="icon" />
-                    <span>{benefit.title}</span>
-                  </div>
-                ))}
-              </div>
-              <button type="button" className="btn" disabled>
-                Inscrições para voluntários encerradas
-              </button>
-              <p className="form-closed-notice">
-                As inscrições para voluntários já foram encerradas. Obrigado pelo interesse em apoiar a comunidade!
-              </p>
-            </div>
-            <div className="volunteers-image">
-              <img 
-                src="images/vo.jpeg" 
-                alt="Voluntários" 
-                onError={(e) => {
-                  e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=faces&auto=format&q=80'
-                }} 
-              />
-            </div>
-          </div>
-          ) : (
-            <div className="empty-state">
-              <h3>Em breve</h3>
-              <p>As informações sobre voluntários serão divulgadas em breve.</p>
-            </div>
-          )}
-        </div>
-      </section>
+    
 
       {/* Patrocinadores Section */}
       <section className="section patrocinadores">
@@ -922,6 +920,89 @@ const App = () => {
             <div className="empty-state">
               <h3>Em breve</h3>
               <p>As comunidades parceiras serão anunciadas em breve.</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+        {/* Call for Speakers Section */}
+      <section id="call-for-speakers" className="section call-for-speakers" style={{ backgroundColor: 'var(--light-bg, #f8f9fa)' }}>
+        <div className="container">
+          <h2 className="section-title">Call for Speakers</h2>
+          <div className="volunteers-content">
+            <div className="volunteers-text">
+              <h3>Tem conhecimento para compartilhar?</h3>
+              <p>O DevFest SJC está em busca de palestrantes incríveis! Submeta sua palestra e venha compartilhar suas ideias com a comunidade de tecnologia da região.</p>
+              <div className="volunteer-benefits">
+                <div className="benefit">
+                  <Mic className="icon" />
+                  <span>Destaque na comunidade</span>
+                </div>
+                <div className="benefit">
+                  <Users className="icon" />
+                  <span>Networking e troca de ideias</span>
+                </div>
+                <div className="benefit">
+                  <Award className="icon" />
+                  <span>Acesso VIP e brindes exclusivos</span>
+                </div>
+              </div>
+              <button type="button" className="btn" disabled>
+                Submissões de palestras encerradas
+              </button>
+              <p className="form-closed-notice">
+                As submissões para o Call for Speakers já foram encerradas. Agradecemos a todos que enviaram suas propostas!
+              </p>
+            </div>
+            <div className="volunteers-image">
+              <img 
+                src="images/speaker.jpeg" 
+                alt="Palestrante no palco" 
+                style={{ borderRadius: '16px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Voluntários Section */}
+      <section className="section voluntarios">
+        <div className="container">
+          <h2 className="section-title">Voluntários</h2>
+          {volunteersData.volunteers.roles && volunteersData.volunteers.roles.length > 0 ? (
+            <div className="volunteers-content">
+            <div className="volunteers-text">
+              <h3>{volunteersData.volunteers.info.title}</h3>
+              <p>{volunteersData.volunteers.info.description}</p>
+              <div className="volunteer-benefits">
+                {volunteersData.volunteers.benefits.slice(0, 3).map((benefit, index) => (
+                  <div key={index} className="benefit">
+                    <Heart className="icon" />
+                    <span>{benefit.title}</span>
+                  </div>
+                ))}
+              </div>
+              <button type="button" className="btn" disabled>
+                Inscrições para voluntários encerradas
+              </button>
+              <p className="form-closed-notice">
+                As inscrições para voluntários já foram encerradas. Obrigado pelo interesse em apoiar a comunidade!
+              </p>
+            </div>
+            <div className="volunteers-image">
+              <img 
+                src="images/vo.jpeg" 
+                alt="Voluntários" 
+                onError={(e) => {
+                  e.target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&crop=faces&auto=format&q=80'
+                }} 
+              />
+            </div>
+          </div>
+          ) : (
+            <div className="empty-state">
+              <h3>Em breve</h3>
+              <p>As informações sobre voluntários serão divulgadas em breve.</p>
             </div>
           )}
         </div>
@@ -1085,6 +1166,70 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* Speaker Detail Modal Dialog */}
+      <dialog
+        ref={speakerDialogRef}
+        closedby="any"
+        aria-labelledby="speaker-dialog-title"
+        className="speaker-dialog"
+      >
+        {selectedSpeaker && (
+          <div className="speaker-dialog-body">
+            <form method="dialog" className="speaker-dialog-header">
+              <button
+                type="submit"
+                className="speaker-dialog-close"
+                aria-label="Fechar detalhes do palestrante"
+                autoFocus
+              >
+                &times;
+              </button>
+            </form>
+            <div className="speaker-image">
+              <img
+                src={selectedSpeaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedSpeaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`}
+                alt={selectedSpeaker.name}
+                onError={(e) => {
+                  e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedSpeaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
+                }}
+              />
+            </div>
+            {getSpeakerTracks(selectedSpeaker).length > 0 && (
+              <div className="speaker-tracks">
+                {getSpeakerTracks(selectedSpeaker).map((track) => (
+                  <span key={track} className={`speaker-track-badge track-${track.toLowerCase()}`}>
+                    {track === 'Workshop' ? 'Workshop' : `Trilha ${track}`}
+                  </span>
+                ))}
+              </div>
+            )}
+            <h2 id="speaker-dialog-title" className="speaker-dialog-name">{selectedSpeaker.name}</h2>
+            {selectedSpeaker.role && <p className="speaker-role">{selectedSpeaker.role}</p>}
+            {selectedSpeaker.company && <p className="speaker-company">{selectedSpeaker.company}</p>}
+            <p className="speaker-dialog-bio">{selectedSpeaker.bio}</p>
+            {selectedSpeaker.talk && selectedSpeaker.talk.title && (
+              <div className="speaker-dialog-talk">
+                <h3>{selectedSpeaker.talk.title}</h3>
+                {selectedSpeaker.talk.description ? (
+                  <p className="speaker-dialog-bio">{selectedSpeaker.talk.description}</p>
+                ) : (
+                  <p className="speaker-dialog-bio">Mais detalhes da palestra em breve.</p>
+                )}
+                {selectedSpeaker.talk.time && selectedSpeaker.talk.duration && (
+                  <p className="talk-time">{selectedSpeaker.talk.time} - {selectedSpeaker.talk.duration}</p>
+                )}
+              </div>
+            )}
+            <div className="speaker-social">
+              {selectedSpeaker.social?.twitter && <a href={selectedSpeaker.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={22} /></a>}
+              {selectedSpeaker.social?.linkedin && <a href={selectedSpeaker.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={22} /></a>}
+              {selectedSpeaker.social?.github && <a href={selectedSpeaker.social.github} target="_blank" rel="noopener noreferrer"><Github size={22} /></a>}
+              {selectedSpeaker.social?.instagram && <a href={selectedSpeaker.social.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={22} /></a>}
+            </div>
+          </div>
+        )}
+      </dialog>
     </div>
   )
 }

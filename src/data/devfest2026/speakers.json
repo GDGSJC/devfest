@@ -27,7 +27,7 @@
       "company": "",
       "bio": "Google Developer Expert em AI e Cloud, organizador do GDG Caraguatatuba e um dos nomes que vêm ajudando a comunidade brasileira a explorar, na prática, as possibilidades da Inteligência Artificial. 🚀\n\nCom uma trajetória que conecta IA, Cloud, desenvolvimento e educação, Victor é daqueles que transformam tecnologia complexa em conhecimento que dá vontade de colocar em prática",
       "image": "images/speakers/victor.jpeg",
-      "track": "Principal",
+      "track": ["Principal", "Workshop"],
       "isGuest": true,
       "social": {
         "instagram": "https://www.instagram.com/victorpug.exe/"

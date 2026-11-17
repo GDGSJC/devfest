@@ -21,7 +21,7 @@ Use this skill whenever you receive new speaker information (often in a TSV, CSV
      "company": "Company Name",
      "bio": "Mini bio text",
      "image": "images/speakers/filename.jpeg",
-     "track": "Track name (if applicable)",
+     "track": "Track name or array of track names (e.g., \"Principal\" or [\"Principal\", \"Workshop\"])",
      "isGuest": true,
      "social": {
        "linkedin": "https://linkedin.com/in/username"

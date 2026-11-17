@@ -439,7 +439,7 @@
 
 .speakers-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
 }
 
@@ -471,13 +471,20 @@
   object-fit: cover;
 }
 
+.speaker-tracks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
 .speaker-track-badge {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.78rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
   background: rgba(66, 133, 244, 0.12);
   color: var(--google-blue);
 }
@@ -532,6 +539,12 @@
   font-size: 0.9rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .speaker-social {
@@ -860,6 +873,10 @@
 .speaker-talk-content .speaker-bio {
   margin-bottom: 0.5rem;
   white-space: pre-line;
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
 }
 
 .talk-time {
@@ -1902,4 +1919,121 @@ html {
   .partner-logo.unimate {
     max-height: 60px;
   }
+}
+
+/* Clickable Speaker Avatar Buttons */
+.track-speaker-avatar-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaker-image-btn {
+  display: block;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.speaker-image-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(66, 133, 244, 0.3);
+}
+
+/* Speaker Detail Modal Dialog */
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(3px);
+}
+
+.speaker-dialog {
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+  max-width: 560px;
+  width: calc(100% - 2rem);
+  max-height: 85vh;
+  margin: auto;
+  background: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  color: var(--dark-color);
+}
+
+.speaker-dialog-body {
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.speaker-dialog-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1rem;
+}
+
+.speaker-dialog-close {
+  background: var(--light-color);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--gray-color);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.speaker-dialog-close:hover {
+  background: var(--gray-light);
+  color: var(--dark-color);
+}
+
+.speaker-dialog-name {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-dialog-bio {
+  color: var(--gray-color);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  white-space: pre-line;
+  text-align: left;
+}
+
+.speaker-dialog-talk {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--light-color);
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+  text-align: left;
+}
+
+.speaker-dialog-talk h3 {
+  color: var(--primary-color);
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+}
+
+.speaker-dialog-talk .speaker-dialog-bio {
+  margin-bottom: 0.5rem;
 }
