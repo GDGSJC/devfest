@@ -16,8 +16,8 @@
       "talk": {
         "title": "Sim! Você ainda precisa de uma Feature Store!",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "11H15 - 12H00",
+        "duration": "45 min"
       }
     },
     {
@@ -35,8 +35,10 @@
       "talk": {
         "title": "",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "16H00 - 16H40",
+        "duration": "40 min",
+        "workshopTime": "10H30 - 11H55",
+        "workshopDuration": "1h 25min"
       }
     },
     {
@@ -54,8 +56,8 @@
       "talk": {
         "title": "Isso não deveria ser um stand-up",
         "description": "Isso Não Deveria Ser um Stand-up é uma apresentação irreverente sobre tecnologia, carreira e os absurdos do mercado de desenvolvimento.\nRodrigo “Pokemaobr” Cardoso transforma sua trajetória — dos primórdios da internet, com computadores limitados e conexões discadas, até a experiência como desenvolvedor e profissional de DevRel — em uma sequência de histórias, provocações e situações que todo profissional de tecnologia já viveu ou gostaria de esquecer.\nEntre piadas sobre processos seletivos impossíveis, exigências surreais para vagas, inteligência artificial, LinkedIn, comunidade e a rotina de quem trabalha com código, a apresentação questiona: o que realmente significa ser um profissional de tecnologia hoje?\nUma mistura de stand-up, palestra e desabafo — porque, no fim, isso não deveria ser um stand-up… mas acabou sendo",
-        "time": "",
-        "duration": ""
+        "time": "14H00 - 14H40",
+        "duration": "40 min"
       }
     },
     {
@@ -73,8 +75,8 @@
       "talk": {
         "title": "",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "14H45 - 15H25",
+        "duration": "40 min"
       }
     },
     {
@@ -90,8 +92,8 @@
       "talk": {
         "title": "",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "10H30 - 11H10",
+        "duration": "40 min"
       }
     },
     {
@@ -107,8 +109,8 @@
       "talk": {
         "title": "Vamos Falar de Flutter? Uma Introdução à Plataforma Revolucionária para Desenvolvimento Multiplataforma!",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "14H00 - 15H25",
+        "duration": "1h 25min"
       }
     },
     {
@@ -127,8 +129,8 @@
       "talk": {
         "title": "A IA Fez Seu Sistema. Agora Vamos Hackeá-lo",
         "description": "Criar sistemas com IA ficou fácil. Criar sistemas seguros, nem tanto.\n\nNesta palestra, vamos explorar na prática vulnerabilidades comuns em aplicações feitas com vibe coding: isAdmin no frontend, Supabase exposto, permissões mal configuradas e APIs sem proteção adequada.\n\nTambém veremos como corrigir esses problemas usando conceitos simples como JWT, autorização no backend e controle de acesso por usuário.",
-        "time": "",
-        "duration": ""
+        "time": "10H30 - 11H10",
+        "duration": "40 min"
       }
     },
     {
@@ -146,8 +148,8 @@
       "talk": {
         "title": "O Mercado de Desenvolvedores no Contexto da Indústria",
         "description": "A palestra vai abordar minha experiência profissional trabalhando com desenvolvimento dentro do Grupo Boticário, mostrando na prática como uma grande indústria utiliza tecnologia para conectar seus processos de produção, gestão e operação. O Grupo Boticário possui uma estrutura de indústria inteligente, onde sistemas como MES/MOM e SAP ERP têm um papel fundamental no funcionamento e na integração da operação industrial.\n\nTambém pretendo demonstrar um pouco como a Inteligência Artificial está impactando esse mercado e mudando a forma como os desenvolvedores trabalham, trazendo cada vez mais possibilidades que vão além do desenvolvimento de código, envolvendo também ideias relacionadas ao produto, comunicação e até tópicos mais avançados dentro da Ciência da Computação.\n\nPor fim, quero falar sobre carreira e sobre como começar a trabalhar nessa área, compartilhando um pouco do que aprendi na minha trajetória e mostrando quais caminhos podem ser interessantes para quem está começando na tecnologia e vê a indústria como uma área interessante para seguir carreira. A ideia é trazer uma visão bem prática de como é trabalhar como desenvolvedor dentro de uma indústria inteligente e das oportunidades e desafios desse mercado.",
-        "time": "",
-        "duration": ""
+        "time": "14H00 - 14H40",
+        "duration": "40 min"
       }
     },
     {
@@ -165,8 +167,8 @@
       "talk": {
         "title": "Não era só um bug: o que um incidente em um sistema legado me ensinou sobre engenharia e IA.",
         "description": "Uma alteração aparentemente simples em um sistema corporativo legado acabou revelando um problema muito maior: regras de negócio distribuídas entre código, banco de dados, permissões e diferentes etapas de um workflow.\n\nNesta palestra, compartilho de forma anonimizada como um incidente real evoluiu de uma correção pontual para uma investigação mais estruturada sobre comportamento do sistema, regras de negócio, testes e retrocompatibilidade. Mostro como a IA foi utilizada para acelerar a análise de código, SQL, hipóteses e cenários de teste, mas também como respostas tecnicamente convincentes podem estar erradas quando não são confrontadas com evidências reais do sistema.\n\nA partir dessa experiência, apresento aprendizados práticos sobre como investigar sistemas legados, validar hipóteses, reconstruir regras de negócio com os usuários e utilizar IA como apoio à engenharia sem transformá-la em fonte de verdade. A ideia é mostrar que um bug pode ser mais do que algo a corrigir: pode ser o ponto de partida para entender melhor o sistema e reduzir o risco da próxima mudança.",
-        "time": "",
-        "duration": ""
+        "time": "14H45 - 15H25",
+        "duration": "40 min"
       }
     },
     {
@@ -184,8 +186,8 @@
       "talk": {
         "title": "Seu Bluetooth fala demais? Recon e segurança em dispositivos BLE",
         "description": "Bluetooth está presente em celulares, wearables, dispositivos IoT, automóveis, sensores e uma infinidade de produtos que utilizamos diariamente. Mas antes mesmo de uma conexão ser estabelecida, esses dispositivos podem revelar informações interessantes sobre sua identidade, fabricante, serviços e comportamento.\n\nNesta palestra vamos observar o Bluetooth pela perspectiva de quem realiza reconhecimento de segurança.\n\nA partir das diferenças entre Bluetooth Clássico e Bluetooth Low Energy (BLE), veremos quais informações podem ser identificadas em um ambiente real, como advertising packets, UUIDs, serviços, fabricantes e outros elementos que auxiliam no fingerprinting de dispositivos.\n\nTambém discutiremos como essas informações podem apoiar atividades de Pentest e Red Team, mas principalmente o que desenvolvedores de aplicações mobile, IoT e dispositivos conectados podem aprender ao observar seus próprios produtos pela perspectiva de um atacante.\n\nComo demonstração, será apresentada uma ferramenta desenvolvida para automatizar parte desse processo de reconhecimento e organizar as informações encontradas em ambientes Bluetooth.\n\nA proposta não é apenas mostrar como encontrar dispositivos Bluetooth, mas provocar uma pergunta:\n\nQuanto o seu dispositivo revela antes mesmo de alguém se conectar a ele?",
-        "time": "",
-        "duration": ""
+        "time": "11H15 - 12H00",
+        "duration": "45 min"
       }
     },
     {
@@ -204,8 +206,8 @@
       "talk": {
         "title": "Além do Try/Catch: Como projetar software resiliente para o mundo real?",
         "description": "Tratamento de exceções básicas não é suficiente quando um sistema enfrenta o caos da nuvem, falhas de rede ou cargas imprevisíveis. Em ambientes onde a intervenção manual ou um rollback imediato não são opções viáveis, o software precisa ser projetado para antecipar a falha e continuar operando.\n\nNesta palestra, vamos explorar além dos blocos de código defensivos tradicionais e mergulhar em padrões arquiteturais de resiliência, como rate limiting, idempotência, degradação graciosa e isolamento de falhas. Utilizando cenários críticos como exemplos práticos aplicáveis a APIs, microsserviços e sistemas de IA, será possível descobrir como elevar o nível da engenharia para construir sistemas que realmente sobrevivem no dia a dia do mercado.",
-        "time": "",
-        "duration": ""
+        "time": "14H00 - 14H40",
+        "duration": "40 min"
       }
     },
     {
@@ -224,8 +226,8 @@
       "talk": {
         "title": "IA First na prática: agentes em produção sem estourar a conta",
         "description": "Colocar um agente de IA para funcionar em demonstração é fácil. Difícil é mantê-lo em produção atendendo milhares de usuários por dia, com qualidade auditável e sem que o custo de API cresça mais rápido que o resultado. É esse o problema que enfrentamos na Assaad Educação, uma edtech com 18 mil alunos, ao construir uma operação IA First do zero em seis meses.\n\nNesta palestra mostro o caminho real: arquitetura multiagente para atendimento, agentes especializados por disciplina para monitoria, correção automatizada de redação em cinco competências e um pipeline de IA que tratou mais de 36 mil questões com taxa de erro abaixo de 1%. E mostro sobretudo a parte que raramente aparece em palco: como derrubamos 85% do custo diário de atendimento trocando o modelo dos subagentes, como cortamos pela metade o custo por correção com prompt caching e processamento flexível, e como uma auditoria revelou bugs de prompt que impactavam diretamente a nota do aluno.\n\nTambém vou falar do que deu errado. Um squad inteiro de agentes encerrado depois de um mês, um pipeline de IA descartado por inviabilidade de custo-benefício e uma falha silenciosa na transferência para atendimento humano que só apareceu numa auditoria. A tese central é simples e vem de vinte anos atrás, no chão de fábrica da Embraer: automatizar processo ruim só acelera o problema. IA First não é colocar IA em cima do que já existe, é redesenhar o processo com ela no centro. Quem sai da palestra leva um método aplicável de medição de custo por operação e de decisão sobre quando otimizar, quando escalar e quando matar uma frente de IA.",
-        "time": "",
-        "duration": ""
+        "time": "14H45 - 15H25",
+        "duration": "40 min"
       }
     },
     {
@@ -244,8 +246,8 @@
       "talk": {
         "title": "Além do WebSocket: o que faz uma aplicação ser realmente realtime?",
         "description": "Muitos programadores acreditam que aplicações realtime se resumem a abrir um WebSocket ou gerenciar algumas sessões. Mas isso é só a ponta do iceberg em uma aplicação realtime de produção altamente escalável.\n\nNesta palestra, vamos explorar decisões de arquitetura como atualizações otimistas, alterações concorrentes, distribuição de dados e os custos de manter clientes sincronizados, inclusive diante de falhas. Também discutiremos como aplicações realtime se diferenciam de APIs REST quando o assunto é escalabilidade. O Meteor será nosso estudo de caso, com aprendizados aplicáveis a outras stacks e sem exigir experiência prévia com o framework.",
-        "time": "",
-        "duration": ""
+        "time": "16H00 - 16H40",
+        "duration": "40 min"
       }
     },
     {
@@ -264,8 +266,8 @@
       "talk": {
         "title": "Spec-Driven Development com Gemini",
         "description": "A palestra apresenta o Spec-Driven Development (SDD) como uma evolução do desenvolvimento de software com IA.\n\nComeçamos pelo Vibe Coding, uma abordagem em que o desenvolvedor descreve o que quer e deixa a IA gerar e modificar o código de forma iterativa. Apesar de ser extremamente produtivo para prototipação, esse modelo pode gerar código inconsistente, decisões implícitas, retrabalho e comportamentos inesperados conforme o projeto cresce.\n\nO Spec-Driven Development propõe uma mudança de abordagem: antes de pedir para a IA escrever o código, definimos claramente o que deve ser construído e como saberemos que está correto. A especificação se torna a fonte de verdade, descrevendo contexto, requisitos, regras de negócio, comportamento esperado, edge cases e critérios de aceitação.\n\nDurante a palestra, irei mostrar como construir uma especificação na prática e como utilizá-la para gerar um plano de implementação e orientar a criação do código. O Gemini será utilizado como coding assistant, permitindo demonstrar como uma especificação bem estruturada reduz ambiguidades, limita decisões inventadas pelo modelo e torna o desenvolvimento com IA mais previsível.",
-        "time": "",
-        "duration": ""
+        "time": "10H30 - 11H10",
+        "duration": "40 min"
       }
     },
     {
@@ -283,8 +285,8 @@
       "talk": {
         "title": "Discutindo a Engenharia de Contexto: Como domar alucinações da IA usando um andaime cognitivo",
         "description": "Você já pediu para a IA gerar um código a partir de uma User Story em texto livre e recebeu uma solução que parece impecável, mas falha ao compilar ou ignora regras de negócios vitais? A linguagem natural sobrecarrega cognitivamente os Grandes Modelos de Linguagem (LLMs), gerando as temidas alucinações de código. Nesta palestra, discutiremos como a \"Engenharia de Contexto\", um método de faseado que une o refinamento ágil e a arquitetura de software. Os participantes descobrirão como os seus agentes de IA podem transformar requisitos ambíguos em cenários BDD, selecionar o diagrama ideal com a matriz científica CLUPIR e usar notações de Diagram-as-Code (Mermaid/PlantUML) como um \"andaime\" inflexível. O resultado? Um código assertivo e aderente à necessidade de seu projeto.",
-        "time": "",
-        "duration": ""
+        "time": "11H15 - 12H00",
+        "duration": "45 min"
       }
     },
     {
@@ -302,8 +304,8 @@
       "talk": {
         "title": "Quarkus Flow: a espinha dorsal para orquestração de agentes modernos",
         "description": "Criar agentes de IA é apenas o começo. À medida que sistemas agenticos crescem, surge o desafio de coordenar agentes, ferramentas, modelos e processos de forma confiável, observável e resiliente.\n\nNesta palestra, vamos explorar o Quarkus Flow como uma espinha dorsal para a orquestração de agentes modernos, combinando agentes construídos com Quarkus LangChain4j Agentic com workflows capazes de coordenar processos complexos. Vamos abordar Jobs, Durable Workflows e os mecanismos de observabilidade, incluindo métricas, tracing e logs.\n\nAo final, você verá como transformar agentes isolados em sistemas agenticos capazes de executar processos reais, mantendo controle sobre suas execuções, contexto e comportamento.",
-        "time": "",
-        "duration": ""
+        "time": "14H00 - 14H40",
+        "duration": "40 min"
       }
     },
     {
@@ -313,7 +315,7 @@
       "company": "",
       "bio": "Engenheira de Software Fullstack Sênior, com quase uma década de experiência criando e escalando aplicações web e mobile. Atualmente, é Tech Lead na ThoughtWorks, professora na XP Educação e Embaixadora Women Techmakers. Apaixonada por tecnologia e entusiasta de ferramentas de IA, Rafaela desenvolve soluções para aumentar produtividade, eficiência e qualidade de código.",
       "image": "images/speakers/rafaela-marcolino.png",
-      "track": "Junior",
+      "track": "Expert",
       "isGuest": false,
       "social": {
         "linkedin": "https://www.linkedin.com/in/rafaela-marcolino/"
@@ -321,8 +323,8 @@
       "talk": {
         "title": "Código Não Salva Ideia Ruim: Como Descobrir se seu Projeto Vende Antes de Construir",
         "description": "O maior erro de quem quer criar uma startup é começar pelo desenvolvimento sem validar a demanda do mercado. Descubra ferramentas no-code, técnicas de prototipagem rápida e estratégias de validação com clientes para saber se a sua ideia tem tração comercial antes de investir tempo e dinheiro em código.",
-        "time": "",
-        "duration": ""
+        "time": "14H45 - 15H25",
+        "duration": "40 min"
       }
     },
     {
@@ -340,8 +342,8 @@
       "talk": {
         "title": "Modernização sem hype: evoluindo infraestrutura em empresas tradicionais",
         "description": "Em regiões como o Vale do Paraíba, onde predominam empresas tradicionais e a tecnologia não é o core do negócio, a infraestrutura costuma ser o calcanhar de Aquiles. Também é onde a mudança mais faz diferença: ela separa \"só entregar\" de entregar o certo e com qualidade. Nesta palestra, compartilho como avançar em infraestrutura nesse contexto, sem hype e sem bala de prata, e como processos bem desenhados sustentam essa evolução no dia a dia.",
-        "time": "",
-        "duration": ""
+        "time": "16H00 - 16H40",
+        "duration": "40 min"
       }
     }
   ]

@@ -76,6 +76,7 @@ const App = () => {
   const showAgendaDetails = true
 
   const openSpeakerDialog = (speaker) => {
+    if (!speaker || speaker.isPlaceholderSlot) return
     setSelectedSpeaker(speaker)
     if (speakerDialogRef.current && !speakerDialogRef.current.open) {
       speakerDialogRef.current.showModal()
@@ -118,46 +119,47 @@ const App = () => {
 
   // Event schedule data
   const eventSchedule = [
-    { time: '09H00', activity: 'Credenciamento', description: 'Recepção dos participantes e entrega de materiais' },
-    { time: '09H45', activity: 'Abertura', description: 'Cerimônia de abertura oficial do evento' },
-    { time: '10H25', activity: 'Início das palestras', description: 'Início das apresentações nas três trilhas simultâneas' },
-    { time: '12H00', activity: 'Almoço', description: 'Intervalo para almoço (por conta dos participantes)', note: '*' },
-    { time: '14H00', activity: 'Retorno Palestras + Início Trilhas', description: 'Continuação das apresentações' },
-    { time: '16H50', activity: 'Encerramento + Sorteios', description: 'Cerimônia de encerramento e premiação' }
+    { time: '09H00 - 09H50', activity: 'Credenciamento & Coffee', description: 'Recepção dos participantes, entrega de materiais e coffee break de boas-vindas' },
+    { time: '10H00 - 10H25', activity: 'Intro / Abertura', description: 'Cerimônia de abertura oficial do evento' },
+    { time: '10H30', activity: 'Início das palestras', description: 'Início das apresentações no Palco Principal e trilhas simultâneas' },
+    { time: '12H00 - 13H45', activity: 'Almoço', description: 'Intervalo para almoço (por conta dos participantes)', note: '*' },
+    { time: '14H00', activity: 'Retorno Palestras + Início Trilhas', description: 'Continuação das apresentações nas trilhas' },
+    { time: '15H30 - 16H00', activity: 'Coffee Break', description: 'Intervalo para coffee break e networking' },
+    { time: '16H50 - 17H00', activity: 'Encerramento + Sorteios', description: 'Cerimônia de encerramento e premiação' }
   ]
 
   // Kids track activities (6-15 anos)
   const kidsActivities = [
     {
-      time: '10H25',
+      time: '10H25 - 17H00',
       activity: 'Oficina de Programação',
-      description: 'Desenvolvimento de uma história animada',
+      description: 'Soon',
       type: 'programming'
     },
-    {
-      time: '11H00', 
-      activity: 'Oficina Maker',
-      description: 'Montagem da Caixinha Porta Trecos',
-      type: 'maker'
-    },
-    {
-      time: '14H00',
-      activity: 'Oficina de Programação', 
-      description: 'Criação de um jogo',
-      type: 'programming'
-    },
-    {
-      time: '14H50',
-      activity: 'Oficina Maker',
-      description: 'Montagem do Ventilador Maker',
-      type: 'maker'
-    },
-    {
-      time: '16H00',
-      activity: 'Oficina de Programação',
-      description: 'com Arduino e Protoboard com leds',
-      type: 'programming'
-    }
+    // {
+    //   time: '11H00', 
+    //   activity: 'Oficina Maker',
+    //   description: 'Montagem da Caixinha Porta Trecos',
+    //   type: 'maker'
+    // },
+    // {
+    //   time: '14H00',
+    //   activity: 'Oficina de Programação', 
+    //   description: 'Criação de um jogo',
+    //   type: 'programming'
+    // },
+    // {
+    //   time: '14H50',
+    //   activity: 'Oficina Maker',
+    //   description: 'Montagem do Ventilador Maker',
+    //   type: 'maker'
+    // },
+    // {
+    //   time: '16H00',
+    //   activity: 'Oficina de Programação',
+    //   description: 'com Arduino e Protoboard com leds',
+    //   type: 'programming'
+    // }
   ]
 
   // Kids Little track activities (2-5 anos)
@@ -191,39 +193,127 @@ const App = () => {
     },
     {
       id: 'principal',
-      name: 'TRILHA PRINCIPAL', 
+      name: 'PALCO PRINCIPAL',
+      subtitle: 'MARCO ANTONIO',
+      stageTitle: 'Palco Principal - Marco Antonio',
       icon: '🚀',
       speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Principal') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'expert', 
-      name: 'TRILHA EXPERTS',
+      name: 'TRILHA EXPERT',
+      subtitle: 'DR. CARLOS',
+      stageTitle: 'Trilha Expert - Dr. Carlos',
       icon: '💻',
       speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Expert', 'Experts') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'junior',
       name: 'TRILHA JUNIOR',
+      subtitle: 'SALA 3',
+      stageTitle: 'Trilha Junior - Sala 3',
       icon: '🌱',
-      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time)
+      speakers: [
+        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time),
+        {
+          name: 'Palestrante Nimble',
+          image: 'images/sponsors/nimble.png',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Agentes de IA como colegas de time: arquitetura multiagente aplicada ao Scrum (um caso real com Jira Rovo)',
+            time: '11H15 - 12H00',
+            duration: '45 min'
+          }
+        },
+        {
+          name: 'Palestrante Boss',
+          image: 'images/sponsors/fala-boss.png',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Palestra FalaBoss',
+            time: '16H00 - 16H40',
+            duration: '40 min'
+          }
+        }
+      ]
     },
     {
       id: 'community',
       name: 'TRILHA COMMUNITY',
+      subtitle: 'AUDITÓRIO 3',
+      stageTitle: 'Trilha Community - Auditório 3',
       icon: '👥',
-      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Community') && speaker.talk && speaker.talk.time)
+      speakers: [
+        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Community') && speaker.talk && speaker.talk.time),
+        {
+          name: 'Palestrante Brendi',
+          image: '',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Palestra Brendi (em breve)',
+            time: '10H30 - 11H10',
+            duration: '40 min'
+          }
+        }
+      ]
     },
     {
       id: 'workshop',
-      name: 'WORKSHOP',
+      name: 'TRILHA WORKSHOP',
+      subtitle: 'SALA NEXUS',
+      stageTitle: 'Trilha Workshop - Sala Nexus',
       icon: '🛠️',
-      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Workshop') && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers
+        .filter(speaker => speakerHasTrack(speaker, 'Workshop') && speaker.talk && (speaker.talk.workshopTime || speaker.talk.time))
+        .map(speaker => ({
+          ...speaker,
+          talk: {
+            ...speaker.talk,
+            time: speaker.talk.workshopTime || speaker.talk.time,
+            duration: speaker.talk.workshopDuration || speaker.talk.duration,
+            title: speaker.talk.workshopTitle || speaker.talk.title || 'Workshop Prático'
+          }
+        }))
     },
     {
       id: 'pit',
       name: 'TRILHA PIT',
+      subtitle: 'SALA 2',
+      stageTitle: 'Trilha PIT - Sala 2',
       icon: '💡',
-      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'PIT', 'Trilha PIT') && speaker.talk && speaker.talk.time)
+      speakers: [
+        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'PIT', 'Trilha PIT') && speaker.talk && speaker.talk.time),
+        {
+          name: 'Palestra 1',
+          image: 'images/sponsors/pit-logo.jpeg',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Palestra 1 - Trilha PIT',
+            time: '14H00 - 14H40',
+            duration: '40 min'
+          }
+        },
+        {
+          name: 'Palestra 2',
+          image: 'images/sponsors/pit-logo.jpeg',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Palestra 2 - Trilha PIT',
+            time: '14H45 - 15H25',
+            duration: '40 min'
+          }
+        },
+        {
+          name: 'Palestra 3',
+          image: 'images/sponsors/pit-logo.jpeg',
+          isPlaceholderSlot: true,
+          talk: {
+            title: 'Palestra 3 - Trilha PIT',
+            time: '16H00 - 16H40',
+            duration: '40 min'
+          }
+        }
+      ]
     },
     {
       id: 'kids',
@@ -543,7 +633,7 @@ const App = () => {
                             ))}
                           </div>
                           <div className="coffee-break-info">
-                            <p><strong>Coffee break garantido:</strong> 9h e 15h35</p>
+                            <p><strong>Coffee break garantido:</strong> 9h00 às 9h50 e 15h30 às 16h00</p>
                           </div>
                         </div>
                       ) : track.type === 'kids' ? (
@@ -650,6 +740,11 @@ const App = () => {
                       ) : (
                         /* Trilhas de Palestrantes */
                         <>
+                          {track.stageTitle && (
+                            <div className="schedule-header">
+                              <h3>{track.stageTitle}</h3>
+                            </div>
+                          )}
                           <div className="schedule-grid">
                             {track.speakers
                               .sort((a, b) => {
@@ -664,17 +759,22 @@ const App = () => {
                                   <span className="time">{speaker.talk.time}</span>
                                 </div>
                                 <div className="schedule-content">
-                                  <div className="speaker-avatar">
+                                  <button
+                                    type="button"
+                                    className="speaker-avatar track-speaker-avatar-btn"
+                                    onClick={() => openSpeakerDialog(speaker)}
+                                    aria-label={`Ver detalhes de ${speaker.name}`}
+                                  >
                                     <img
-                                      src={speaker.image}
+                                      src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`}
                                       alt={speaker.name}
                                       onError={(e) => {
                                         e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`
                                       }}
                                     />
-                                  </div>
+                                  </button>
                                   <div className="talk-info">
-                                    <h3>{speaker.talk.title}</h3>
+                                    <h3>{speaker.talk.title || 'Palestra Principal'}</h3>
                                     {speaker.talk.duration && (
                                       <p className="talk-duration">Duração: {speaker.talk.duration}</p>
                                     )}
