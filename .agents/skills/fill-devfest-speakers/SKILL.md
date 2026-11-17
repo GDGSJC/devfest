@@ -44,8 +44,8 @@ Use this skill whenever you receive new speaker information (often in a TSV, CSV
    - "Rede Social(Linkedin)" -> `social.linkedin`
 
 3. **Link the Speaker Images:**
-   - Check the `public/images/speakers/` folder for images matching the speaker names.
-   - You can list the directory contents to find the exact filenames: `ls -la public/images/speakers/`.
+   - **Priority 1 — Google Drive Links:** Always prioritize the Google Drive photo URLs provided in the user's raw data (`https://drive.google.com/open?id=<FILE_ID>` or shared Drive folder). Download the images (`https://drive.google.com/uc?export=download&id=<FILE_ID>`) into `public/images/speakers/`. If a Google Drive link is restricted/private, ask the user for access or the shared folder link rather than silently substituting GitHub avatars. If any temporary GitHub avatar was previously added, replace it with the Google Drive photo whenever available.
+   - **Priority 2 — Local Folder (`public/images/speakers/`):** Check `public/images/speakers/` (`ls -la public/images/speakers/`) for existing images matching the speaker names.
    - Update the `image` field in the JSON with the path `"images/speakers/filename.extension"` corresponding to the speaker.
 
 4. **Update the JSON File:**

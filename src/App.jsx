@@ -71,12 +71,12 @@ function DevFestCountdown() {
 
 const App = () => {
   const [activeTrack, setActiveTrack] = useState('agenda-geral')
-  const showAgendaDetails = false
+  const showAgendaDetails = true
 
   // Event schedule data
   const eventSchedule = [
     { time: '09H00', activity: 'Credenciamento', description: 'Recepção dos participantes e entrega de materiais' },
-    { time: '10H00', activity: 'Abertura', description: 'Cerimônia de abertura oficial do evento' },
+    { time: '09H45', activity: 'Abertura', description: 'Cerimônia de abertura oficial do evento' },
     { time: '10H25', activity: 'Início das palestras', description: 'Início das apresentações nas três trilhas simultâneas' },
     { time: '12H00', activity: 'Almoço', description: 'Intervalo para almoço (por conta dos participantes)', note: '*' },
     { time: '14H00', activity: 'Retorno Palestras + Início Trilhas', description: 'Continuação das apresentações' },
@@ -137,24 +137,36 @@ const App = () => {
       type: 'schedule'
     },
     {
-      id: 'web',
+      id: 'principal',
       name: 'TRILHA PRINCIPAL', 
-      icon: '🌐',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'web' && speaker.talk && speaker.talk.time)
-    },
-    {
-      id: 'experts', 
-      name: 'TRILHA EXPERTS',
-      icon: '⚙️',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'experts' && speaker.talk && speaker.talk.time)
-    },
-    {
-      id: 'start',
-      name: 'TRILHA START',
       icon: '🚀',
-      speakers: speakersData.speakers.filter(speaker => speaker.track === 'start' && speaker.talk && speaker.talk.time)
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Principal' && speaker.talk && speaker.talk.time)
     },
-        {
+    {
+      id: 'expert', 
+      name: 'TRILHA EXPERTS',
+      icon: '💻',
+      speakers: speakersData.speakers.filter(speaker => (speaker.track === 'Expert' || speaker.track === 'Experts') && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'junior',
+      name: 'TRILHA JUNIOR',
+      icon: '🌱',
+      speakers: speakersData.speakers.filter(speaker => (speaker.track === 'Junior' || speaker.track === 'Start') && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'community',
+      name: 'TRILHA COMMUNITY',
+      icon: '👥',
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Community' && speaker.talk && speaker.talk.time)
+    },
+    {
+      id: 'workshop',
+      name: 'WORKSHOP',
+      icon: '🛠️',
+      speakers: speakersData.speakers.filter(speaker => speaker.track === 'Workshop' && speaker.talk && speaker.talk.time)
+    },
+    {
       id: 'kids',
       name: 'TRILHA KIDS',
       subtitle: '6 A 15 ANOS',
@@ -169,6 +181,26 @@ const App = () => {
       type: 'kids-little'
     },
   ].filter(track => track.type === 'schedule' || track.type === 'kids' || track.type === 'kids-little' || (track.speakers && track.speakers.length > 0))
+
+  const renderTrackSpeakers = (trackName) => {
+    const trackSpeakers = speakersData.speakers.filter(speaker => speaker.track === trackName)
+    return (
+      <div className="track-speakers-photos">
+        {trackSpeakers.map((speaker) => (
+          <img
+            key={speaker.id}
+            src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`}
+            alt={speaker.name}
+            title={speaker.name}
+            className="track-speaker-avatar"
+            onError={(e) => {
+              e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`
+            }}
+          />
+        ))}
+      </div>
+    )
+  }
 
   return (
     <div className="App">
@@ -258,7 +290,7 @@ const App = () => {
           <h2 className="section-title">Trilhas Simultâneas</h2>
           <div className="tracks-grid">
             <div className="track-card">
-              <div className="track-icon principal">🚀</div>
+              {renderTrackSpeakers('Principal')}
               <h3>Principal</h3>
               <p>Descubra as últimas tendências em desenvolvimento por especialistas da área.
               </p>
@@ -268,49 +300,59 @@ const App = () => {
                 <li>IA (Inteligência Artificial)</li>
               </ul>
             </div>
-             <div className="track-card">
-              <div className="track-icon experts">💻</div>
-              <h3>Experts</h3>
-              <p>Explore uso de tecnologias no desenvolvimento para o dia a dia no trabalho.
+            <div className="track-card">
+              {renderTrackSpeakers('Expert')}
+              <h3>Expert</h3>
+              <p>Explore uso de tecnologias avançadas e arquitetura no desenvolvimento para o dia a dia.
               </p>
               <ul className="track-topics">
-                <li>Backend</li>
-                <li>Frontend</li>
-                <li>AI/ML no Cloud</li>
+                <li>Arquitetura & Engenharia</li>
+                <li>Agentes de IA & Cloud</li>
+                <li>Infraestrutura & Backend</li>
               </ul>
             </div>
             <div className="track-card">
-              <div className="track-icon start">🌱</div>
-              <h3>Start</h3>
-              <p>Mergulhe no mundo do desenvolvimento e descubra as melhoras praticas para sua carreira.</p>
+              {renderTrackSpeakers('Junior')}
+              <h3>Junior</h3>
+              <p>Mergulhe no mundo do desenvolvimento e descubra as melhores práticas para sua carreira.</p>
               <ul className="track-topics">
                 <li>Dicas de carreira</li>
-                <li>Networking</li>
-                <li>Inovação</li>
+                <li>Segurança & Engenharia</li>
+                <li>Inovação & Produto</li>
               </ul>
             </div>
             <div className="track-card">
-              <div className="track-icon cluster">💡</div>
-              <h3>Cluster TIC</h3>
-              <p>Trilha organizada pelo PIT, Parque de Inovação Tecnológica São José dos Campos .</p>
-              <ul className="track-topics">
-                <li> Tecnologia </li>
-                <li> Inovação </li>
-                <li> Empreendedorismo </li>
-              </ul>
-            </div>
-            <div className="track-card">
-              <div className="track-icon community">👥</div>
+              {renderTrackSpeakers('Community')}
               <h3>Community</h3>
               <p>Das comunidades de desenvolvedores parceiras diretamente para o DevFest.</p>
               <ul className="track-topics">
-                <li> Comunidades de desenvolvedores </li>
-                <li> Experiências de desenvolvimento </li>
-                <li> Tecnologia </li>
-                
+                <li>Comunidades de desenvolvedores</li>
+                <li>Experiências de produção</li>
+                <li>Segurança & Sistemas</li>
               </ul>
             </div>
-           
+            <div className="track-card">
+              {renderTrackSpeakers('Workshop')}
+              <h3>Workshop</h3>
+              <p>Sessões práticas e mão na massa para aprender e explorar tecnologias na prática.</p>
+              <ul className="track-topics">
+                <li>Flutter & Dart</li>
+                <li>Desenvolvimento Multiplataforma</li>
+                <li>Prática Guiada</li>
+              </ul>
+            </div>
+            <div className="track-card">
+              <div className="track-speakers-photos">
+                <img src="images/sponsors/pit-logo.jpeg" alt="Trilha PIT" className="track-pit-logo" />
+              </div>
+              <h3>Trilha PIT</h3>
+              <p>Trilha organizada pelo PIT, Parque de Inovação Tecnológica São José dos Campos.</p>
+              <ul className="track-topics">
+                <li>Tecnologia</li>
+                <li>Inovação</li>
+                <li>Empreendedorismo</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -607,25 +649,38 @@ const App = () => {
               <div key={speaker.id} className="speaker-card">
                 <div className="speaker-image">
                   <img 
-                    src={speaker.image} 
+                    src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`} 
                     alt={speaker.name} 
                     onError={(e) => {
                       e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
                     }} 
                   />
                 </div>
-                <h3>{speaker.name}</h3>
-                <p className="speaker-role">{speaker.role}</p>
-                <p className="speaker-company">{speaker.company}</p>
-                <p className="speaker-bio">{speaker.bio}</p>
-                {speaker.talk && (
-                  <div className="speaker-talk">
-                    <h4>{speaker.talk.title}</h4>
-                <p className="speaker-bio">{speaker.talk.description}</p>
-                {speaker.talk.time && speaker.talk.duration && (
-                  <p className="talk-time">{speaker.talk.time} - {speaker.talk.duration}</p>
+                {speaker.track && (
+                  <span className={`speaker-track-badge track-${speaker.track.toLowerCase()}`}>
+                    {speaker.track === 'Workshop' ? 'Workshop' : `Trilha ${speaker.track}`}
+                  </span>
                 )}
-                  </div>
+                <h3>{speaker.name}</h3>
+                {speaker.role && <p className="speaker-role">{speaker.role}</p>}
+                {speaker.company && <p className="speaker-company">{speaker.company}</p>}
+                <p className="speaker-bio">{speaker.bio}</p>
+                {speaker.talk && speaker.talk.title && (
+                  <details className="speaker-talk">
+                    <summary className="speaker-talk-summary">
+                      <span className="speaker-talk-title">{speaker.talk.title}</span>
+                    </summary>
+                    <div className="speaker-talk-content">
+                      {speaker.talk.description ? (
+                        <p className="speaker-bio">{speaker.talk.description}</p>
+                      ) : (
+                        <p className="speaker-bio">Mais detalhes da palestra em breve.</p>
+                      )}
+                      {speaker.talk.time && speaker.talk.duration && (
+                        <p className="talk-time">{speaker.talk.time} - {speaker.talk.duration}</p>
+                      )}
+                    </div>
+                  </details>
                 )}
                 <div className="speaker-social">
                   {speaker.social.twitter && <a href={speaker.social.twitter} target="_blank" rel="noopener noreferrer"><Twitter size={20} /></a>}
@@ -667,11 +722,12 @@ const App = () => {
                   <span>Acesso VIP e brindes exclusivos</span>
                 </div>
               </div>
-              <button type="button" className="btn btn-primary" disabled>
-                <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
-                  Quero submeter palestra
-                </a>
+              <button type="button" className="btn" disabled>
+                Submissões de palestras encerradas
               </button>
+              <p className="form-closed-notice">
+                As submissões para o Call for Speakers já foram encerradas. Agradecemos a todos que enviaram suas propostas!
+              </p>
             </div>
             <div className="volunteers-image">
               <img 
@@ -702,11 +758,11 @@ const App = () => {
                 ))}
               </div>
               <button type="button" className="btn" disabled>
-              Quero ser voluntário
-                {/* <a href="https://forms.gle/tHAKvdw2z9JojAYr9" target="_blank" rel="noopener noreferrer" className="volunteer-link">
-                  Quero ser voluntário
-                </a> */}
+                Inscrições para voluntários encerradas
               </button>
+              <p className="form-closed-notice">
+                As inscrições para voluntários já foram encerradas. Obrigado pelo interesse em apoiar a comunidade!
+              </p>
             </div>
             <div className="volunteers-image">
               <img 

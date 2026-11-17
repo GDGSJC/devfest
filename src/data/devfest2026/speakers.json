@@ -7,13 +7,14 @@
       "company": "",
       "bio": "Estatístico, Twitch Partner, GeForce Partner, GitHub Star, Google AI Community Builder e LinkedIn Top Voice, Téo tem uma trajetória passando por empresas como Globo, Gamers Club, Via Varejo, Grupo Boticário e SAS Institute.",
       "image": "images/speakers/teo.jpeg",
-      "track": "",
+      "track": "Principal",
       "isGuest": true,
       "social": {
-        "linkedin": "https://linkedin.com/in/teocalvo"
+        "linkedin": "https://linkedin.com/in/teocalvo",
+        "instagram": "https://www.instagram.com/teomewhy/?hl=pt"
       },
       "talk": {
-        "title": "",
+        "title": "Sim! Você ainda precisa de uma Feature Store!",
         "description": "",
         "time": "",
         "duration": ""
@@ -26,9 +27,11 @@
       "company": "",
       "bio": "Google Developer Expert em AI e Cloud, organizador do GDG Caraguatatuba e um dos nomes que vêm ajudando a comunidade brasileira a explorar, na prática, as possibilidades da Inteligência Artificial. 🚀\n\nCom uma trajetória que conecta IA, Cloud, desenvolvimento e educação, Victor é daqueles que transformam tecnologia complexa em conhecimento que dá vontade de colocar em prática",
       "image": "images/speakers/victor.jpeg",
-      "track": "",
+      "track": "Principal",
       "isGuest": true,
-      "social": {},
+      "social": {
+        "instagram": "https://www.instagram.com/victorpug.exe/"
+      },
       "talk": {
         "title": "",
         "description": "",
@@ -43,12 +46,14 @@
       "company": "",
       "bio": "Desenvolvedor, criador de conteúdo, evangelista da comunidade PHP e conhecido por transformar o dia a dia da vida de dev em conteúdo, conversa e, claro, muito humor. 😂🔥\n\nCom uma trajetória forte na comunidade de desenvolvimento, PokemaoBr é daqueles nomes que conseguem falar de tecnologia de um jeito leve, divertido e muito próximo da realidade de quem vive no mundo DEV",
       "image": "images/speakers/pokemon.jpeg",
-      "track": "",
+      "track": "Principal",
       "isGuest": true,
-      "social": {},
+      "social": {
+        "instagram": "https://www.instagram.com/pokemaobr/"
+      },
       "talk": {
-        "title": "",
-        "description": "",
+        "title": "Isso não deveria ser um stand-up",
+        "description": "Isso Não Deveria Ser um Stand-up é uma apresentação irreverente sobre tecnologia, carreira e os absurdos do mercado de desenvolvimento.\nRodrigo “Pokemaobr” Cardoso transforma sua trajetória — dos primórdios da internet, com computadores limitados e conexões discadas, até a experiência como desenvolvedor e profissional de DevRel — em uma sequência de histórias, provocações e situações que todo profissional de tecnologia já viveu ou gostaria de esquecer.\nEntre piadas sobre processos seletivos impossíveis, exigências surreais para vagas, inteligência artificial, LinkedIn, comunidade e a rotina de quem trabalha com código, a apresentação questiona: o que realmente significa ser um profissional de tecnologia hoje?\nUma mistura de stand-up, palestra e desabafo — porque, no fim, isso não deveria ser um stand-up… mas acabou sendo",
         "time": "",
         "duration": ""
       }
@@ -60,9 +65,11 @@
       "company": "",
       "bio": "Com mais de 20 anos de carreira, Juliano é especialista em Inteligência Artificial, Redes Sociais, Inovação e Transformação Digital.\nAtualmente, é Head de Ecossistema da AI Brasil, além de ter sido palestrante do Facebook Brasil e ter recebido, por duas vezes, o reconhecimento de Melhor Profissional de Redes Sociais pela Abiacom.\nAutor de “O Livro Secreto das Redes Sociais”, Juliano também acumula uma trajetória de mais de 1.000 palestras, levando temas complexos de tecnologia para uma linguagem prática e acessível.",
       "image": "images/speakers/Kimura.jpeg",
-      "track": "",
+      "track": "Principal",
       "isGuest": true,
-      "social": {},
+      "social": {
+        "instagram": "https://www.instagram.com/julianokimura/"
+      },
       "talk": {
         "title": "",
         "description": "",
@@ -77,12 +84,262 @@
       "company": "",
       "bio": "Ahirton é Data & AI Manager, 6x Microsoft MVP, 2x Google Developer Expert e LinkedIn Top Voice, além de atuar há anos com Inteligência Artificial, Machine Learning e Data Engineering.",
       "image": "images/speakers/Ahirton.jpeg",
-      "track": "",
+      "track": "Principal",
       "isGuest": true,
       "social": {},
       "talk": {
         "title": "",
         "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "Toshi Ossada",
+      "role": "",
+      "company": "",
+      "bio": "Profissional reconhecido pelo programa da Microsoft como Most Value Professional e do Google Developer Expert em Flutter e Dart, pós graduado em Engenharia de Software, com formação tecnológica em Jogos Digitais e técnica em Informática com mais de 18 anos de experiência na área, atuando em empresas nacionais e multinacionais de grande porte de tecnologia. Profissional com ampla experiência em desenvolvimento de aplicações mobile utilizando Flutter. Possui conhecimento em programação de software em diversas ferramentas da área. Vivência com gestão de equipes, condução de projeto com equipes multidisciplinares e troca com stakeholders. Como fundador da Flutter Brasil, encontra-se na linha de frente na organização de eventos e atividades, visando expandir e fortalecer a comunidade.",
+      "image": "images/speakers/toshi.jpeg",
+      "track": "Workshop",
+      "isGuest": false,
+      "social": {},
+      "talk": {
+        "title": "Vamos Falar de Flutter? Uma Introdução à Plataforma Revolucionária para Desenvolvimento Multiplataforma!",
+        "description": "",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 8,
+      "name": "Maik Vinicius",
+      "role": "",
+      "company": "",
+      "bio": "Cristão, marido e pai, Maik Vinícius carrega em sua história a prova de que a tecnologia pode transformar destinos.\n\nCom mais de 10 anos de experiência, já passou por grandes empresas, mas decidiu ir além: construir algo que impactasse pessoas de verdade. Foi assim que fundou a DevJr, uma comunidade que há mais de 7 anos tem levantado programadores do zero e ajudado milhares a entrarem no mercado de tecnologia.\n\nHoje, como empresário, lidera uma software house e atua também na área educacional, ensinando não apenas código, mas visão, posicionamento e crescimento.\n\nSua missão é clara: capacitar pessoas para viverem do digital, com propósito, disciplina e fé, mostrando que é possível construir uma carreira sólida sem abrir mão dos valores.\n\nMaik não fala apenas sobre tecnologia. Ele fala sobre transformação de vida.",
+      "image": "images/speakers/maik.png",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://linkedin.com/in/maikvinicius",
+        "instagram": "https://instagram.com/omaikvinicius"
+      },
+      "talk": {
+        "title": "A IA Fez Seu Sistema. Agora Vamos Hackeá-lo",
+        "description": "Criar sistemas com IA ficou fácil. Criar sistemas seguros, nem tanto.\n\nNesta palestra, vamos explorar na prática vulnerabilidades comuns em aplicações feitas com vibe coding: isAdmin no frontend, Supabase exposto, permissões mal configuradas e APIs sem proteção adequada.\n\nTambém veremos como corrigir esses problemas usando conceitos simples como JWT, autorização no backend e controle de acesso por usuário.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 9,
+      "name": "Ricardo Campos Pereira",
+      "role": "",
+      "company": "",
+      "bio": "Sou Ricardo Campos, autista e desenvolvedor desde 2020. Atuei com desenvolvimento web durante a maior parte da minha carreira, tendo como minha última experiência nessa área a atuação na Webmotors, empresa do grupo Santander.\n\nHoje sou desenvolvedor no contexto industrial, trabalhando há mais de um ano no Grupo Boticário. Essa mudança de área me trouxe uma visão diferente sobre desenvolvimento de software, principalmente por estar diretamente ligado a processos industriais e sistemas que fazem parte da operação de uma grande indústria.",
+      "image": "images/speakers/ricardo.jpeg",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/ricardo-campos-ba56091b5/"
+      },
+      "talk": {
+        "title": "O Mercado de Desenvolvedores no Contexto da Indústria",
+        "description": "A palestra vai abordar minha experiência profissional trabalhando com desenvolvimento dentro do Grupo Boticário, mostrando na prática como uma grande indústria utiliza tecnologia para conectar seus processos de produção, gestão e operação. O Grupo Boticário possui uma estrutura de indústria inteligente, onde sistemas como MES/MOM e SAP ERP têm um papel fundamental no funcionamento e na integração da operação industrial.\n\nTambém pretendo demonstrar um pouco como a Inteligência Artificial está impactando esse mercado e mudando a forma como os desenvolvedores trabalham, trazendo cada vez mais possibilidades que vão além do desenvolvimento de código, envolvendo também ideias relacionadas ao produto, comunicação e até tópicos mais avançados dentro da Ciência da Computação.\n\nPor fim, quero falar sobre carreira e sobre como começar a trabalhar nessa área, compartilhando um pouco do que aprendi na minha trajetória e mostrando quais caminhos podem ser interessantes para quem está começando na tecnologia e vê a indústria como uma área interessante para seguir carreira. A ideia é trazer uma visão bem prática de como é trabalhar como desenvolvedor dentro de uma indústria inteligente e das oportunidades e desafios desse mercado.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 10,
+      "name": "Vânia Gomes",
+      "role": "",
+      "company": "",
+      "bio": "Sou desenvolvedora de software com experiência no desenvolvimento e sustentação de sistemas corporativos, atuando principalmente com .NET, aplicações web, bancos de dados e integrações entre sistemas. No dia a dia, trabalho com investigação de incidentes, evolução de aplicações legadas, análise de regras de negócio, testes, retrocompatibilidade e melhorias em workflows e integrações. Sou formada em Sistemas para Internet e concluí um MBA em Arquitetura de Software. Também estudo o uso de Inteligência Artificial como apoio ao desenvolvimento de forma crítica e responsável, combinando IA com evidências, testes e conhecimento do negócio. Gosto especialmente de transformar desafios reais encontrados no desenvolvimento de software em aprendizados de engenharia que possam ser compartilhados com outras pessoas da comunidade.",
+      "image": "images/speakers/vania.jpeg",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/vaniagomes-tech/"
+      },
+      "talk": {
+        "title": "Não era só um bug: o que um incidente em um sistema legado me ensinou sobre engenharia e IA.",
+        "description": "Uma alteração aparentemente simples em um sistema corporativo legado acabou revelando um problema muito maior: regras de negócio distribuídas entre código, banco de dados, permissões e diferentes etapas de um workflow.\n\nNesta palestra, compartilho de forma anonimizada como um incidente real evoluiu de uma correção pontual para uma investigação mais estruturada sobre comportamento do sistema, regras de negócio, testes e retrocompatibilidade. Mostro como a IA foi utilizada para acelerar a análise de código, SQL, hipóteses e cenários de teste, mas também como respostas tecnicamente convincentes podem estar erradas quando não são confrontadas com evidências reais do sistema.\n\nA partir dessa experiência, apresento aprendizados práticos sobre como investigar sistemas legados, validar hipóteses, reconstruir regras de negócio com os usuários e utilizar IA como apoio à engenharia sem transformá-la em fonte de verdade. A ideia é mostrar que um bug pode ser mais do que algo a corrigir: pode ser o ponto de partida para entender melhor o sistema e reduzir o risco da próxima mudança.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 11,
+      "name": "Diogenes Ramos",
+      "role": "",
+      "company": "",
+      "bio": "Especialista em Cibersegurança com atuação em Segurança Ofensiva, Penetration Testing, Red Team e Application Security, com foco na identificação e validação de riscos em aplicações web, APIs, ambientes mobile e infraestrutura.\n\nAtua em conjunto com times de desenvolvimento, arquitetura, infraestrutura e segurança, aproximando a visão ofensiva do ciclo de desenvolvimento de software e da construção de produtos mais seguros.\n\nÉ autor do livro “A Falha Não É Técnica: Gestão de Vulnerabilidades como Disciplina Corporativa de Redução de Risco”, pesquisador de segurança com vulnerabilidades publicadas em CVEs e líder do capítulo OWASP São José dos Campos.\n\nJá palestrou em eventos como BSides São Paulo, Mind The Sec e Ekoparty, abordando temas relacionados a segurança ofensiva, AppSec, pesquisa de vulnerabilidades e segurança em tecnologias emergentes",
+      "image": "images/speakers/diogenes.png",
+      "track": "Community",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/diogenes-r-9a0427a/"
+      },
+      "talk": {
+        "title": "Seu Bluetooth fala demais? Recon e segurança em dispositivos BLE",
+        "description": "Bluetooth está presente em celulares, wearables, dispositivos IoT, automóveis, sensores e uma infinidade de produtos que utilizamos diariamente. Mas antes mesmo de uma conexão ser estabelecida, esses dispositivos podem revelar informações interessantes sobre sua identidade, fabricante, serviços e comportamento.\n\nNesta palestra vamos observar o Bluetooth pela perspectiva de quem realiza reconhecimento de segurança.\n\nA partir das diferenças entre Bluetooth Clássico e Bluetooth Low Energy (BLE), veremos quais informações podem ser identificadas em um ambiente real, como advertising packets, UUIDs, serviços, fabricantes e outros elementos que auxiliam no fingerprinting de dispositivos.\n\nTambém discutiremos como essas informações podem apoiar atividades de Pentest e Red Team, mas principalmente o que desenvolvedores de aplicações mobile, IoT e dispositivos conectados podem aprender ao observar seus próprios produtos pela perspectiva de um atacante.\n\nComo demonstração, será apresentada uma ferramenta desenvolvida para automatizar parte desse processo de reconhecimento e organizar as informações encontradas em ambientes Bluetooth.\n\nA proposta não é apenas mostrar como encontrar dispositivos Bluetooth, mas provocar uma pergunta:\n\nQuanto o seu dispositivo revela antes mesmo de alguém se conectar a ele?",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 12,
+      "name": "Raphaela Monteiro",
+      "role": "",
+      "company": "",
+      "bio": "Sou desenvolvedora de software e estudante do último semestre de Análise e Desenvolvimento de Sistemas na FATEC Prof. Jessen Vidal.\n\nGosto de entender o que acontece por baixo das camadas de abstração. Desenvolvo software cobrindo todo o stack, desde APIs e sistemas distribuídos até aplicações de IA e infraestrutura, enquanto me aproximo gradualmente de programação de sistemas, computação embarcada e do setor espacial.\n\nHoje em dia, você provavelmente vai me encontrar entre um terminal Linux, uma aplicação web fofinha e algo relacionado ao setor espacial.\nTenho interesse especial por problemas de engenharia onde o software encontra restrições reais: performance, confiabilidade, tempo de resposta, limitação de hardware e autonomia.",
+      "image": "images/speakers/raphaela.jpeg",
+      "track": "Community",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/raphaelamonteiro/",
+        "github": "https://github.com/raphaelamonteiro"
+      },
+      "talk": {
+        "title": "Além do Try/Catch: Como projetar software resiliente para o mundo real?",
+        "description": "Tratamento de exceções básicas não é suficiente quando um sistema enfrenta o caos da nuvem, falhas de rede ou cargas imprevisíveis. Em ambientes onde a intervenção manual ou um rollback imediato não são opções viáveis, o software precisa ser projetado para antecipar a falha e continuar operando.\n\nNesta palestra, vamos explorar além dos blocos de código defensivos tradicionais e mergulhar em padrões arquiteturais de resiliência, como rate limiting, idempotência, degradação graciosa e isolamento de falhas. Utilizando cenários críticos como exemplos práticos aplicáveis a APIs, microsserviços e sistemas de IA, será possível descobrir como elevar o nível da engenharia para construir sistemas que realmente sobrevivem no dia a dia do mercado.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 13,
+      "name": "Guilherme Doniani Lopes",
+      "role": "",
+      "company": "",
+      "bio": "Sou CTO da Assaad Educação, edtech de preparação para ENEM e vestibulares com 18 mil alunos, onde lidero uma operação construída com IA no centro: agentes em produção, correção automatizada de redação e geração de conteúdo em escala. Antes disso fui CTO e co-fundador do Front CRM, com exit em 2025, e fundei a Digital Warriors, agência de IA aplicada. Sou de São José dos Campos e comecei aqui mesmo, na Embraer, onde passei 12 anos entre chão de fábrica, melhoria contínua e automação e foi lá que aprendi a lição que uso até hoje: automatizar processo ruim só acelera o problema. Sou formado em Sistemas de Informação, com MBA pela FGV e especialização em Gestão de Projetos pela UC Irvine.",
+      "image": "images/speakers/guilherme.jpeg",
+      "track": "Community",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/doniani",
+        "instagram": "https://instagram.com/doniani"
+      },
+      "talk": {
+        "title": "IA First na prática: agentes em produção sem estourar a conta",
+        "description": "Colocar um agente de IA para funcionar em demonstração é fácil. Difícil é mantê-lo em produção atendendo milhares de usuários por dia, com qualidade auditável e sem que o custo de API cresça mais rápido que o resultado. É esse o problema que enfrentamos na Assaad Educação, uma edtech com 18 mil alunos, ao construir uma operação IA First do zero em seis meses.\n\nNesta palestra mostro o caminho real: arquitetura multiagente para atendimento, agentes especializados por disciplina para monitoria, correção automatizada de redação em cinco competências e um pipeline de IA que tratou mais de 36 mil questões com taxa de erro abaixo de 1%. E mostro sobretudo a parte que raramente aparece em palco: como derrubamos 85% do custo diário de atendimento trocando o modelo dos subagentes, como cortamos pela metade o custo por correção com prompt caching e processamento flexível, e como uma auditoria revelou bugs de prompt que impactavam diretamente a nota do aluno.\n\nTambém vou falar do que deu errado. Um squad inteiro de agentes encerrado depois de um mês, um pipeline de IA descartado por inviabilidade de custo-benefício e uma falha silenciosa na transferência para atendimento humano que só apareceu numa auditoria. A tese central é simples e vem de vinte anos atrás, no chão de fábrica da Embraer: automatizar processo ruim só acelera o problema. IA First não é colocar IA em cima do que já existe, é redesenhar o processo com ela no centro. Quem sai da palestra leva um método aplicável de medição de custo por operação e de decisão sobre quando otimizar, quando escalar e quando matar uma frente de IA.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 14,
+      "name": "Ítalo José",
+      "role": "",
+      "company": "",
+      "bio": "Mantenedor full-time do Meteor JS, há 4 anos trabalhando com devtools e aplicações em tempo real. Atuou na NodeSource, trabalhando no APM mais rápido do mercado Node. 4x MVP, organizador de eventos como CityJS e o finado DevCircles São Paulo, além de já ter dado palestra em diversos países. Uma curiosidade sobre ele: já construiu um carro autônomo real na China.",
+      "image": "images/speakers/italo.jpeg",
+      "track": "Community",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://linkedin.com/in/italojs",
+        "github": "https://github.com/italojs"
+      },
+      "talk": {
+        "title": "Além do WebSocket: o que faz uma aplicação ser realmente realtime?",
+        "description": "Muitos programadores acreditam que aplicações realtime se resumem a abrir um WebSocket ou gerenciar algumas sessões. Mas isso é só a ponta do iceberg em uma aplicação realtime de produção altamente escalável.\n\nNesta palestra, vamos explorar decisões de arquitetura como atualizações otimistas, alterações concorrentes, distribuição de dados e os custos de manter clientes sincronizados, inclusive diante de falhas. Também discutiremos como aplicações realtime se diferenciam de APIs REST quando o assunto é escalabilidade. O Meteor será nosso estudo de caso, com aprendizados aplicáveis a outras stacks e sem exigir experiência prévia com o framework.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 15,
+      "name": "André Castro",
+      "role": "",
+      "company": "",
+      "bio": "Mestre em Informática",
+      "image": "images/speakers/andre.jpeg",
+      "track": "Expert",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/andreluizfc/",
+        "instagram": "https://www.instagram.com/themchinehead.br"
+      },
+      "talk": {
+        "title": "Spec-Driven Development com Gemini",
+        "description": "A palestra apresenta o Spec-Driven Development (SDD) como uma evolução do desenvolvimento de software com IA.\n\nComeçamos pelo Vibe Coding, uma abordagem em que o desenvolvedor descreve o que quer e deixa a IA gerar e modificar o código de forma iterativa. Apesar de ser extremamente produtivo para prototipação, esse modelo pode gerar código inconsistente, decisões implícitas, retrabalho e comportamentos inesperados conforme o projeto cresce.\n\nO Spec-Driven Development propõe uma mudança de abordagem: antes de pedir para a IA escrever o código, definimos claramente o que deve ser construído e como saberemos que está correto. A especificação se torna a fonte de verdade, descrevendo contexto, requisitos, regras de negócio, comportamento esperado, edge cases e critérios de aceitação.\n\nDurante a palestra, irei mostrar como construir uma especificação na prática e como utilizá-la para gerar um plano de implementação e orientar a criação do código. O Gemini será utilizado como coding assistant, permitindo demonstrar como uma especificação bem estruturada reduz ambiguidades, limita decisões inventadas pelo modelo e torna o desenvolvimento com IA mais previsível.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 16,
+      "name": "João Seabra",
+      "role": "",
+      "company": "",
+      "bio": "Tech Lead | Software Architect | Scrum Master | PhD Candidate in AI & Neuroscience | IT Project Manager | Cloud Solutions (AWS) | Python • PHP • C/C++ | +20 years of Exp.\n\nJoão Seabra é Tech Lead e Arquiteto de Software com mais de 20 anos de experiência na entrega de sistemas de missão crítica. Mestre em Engenharia de Software, é autor do livro \"UML: Uma Ferramenta para o Design de Software\" e criador do modelo acadêmico CLUPIR para classificação de linguagens visuais. Atualmente, é doutorando em Neurociências no Instituto do Cérebro da UFRN, onde pesquisa a convergência entre IA, processos cognitivos e Edge Computing no processamento de sinais complexos para apoio à decisão clínica. Acredita firmemente que a capacidade cognitiva de modelos visuais e contratos ágeis estruturados é o segredo para domar e escalar a Inteligência Artificial corporativa.",
+      "image": "images/speakers/joao-seabra.jpeg",
+      "track": "Expert",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://linkedin.com/in/joao-m-seabra"
+      },
+      "talk": {
+        "title": "Discutindo a Engenharia de Contexto: Como domar alucinações da IA usando um andaime cognitivo",
+        "description": "Você já pediu para a IA gerar um código a partir de uma User Story em texto livre e recebeu uma solução que parece impecável, mas falha ao compilar ou ignora regras de negócios vitais? A linguagem natural sobrecarrega cognitivamente os Grandes Modelos de Linguagem (LLMs), gerando as temidas alucinações de código. Nesta palestra, discutiremos como a \"Engenharia de Contexto\", um método de faseado que une o refinamento ágil e a arquitetura de software. Os participantes descobrirão como os seus agentes de IA podem transformar requisitos ambíguos em cenários BDD, selecionar o diagrama ideal com a matriz científica CLUPIR e usar notações de Diagram-as-Code (Mermaid/PlantUML) como um \"andaime\" inflexível. O resultado? Um código assertivo e aderente à necessidade de seu projeto.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 17,
+      "name": "Matheus Cruz",
+      "role": "",
+      "company": "",
+      "bio": "Me chamo Matheus Cruz, tenho 31 anos, trabalho contribuindo com Open Source na IBM como Sr. Software Engineer. Amo Open Source e contribuo e gosto de contribuir com diversos projetos do mundo Java, tais como Quarkus, Quarkus Flow, Quarkus Roq e outros. Sou um dos coordenadores da comunidade Quarkus Club e amo estar em comunidade.",
+      "image": "images/speakers/matheus-cruz.jpeg",
+      "track": "Expert",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/mcruzdev1"
+      },
+      "talk": {
+        "title": "Quarkus Flow: a espinha dorsal para orquestração de agentes modernos",
+        "description": "Criar agentes de IA é apenas o começo. À medida que sistemas agenticos crescem, surge o desafio de coordenar agentes, ferramentas, modelos e processos de forma confiável, observável e resiliente.\n\nNesta palestra, vamos explorar o Quarkus Flow como uma espinha dorsal para a orquestração de agentes modernos, combinando agentes construídos com Quarkus LangChain4j Agentic com workflows capazes de coordenar processos complexos. Vamos abordar Jobs, Durable Workflows e os mecanismos de observabilidade, incluindo métricas, tracing e logs.\n\nAo final, você verá como transformar agentes isolados em sistemas agenticos capazes de executar processos reais, mantendo controle sobre suas execuções, contexto e comportamento.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 18,
+      "name": "Rafaela Marcolino",
+      "role": "",
+      "company": "",
+      "bio": "Engenheira de Software Fullstack Sênior, com quase uma década de experiência criando e escalando aplicações web e mobile. Atualmente, é Tech Lead na ThoughtWorks, professora na XP Educação e Embaixadora Women Techmakers. Apaixonada por tecnologia e entusiasta de ferramentas de IA, Rafaela desenvolve soluções para aumentar produtividade, eficiência e qualidade de código.",
+      "image": "images/speakers/rafaela-marcolino.png",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/rafaela-marcolino/"
+      },
+      "talk": {
+        "title": "Código Não Salva Ideia Ruim: Como Descobrir se seu Projeto Vende Antes de Construir",
+        "description": "O maior erro de quem quer criar uma startup é começar pelo desenvolvimento sem validar a demanda do mercado. Descubra ferramentas no-code, técnicas de prototipagem rápida e estratégias de validação com clientes para saber se a sua ideia tem tração comercial antes de investir tempo e dinheiro em código.",
+        "time": "",
+        "duration": ""
+      }
+    },
+    {
+      "id": 19,
+      "name": "Iasmin Miranda",
+      "role": "",
+      "company": "",
+      "bio": "Iasmin Miranda é engenheira de software com quase 10 anos de estrada, construídos sobre uma base forte em Python e backend. Na Embraer, em São José dos Campos, é tech lead de um time de cerca de 15 pessoas, entre desenvolvedores e estagiários, e process owner dos padrões de desenvolvimento de software da diretoria. Nesse papel, aprende diariamente que modernizar em uma empresa grande é menos sobre ferramenta nova e mais sobre contexto, pessoas e trade-offs.",
+      "image": "images/speakers/iasmin.jpeg",
+      "track": "Expert",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/iasmin-miranda-teixeira/"
+      },
+      "talk": {
+        "title": "Modernização sem hype: evoluindo infraestrutura em empresas tradicionais",
+        "description": "Em regiões como o Vale do Paraíba, onde predominam empresas tradicionais e a tecnologia não é o core do negócio, a infraestrutura costuma ser o calcanhar de Aquiles. Também é onde a mudança mais faz diferença: ela separa \"só entregar\" de entregar o certo e com qualidade. Nesta palestra, compartilho como avançar em infraestrutura nesse contexto, sem hype e sem bala de prata, e como processos bem desenhados sustentam essa evolução no dia a dia.",
         "time": "",
         "duration": ""
       }
