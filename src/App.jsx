@@ -15,7 +15,7 @@ function DevFestCountdown() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const eventDate = new Date('2026-12-05T09:00:00')
+      const eventDate = new Date('2026-12-05T09:45:00')
       const now = new Date()
       const difference = eventDate - now
 
@@ -119,8 +119,8 @@ const App = () => {
 
   // Event schedule data
   const eventSchedule = [
-    { time: '09H00 - 09H50', activity: 'Credenciamento & Coffee', description: 'Recepção dos participantes, entrega de materiais e coffee break de boas-vindas' },
-    { time: '10H00 - 10H25', activity: 'Intro / Abertura', description: 'Cerimônia de abertura oficial do evento' },
+    { time: '09H00 - 09H45', activity: 'Credenciamento & Coffee', description: 'Recepção dos participantes, entrega de materiais e coffee break de boas-vindas' },
+    { time: '09H45 - 10H25', activity: 'Intro / Abertura', description: 'Cerimônia de abertura oficial do evento' },
     { time: '10H30', activity: 'Início das palestras', description: 'Início das apresentações no Palco Principal e trilhas simultâneas' },
     { time: '12H00 - 13H45', activity: 'Almoço', description: 'Intervalo para almoço (por conta dos participantes)', note: '*' },
     { time: '14H00', activity: 'Retorno Palestras + Início Trilhas', description: 'Continuação das apresentações nas trilhas' },
