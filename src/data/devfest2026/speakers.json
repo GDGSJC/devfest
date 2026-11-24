@@ -359,8 +359,25 @@
       "talk": {
         "title": "Da conversa à operação: construindo agentes de IA para restaurantes — o caso Finn",
         "description": "",
-        "time": "",
-        "duration": ""
+        "time": "16H00 - 16H40",
+        "duration": "40 min"
+      }
+    },
+    {
+      "id": 21,
+      "name": "Samanta Aragão",
+      "role": "",
+      "company": "Nimble Evolution",
+      "bio": "",
+      "image": "images/speakers/samanta.jpeg",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {},
+      "talk": {
+        "title": "Agentes de IA como colegas de time: arquitetura multiagente aplicada ao Scrum (um caso real com Jira Rovo)",
+        "description": "Como seria ter um agente de IA ao lado de cada papel do time Scrum? Nesta palestra, mostro como construímos um ecossistema de agentes especializados para PO, UX, Arquitetura, Dev e QA que colaboram diretamente no Jira para levar uma demanda da ideia ao “pronto para desenvolvimento”. Inclui demo ao vivo, resultados reais e os aprendizados que você pode levar para qualquer stack.\n\nAssistentes de IA já fazem parte do dia a dia dos devs. Mas o que acontece quando, em vez de um assistente genérico, o time conta com agentes especializados que atuam como membros do time Scrum, cada um com seu papel e responsabilidades?\nNesta palestra, compartilho um caso real em que criamos agentes para apoiar os papéis de Product Owner, UX, Arquitetura, Desenvolvimento e QA. Os agentes atuam diretamente nas issues do Jira: analisam e refinam histórias, sugerem critérios de aceite, apontam riscos técnicos, geram documentação no Confluence e apoiam a tomada de decisão. Juntos, eles formam um fluxo colaborativo em que cada demanda evolui no Jira enquanto o contexto passa de um agente para o outro.\nA implementação foi feita com o Rovo, integrado ao Jira e ao Confluence, mas o foco da sessão está nos padrões de arquitetura multiagente, que se aplicam a outras ferramentas e stacks.\nVamos abordar:\n- A estratégia para desenhar agentes especializados por papel\n- Como orquestrar o fluxo de trabalho e a troca de contexto entre os agentes dentro do Jira\n- Onde a IA realmente agrega valor no processo ágil e onde ela ainda não ajuda\n- Uma demo ao vivo de uma issue no Jira evoluindo da criação até estar pronta para desenvolvimento\n- Os resultados obtidos: refinamentos mais consistentes, padronização das informações, menos retrabalho, conhecimento mais distribuído e times mais produtivos\n- Os erros que cometemos no caminho e os próximos passos dessa arquitetura\nAo final, você terá uma visão prática de como transformar agentes de IA em colegas de time de verdade, e não apenas em ferramentas de consulta.",
+        "time": "11H15 - 12H00",
+        "duration": "45 min"
       }
     }
   ]

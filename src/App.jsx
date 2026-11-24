@@ -216,16 +216,6 @@ const App = () => {
       speakers: [
         ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time),
         {
-          name: 'Palestrante Nimble',
-          image: 'images/sponsors/nimble.png',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Agentes de IA como colegas de time: arquitetura multiagente aplicada ao Scrum (um caso real com Jira Rovo)',
-            time: '11H15 - 12H00',
-            duration: '45 min'
-          }
-        },
-        {
           name: 'Palestrante Boss',
           image: 'images/sponsors/fala-boss.png',
           isPlaceholderSlot: true,
@@ -243,19 +233,7 @@ const App = () => {
       subtitle: 'AUDITÓRIO 3',
       stageTitle: 'Trilha Community - Auditório 3',
       icon: '👥',
-      speakers: [
-        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Community') && speaker.talk && speaker.talk.time),
-        {
-          name: 'Palestrante Brendi',
-          image: '',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Palestra Brendi (em breve)',
-            time: '10H30 - 11H10',
-            duration: '40 min'
-          }
-        }
-      ]
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Community') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'workshop',
