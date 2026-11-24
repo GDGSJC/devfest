@@ -969,33 +969,49 @@ const App = () => {
       </section>
 
       {/* Comunidades Parceiras Section */}
-      <section className="section comunidades">
+      <section id="comunidades" className="section comunidades">
         <div className="container">
           <h2 className="section-title">Comunidades Parceiras</h2>
           {communitiesData.partnerCommunities?.length > 0 ? (
             <div className="communities-grid">
               {communitiesData.partnerCommunities.map((community) => (
-              <div key={community.id} className="community-card ">
-                <img 
-                  src={community.logo} 
-                  alt={community.name} 
-                  onError={(e) => {
-                    e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(community.name)}&size=160&background=fbbc04&color=4285f4&bold=true&format=png`
-                  }} 
-                />
-                <h3>{community.name}</h3>
-                <p>{community.description}</p>
-                <div className="community-info">
-                  {/* <span className="member-count">{community.members.toLocaleString()} membros</span> */}
-                  <span className="location">{community.location}</span>
-                </div>
-                <div className="community-links">
-                  {community.social.website && <a href={community.social.website} target="_blank" rel="noopener noreferrer"><ExternalLink size={20} /></a>}
-                  {community.social.instagram && <a href={community.social.instagram} target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>}
-                  {community.social.linkedin && <a href={community.social.linkedin} target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>}
-                </div>
-              </div>
-            ))}
+                <article key={community.id ?? community.name} className="community-card">
+                  <div className={`community-logo-frame${community.darkLogo ? ' community-logo-frame--dark' : ''}`}>
+                    <img
+                      src={community.logo}
+                      alt={community.name}
+                      loading="lazy"
+                      onError={(e) => {
+                        e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(community.name)}&size=160&background=fbbc04&color=4285f4&bold=true&format=png`
+                      }}
+                    />
+                  </div>
+                  <h3>{community.name}</h3>
+                  {community.description && <p>{community.description}</p>}
+                  {community.location && (
+                    <div className="community-info">
+                      <span className="location">{community.location}</span>
+                    </div>
+                  )}
+                  <footer className="community-links">
+                    {community.social?.website && (
+                      <a href={community.social.website} target="_blank" rel="noopener noreferrer" aria-label={`Site de ${community.name}`}>
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
+                    {community.social?.instagram && (
+                      <a href={community.social.instagram} target="_blank" rel="noopener noreferrer" aria-label={`Instagram de ${community.name}`}>
+                        <Instagram size={20} />
+                      </a>
+                    )}
+                    {community.social?.linkedin && (
+                      <a href={community.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn de ${community.name}`}>
+                        <Linkedin size={20} />
+                      </a>
+                    )}
+                  </footer>
+                </article>
+              ))}
             </div>
           ) : (
             <div className="empty-state">

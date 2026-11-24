@@ -1,5 +1,37 @@
 {
   "partnerCommunities": [
-    
+    {
+      "id": 1,
+      "name": "Easy Podcast",
+      "logo": "images/communities/easyTechPodcast.png",
+      "darkLogo": true,
+      "social": {
+        "instagram": "https://www.instagram.com/easytech.podcast/"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Dev JR",
+      "logo": "images/communities/devjr.png",
+      "social": {
+        "instagram": "https://www.instagram.com/devjrbr/"
+      }
+    },
+    {
+      "id": 3,
+      "name": "OWASP São José dos Campos",
+      "logo": "images/communities/owasp.png",
+      "social": {
+        "instagram": "https://www.instagram.com/owasp/"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Papuguinho",
+      "logo": "images/communities/papuguinho.png",
+      "social": {
+        "instagram": "https://www.instagram.com/papuguinho/"
+      }
+    }
   ]
 }
