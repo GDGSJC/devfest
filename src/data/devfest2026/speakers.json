@@ -334,7 +334,7 @@
       "company": "",
       "bio": "Iasmin Miranda é engenheira de software com quase 10 anos de estrada, construídos sobre uma base forte em Python e backend. Na Embraer, em São José dos Campos, é tech lead de um time de cerca de 15 pessoas, entre desenvolvedores e estagiários, e process owner dos padrões de desenvolvimento de software da diretoria. Nesse papel, aprende diariamente que modernizar em uma empresa grande é menos sobre ferramenta nova e mais sobre contexto, pessoas e trade-offs.",
       "image": "images/speakers/iasmin.jpeg",
-      "track": "Expert",
+      "track": "Community",
       "isGuest": false,
       "social": {
         "linkedin": "https://www.linkedin.com/in/iasmin-miranda-teixeira/"
@@ -342,8 +342,25 @@
       "talk": {
         "title": "Modernização sem hype: evoluindo infraestrutura em empresas tradicionais",
         "description": "Em regiões como o Vale do Paraíba, onde predominam empresas tradicionais e a tecnologia não é o core do negócio, a infraestrutura costuma ser o calcanhar de Aquiles. Também é onde a mudança mais faz diferença: ela separa \"só entregar\" de entregar o certo e com qualidade. Nesta palestra, compartilho como avançar em infraestrutura nesse contexto, sem hype e sem bala de prata, e como processos bem desenhados sustentam essa evolução no dia a dia.",
-        "time": "16H00 - 16H40",
+        "time": "10H30 - 11H10",
         "duration": "40 min"
+      }
+    },
+    {
+      "id": 20,
+      "name": "Rafael Facchin",
+      "role": "CFO",
+      "company": "Brendi",
+      "bio": "Rafael Facchin é CFO da Brendi e engenheiro de software, formado em Engenharia Aeroespacial pelo ITA. Sua trajetória reúne desenvolvimento de software, sistemas espaciais e pesquisa em engenharia. Atualmente, participa da construção dos agentes de IA da Brendi, como parte da evolução da plataforma para um produto multiagente voltado à operação de restaurantes. Entre eles está Finn, agente concebido para apoiar a gestão financeira, de compras e de estoque, ajudando os donos de restaurantes a tomar decisões com foco na rentabilidade.",
+      "image": "images/speakers/RAFAEL.jpg.jpeg",
+      "track": "Expert",
+      "isGuest": false,
+      "social": {},
+      "talk": {
+        "title": "Da conversa à operação: construindo agentes de IA para restaurantes — o caso Finn",
+        "description": "",
+        "time": "",
+        "duration": ""
       }
     }
   ]

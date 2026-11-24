@@ -882,108 +882,111 @@ const App = () => {
     
 
       {/* Patrocinadores Section */}
-      <section className="section patrocinadores">
+      <section id="patrocinadores" className="section patrocinadores">
         <div className="container">
           <h2 className="section-title">Patrocinadores</h2>
-          {(sponsorsData.sponsors.diamond?.length > 0 || sponsorsData.sponsors.gold?.length > 0 || sponsorsData.sponsors.silver?.length > 0) ? (
+          {(sponsorsData.sponsors.diamond?.length > 0 || sponsorsData.sponsors.gold?.length > 0 || sponsorsData.sponsors.silver?.length > 0 || sponsorsData.sponsors.support?.length > 0) ? (
             <>
               <div className="sponsors-tiers">
-            <div className="sponsor-tier">
-              {sponsorsData.sponsors?.diamond?.length > 0 && <h3>Cota Parque Tecnológico</h3>}
-              <div className="sponsors-grid diamond">
-                {sponsorsData.sponsors?.diamond.map((sponsor) => (
-                  <div key={sponsor.id} className="sponsor-card">
-                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-                    <img 
-                      src={sponsor.logo} 
-                      alt={sponsor.name} 
-                      onError={(e) => {
-                        e.target.src = `https://via.placeholder.com/300x150/b9f2ff/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                      }} 
-                    />
-                    </a>
-                  </div>
-                ))}
+                {[
+                  { key: 'diamond', title: 'Cota Parque Tecnológico', fallbackSize: '300x150', fallbackBg: 'b9f2ff' },
+                  { key: 'gold', title: 'Cota Ponte Estaiada', fallbackSize: '250x125', fallbackBg: 'ffd700' },
+                  { key: 'silver', title: 'Cota Exchange', fallbackSize: '200x100', fallbackBg: 'c0c0c0' },
+                  { key: 'support', title: 'Apoio', fallbackSize: '200x100', fallbackBg: 'c0c0c0' }
+                ].map(({ key, title, fallbackSize, fallbackBg }) => {
+                  const tierSponsors = sponsorsData.sponsors?.[key] || []
+                  if (tierSponsors.length === 0) return null
+                  return (
+                    <div key={key} className={`sponsor-tier sponsor-tier--${key}`}>
+                      <h3 className="sponsor-tier-title">{title}</h3>
+                      <div className={`sponsors-grid ${key}`}>
+                        {tierSponsors.map((sponsor) => (
+                          <a
+                            key={sponsor.id ?? sponsor.name}
+                            href={sponsor.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="sponsor-card-link"
+                            aria-label={`Visitar site de ${sponsor.name}`}
+                            title={sponsor.name}
+                          >
+                            <article className="sponsor-card">
+                              <img
+                                src={sponsor.logo}
+                                alt={sponsor.name}
+                                loading="lazy"
+                                onError={(e) => {
+                                  e.target.src = `https://via.placeholder.com/${fallbackSize}/${fallbackBg}/4285f4?text=${encodeURIComponent(sponsor.name)}`
+                                }}
+                              />
+                            </article>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
-            </div>
-            <div className="sponsor-tier">
-            {
-              sponsorsData.sponsors?.gold?.length > 0 && <h3>Cota Ponte Estaiada</h3>
-            }
-              <div className="sponsors-grid gold">
-                {sponsorsData.sponsors?.gold?.map((sponsor) => (
-                  <div key={sponsor.id} className="sponsor-card">
-                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-
-                      <img 
-                        src={sponsor.logo} 
-                        alt={sponsor.name} 
-                        onError={(e) => {
-                          e.target.src = `https://via.placeholder.com/250x125/ffd700/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                        }} 
-                    />
-                    </a>
-                  </div>
-                ))}
+              <div className="become-sponsor">
+                <h3>Seja um Patrocinador</h3>
+                <p>Conecte sua marca com a comunidade de desenvolvedores mais vibrante da região.</p>
+                <a href={`mailto:${organizersData.organizers.contact.sponsors}`} className="btn btn-secondary">
+                  Saiba Como Patrocinar
+                </a>
               </div>
-            </div>
-            <div className="sponsor-tier">
-            {
-              sponsorsData.sponsors?.silver?.length > 0 && <h3>Cota Exchange</h3>
-            }
-              <div className="sponsors-grid silver">
-                {sponsorsData.sponsors?.silver?.map((sponsor) => (
-                  <div key={sponsor.id} className="sponsor-card">
-                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-
-                      <img 
-                        src={sponsor.logo} 
-                        alt={sponsor.name} 
-                        onError={(e) => {
-                          e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                        }} 
-                    />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="sponsor-tier">
-            {
-              sponsorsData.sponsors?.support?.length > 0 && <h3>Apoio</h3>
-            }
-              <div className="sponsors-grid support">
-                {sponsorsData.sponsors?.support?.map((sponsor) => (
-                  <div key={sponsor.id} className="sponsor-card">
-                    <a href={sponsor.website} target="_blank" rel="noopener noreferrer">
-
-                      <img 
-                        src={sponsor.logo} 
-                        alt={sponsor.name} 
-                        onError={(e) => {
-                          e.target.src = `https://via.placeholder.com/200x100/c0c0c0/4285f4?text=${encodeURIComponent(sponsor.name)}`
-                        }} 
-                    />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="become-sponsor">
-            <h3>Seja um Patrocinador</h3>
-            <p>Conecte sua marca com a comunidade de desenvolvedores mais vibrante da região.</p>
-            <a href={`mailto:${organizersData.organizers.contact.sponsors}`} className="btn btn-secondary">
-              Saiba Como Patrocinar
-            </a>
-          </div>
-          </>
+            </>
           ) : (
             <div className="empty-state">
               <h3>Em breve</h3>
               <p>Os patrocinadores serão anunciados em breve.</p>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Patrocinador em Destaque - Brendi Section */}
+      <section id="almoco-brendi" className="section brendi-sponsor">
+        <div className="container">
+          <h2 className="section-title">Almoço por conta da Brendi</h2>
+          <div className="brendi-sponsor-wrapper">
+            <article className="brendi-sponsor-card">
+              <img
+                src="images/sponsors/brendi hamburger.jpeg"
+                alt="Almoço por conta da Brendi: 1 hambúrguer e batata frita para cada participante, totalmente grátis. @brendi.tech"
+                width="1600"
+                height="1143"
+                loading="lazy"
+              />
+              <hgroup>
+                <p className="brendi-sponsor-badge">Patrocinador Oficial • Cota Parque Tecnológico</p>
+                <h3>1 hambúrguer + batata frita grátis para cada participante!</h3>
+              </hgroup>
+              <p className="brendi-sponsor-description">
+                A Brendi está patrocinando o almoço do DevFest São José dos Campos 2026!
+                Cada participante inscrito garante 1 hambúrguer + batata frita totalmente grátis durante o evento.
+              </p>
+              <footer className="brendi-sponsor-actions">
+                <a
+                  href="https://brendi.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  <ExternalLink className="icon" />
+                  Conhecer a Brendi
+                </a>
+                <a
+                  href="https://www.instagram.com/brendi.tech/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
+                >
+                  <Instagram className="icon" />
+                  @brendi.tech
+                </a>
+              </footer>
+            </article>
+          </div>
         </div>
       </section>
 

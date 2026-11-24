@@ -637,69 +637,311 @@
   background: var(--light-color);
 }
 
+.sponsors-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .sponsor-tier {
-  margin-bottom: 3rem;
-}
-
-.sponsor-tier h3 {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.sponsors-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  justify-items: center;
 }
 
-.sponsors-grid.diamond {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.sponsors-grid.diamond .sponsor-card img {
-  max-width: 300px;
-  max-height: 150px;
-}
-
-.sponsors-grid.gold {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.sponsors-grid.silver {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.sponsor-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.sponsor-tier-title {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  color: #1a73e8;
+  font-size: clamp(1.15rem, 0.95rem + 0.7vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
-.sponsor-card:hover {
-  transform: translateY(-4px);
+.sponsor-tier-title::before,
+.sponsor-tier-title::after {
+  content: '';
+  flex: 1 1 0;
+  max-inline-size: 110px;
+  block-size: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.25;
+}
+
+.sponsor-tier--diamond .sponsor-tier-title {
+  color: #1a73e8;
+}
+
+.sponsor-tier--gold .sponsor-tier-title {
+  color: #b06000;
+}
+
+.sponsor-tier--silver .sponsor-tier-title {
+  color: #137333;
+}
+
+.sponsor-tier--support .sponsor-tier-title {
+  color: var(--gray-color);
+}
+
+.sponsors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: balance;
+  justify-content: center;
+  align-items: stretch;
+  margin-inline: auto;
+  inline-size: 100%;
+}
+
+.sponsors-grid.diamond {
+  max-inline-size: 920px;
+  gap: 2rem;
+}
+
+.sponsors-grid.gold {
+  max-inline-size: 860px;
+  gap: 1.75rem;
+}
+
+.sponsors-grid.silver {
+  max-inline-size: 1020px;
+  gap: 1.5rem;
+}
+
+.sponsors-grid.support {
+  max-inline-size: 760px;
+  gap: 1.5rem;
+}
+
+.sponsor-card-link {
+  display: block;
+  text-decoration: none;
+  border-radius: 20px;
+  min-inline-size: 0;
+}
+
+.sponsor-card-link:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+.sponsors-grid.diamond .sponsor-card-link {
+  flex: 0 1 420px;
+}
+
+.sponsors-grid.gold .sponsor-card-link {
+  flex: 0 1 380px;
+}
+
+.sponsors-grid.silver .sponsor-card-link {
+  flex: 0 1 310px;
+}
+
+.sponsors-grid.support .sponsor-card-link {
+  flex: 0 1 300px;
+}
+
+.sponsor-card {
+  inline-size: 100%;
+  block-size: 100%;
+  background: white;
+  border: 1px solid rgba(32, 33, 36, 0.08);
+  border-radius: 20px;
+  padding-block: 2rem;
+  padding-inline: 2.25rem;
+  box-shadow: 0 2px 10px rgba(32, 33, 36, 0.05), 0 8px 24px rgba(32, 33, 36, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: grid;
+  place-items: center;
+}
+
+.sponsors-grid.diamond .sponsor-card {
+  min-block-size: 220px;
+  padding-block: 2.5rem;
+  padding-inline: 2.75rem;
+  border-block-start: 4px solid var(--google-blue);
+}
+
+.sponsors-grid.gold .sponsor-card {
+  min-block-size: 195px;
+  padding-block: 2.25rem;
+  padding-inline: 2.5rem;
+  border-block-start: 4px solid var(--google-yellow);
+}
+
+.sponsors-grid.silver .sponsor-card {
+  min-block-size: 165px;
+  padding-block: 1.85rem;
+  padding-inline: 2rem;
+  border-block-start: 4px solid var(--google-green);
+}
+
+.sponsors-grid.support .sponsor-card {
+  min-block-size: 160px;
+  padding-block: 1.85rem;
+  padding-inline: 2rem;
+  border-block-start: 4px solid var(--gray-light);
+}
+
+.sponsor-card-link:hover .sponsor-card {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(32, 33, 36, 0.12);
+  border-color: rgba(66, 133, 244, 0.25);
 }
 
 .sponsor-card img {
-  max-width: 150px;
-  max-height: 80px;
+  display: block;
+  max-inline-size: 100%;
+  max-block-size: 96px;
   width: auto;
   height: auto;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.sponsor-card-link:hover .sponsor-card img {
+  transform: scale(1.04);
+}
+
+.sponsors-grid.diamond .sponsor-card img {
+  max-inline-size: min(290px, 100%);
+  max-block-size: 130px;
+}
+
+.sponsors-grid.gold .sponsor-card img {
+  max-inline-size: min(240px, 100%);
+  max-block-size: 115px;
+}
+
+.sponsors-grid.silver .sponsor-card img,
+.sponsors-grid.support .sponsor-card img {
+  max-inline-size: min(210px, 100%);
+  max-block-size: 96px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-card,
+  .sponsor-card img {
+    transition: none;
+  }
+
+  .sponsor-card-link:hover .sponsor-card,
+  .sponsor-card-link:hover .sponsor-card img {
+    transform: none;
+  }
+}
+
+/* Patrocinador em Destaque - Brendi */
+.brendi-sponsor {
+  background: white;
+}
+
+.brendi-sponsor-wrapper {
+  container: brendi-card / inline-size;
+  inline-size: 100%;
+}
+
+.brendi-sponsor-card {
+  background: var(--light-color);
+  border-radius: 24px;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.brendi-sponsor-card > img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 1600 / 1143;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+.brendi-sponsor-card > hgroup {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.brendi-sponsor-badge {
+  display: inline-block;
+  justify-self: start;
+  padding-block: 0.35rem;
+  padding-inline: 0.9rem;
+  border-radius: 999px;
+  background: rgba(66, 133, 244, 0.12);
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.brendi-sponsor-card > hgroup h3 {
+  font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem);
+  color: var(--dark-color);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.brendi-sponsor-description {
+  color: var(--gray-color);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.brendi-sponsor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: safe center;
+}
+
+@container brendi-card (inline-size > 720px) {
+  .brendi-sponsor-card:has(> img) {
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 3rem;
+    row-gap: 1.25rem;
+    padding-block: 2.5rem;
+    padding-inline: 2.5rem;
+    align-content: center;
+  }
+
+  .brendi-sponsor-card:has(> img) > img {
+    grid-column: 1;
+    grid-row: 1 / -1;
+  }
+
+  .brendi-sponsor-card:has(> img) > hgroup,
+  .brendi-sponsor-card:has(> img) > .brendi-sponsor-description,
+  .brendi-sponsor-card:has(> img) > .brendi-sponsor-actions {
+    grid-column: 2;
+  }
 }
 
 .become-sponsor {
   text-align: center;
-  margin-top: 4rem;
-  padding: 3rem;
+  max-inline-size: 780px;
+  margin-inline: auto;
+  margin-block-start: 4.5rem;
+  padding-block: 2.75rem;
+  padding-inline: 2.5rem;
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(32, 33, 36, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(32, 33, 36, 0.07);
 }
 
 .become-sponsor h3 {
@@ -1202,9 +1444,26 @@
     grid-template-columns: 1fr;
   }
   
-  .sponsors-grid.gold,
-  .sponsors-grid.silver {
-    grid-template-columns: repeat(2, 1fr);
+  .sponsors-grid.diamond .sponsor-card-link {
+    flex: 1 1 320px;
+    max-inline-size: 420px;
+  }
+
+  .sponsors-grid.silver .sponsor-card-link {
+    flex: 1 1 calc(50% - 0.75rem);
+    max-inline-size: 320px;
+  }
+
+  .sponsors-grid.diamond .sponsor-card {
+    min-block-size: 185px;
+    padding-block: 2rem;
+    padding-inline: 2rem;
+  }
+
+  .sponsors-grid.silver .sponsor-card {
+    min-block-size: 145px;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
   }
   
   .venue-actions {
@@ -1239,9 +1498,17 @@
     justify-content: center;
   }
   
-  .sponsors-grid.gold,
-  .sponsors-grid.silver {
-    grid-template-columns: 1fr;
+  .sponsors-grid.diamond .sponsor-card-link,
+  .sponsors-grid.gold .sponsor-card-link,
+  .sponsors-grid.silver .sponsor-card-link,
+  .sponsors-grid.support .sponsor-card-link {
+    flex: 1 1 100%;
+    max-inline-size: 100%;
+  }
+
+  .brendi-sponsor-actions .btn {
+    inline-size: 100%;
+    justify-content: center;
   }
 }
 

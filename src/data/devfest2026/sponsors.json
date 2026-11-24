@@ -12,29 +12,65 @@
         "name": "Fala Boss",
         "logo": "images/sponsors/fala-boss.png",
         "website": "https://falaboss.com/empregador/pagina-inicial"
+      },
+      {
+        "id": 3,
+        "name": "Brendi",
+        "logo": "images/sponsors/BRENDI_NOME.webp.jpeg",
+        "website": "https://brendi.com.br/"
+      },
+      {
+        "id": 4,
+        "name": "Nimble Evolution",
+        "logo": "images/sponsors/nimble.png",
+        "website": "https://br.nimbleevolution.com/jornada-agil-atlassian/"
       }
     ],
     "gold": [
-     
+      {
+        "id": 1,
+        "name": "FIAP",
+        "logo": "images/sponsors/DevFest 2026 - fiap.png",
+        "website": "https://www.fiap.com.br/"
+      }
     ],
     "silver": [
       {
-        "id": 2,
-        "name": "Microsoft",
-        "logo": "images/sponsors/mv-maker-kid.jpeg"
-      }, 
-      {
-        "id": 2,
-        "name": "Microsoft",
-        "logo": "images/sponsors/mv-maker.png"
+        "id": 1,
+        "name": "Unimate Maker",
+        "logo": "images/sponsors/mv-maker-kid.jpeg",
+        "website": "https://www.instagram.com/unimatemaker"
       },
       {
         "id": 2,
-        "name": "Microsoft",
+        "name": "MV Cultura Maker",
+        "logo": "images/sponsors/mv-maker.png",
+        "website": "https://mvculturamaker.com.br/"
+      },
+      {
+        "id": 3,
+        "name": "OnChange",
         "logo": "images/sponsors/on-change.jpeg",
-        "website": "https://www.microsoft.com/"
+        "website": "https://onchange.com.br/"
+      },
+      {
+        "id": 4,
+        "name": "Unimar",
+        "logo": "images/sponsors/unimar.jpeg",
+        "website": "https://unimaread.com.br/"
+      },
+      {
+        "id": 5,
+        "name": "Hashi Doces e Salgados",
+        "logo": "images/sponsors/hashi.jpeg",
+        "website": "https://www.instagram.com/hashidocesesalgados/"
+      },
+      {
+        "id": 6,
+        "name": "Editora Novatec",
+        "logo": "images/sponsors/novatec.png",
+        "website": "https://novatec.com.br/"
       }
-     
     ],
     "support": [
       {
