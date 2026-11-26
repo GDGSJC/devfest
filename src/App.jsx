@@ -163,13 +163,39 @@ const App = () => {
   ]
 
   // Kids Little track activities (2-5 anos)
-  const kidsLittleActivities = [
+  const kidsLittlePeriods = [
     {
-      time: '10H00 - 17H00',
-      activity: 'Robótica Estrutural',
-      description: 'É a montagem de estruturas com peças específicas sem uso de programação ou eletrônicos, que desenvolvem múltiplas habilidades nas crianças.',
-      instructor: 'Nathalia Braga',
-      type: 'robotics'
+      period: '1º Período',
+      theme: 'Meu Amigo Robô',
+      time: '10H30 - 11H50',
+      icon: '🤖',
+      activities: [
+        { time: '10H30 - 10H40', activity: 'Acolhida', description: 'Recepção e adaptação ao ambiente.' },
+        { time: '10H40 - 11H10', activity: 'Meu Amigo Robô', description: 'Contação de história e criação de robô com materiais recicláveis, pinturas e decorações.' },
+        { time: '11H10 - 11H30', activity: 'Construindo com Kid K’NEX', description: 'Construção de robôs com peças de robótica estrutural.' },
+        { time: '11H30 - 11H50', activity: 'Desafio dos Pequenos Inventores', description: 'Jogos com números, quantidades, cores e formas geométricas, associação e jogo da memória e construção com peças de robótica estrutural.' }
+      ]
+    },
+    {
+      period: '2º Período',
+      theme: 'Um Natal de Construções e Descobertas',
+      time: '14H00 - 15H30',
+      icon: '🎄',
+      activities: [
+        { time: '14H00 - 14H30', activity: 'Desafio das Cores: A Rena do Papai Noel', description: 'Identificação, separação de cores, quantidades e construção com peças de robótica estrutural.' },
+        { time: '14H30 - 15H10', activity: 'Meu Papai Noel Iluminado', description: 'Explorando luz e criatividade, as crianças irão pintar e decorar um cartão do Papai Noel com LED.' },
+        { time: '15H10 - 15H30', activity: 'A Casa do Papai Noel', description: 'Construção criativa com as peças de robótica estrutural, explorando montagem e imaginação.' }
+      ]
+    },
+    {
+      period: '3º Período',
+      theme: 'Uma Experiência de Neve',
+      time: '16H00 - 16H40',
+      icon: '❄️',
+      activities: [
+        { time: '16H00 - 16H10', activity: 'Tempestade de Neve', description: 'Experiência visual e de descoberta, explorando o tema.' },
+        { time: '16H10 - 16H40', activity: 'Neve nas Minhas Mãos', description: 'Experiência sensorial com produção de neve, decoração e montagem em um potinho para levar para casa.' }
+      ]
     }
   ]
 
@@ -213,19 +239,7 @@ const App = () => {
       subtitle: 'SALA 3',
       stageTitle: 'Trilha Junior - Sala 3',
       icon: '🌱',
-      speakers: [
-        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time),
-        {
-          name: 'Palestrante Boss',
-          image: 'images/sponsors/fala-boss.png',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Palestra FalaBoss',
-            time: '16H00 - 16H40',
-            duration: '40 min'
-          }
-        }
-      ]
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'Junior', 'Start') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'community',
@@ -259,39 +273,7 @@ const App = () => {
       subtitle: 'SALA 2',
       stageTitle: 'Trilha PIT - Sala 2',
       icon: '💡',
-      speakers: [
-        ...speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'PIT', 'Trilha PIT') && speaker.talk && speaker.talk.time),
-        {
-          name: 'Palestra 1',
-          image: 'images/sponsors/pit-logo.jpeg',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Palestra 1 - Trilha PIT',
-            time: '14H00 - 14H40',
-            duration: '40 min'
-          }
-        },
-        {
-          name: 'Palestra 2',
-          image: 'images/sponsors/pit-logo.jpeg',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Palestra 2 - Trilha PIT',
-            time: '14H45 - 15H25',
-            duration: '40 min'
-          }
-        },
-        {
-          name: 'Palestra 3',
-          image: 'images/sponsors/pit-logo.jpeg',
-          isPlaceholderSlot: true,
-          talk: {
-            title: 'Palestra 3 - Trilha PIT',
-            time: '16H00 - 16H40',
-            duration: '40 min'
-          }
-        }
-      ]
+      speakers: speakersData.speakers.filter(speaker => speakerHasTrack(speaker, 'PIT', 'Trilha PIT') && speaker.talk && speaker.talk.time)
     },
     {
       id: 'kids',
@@ -669,7 +651,8 @@ const App = () => {
                         /* Trilha Kids Little (2-5 anos) */
                         <div className="kids-little-schedule">
                           <div className="schedule-header">
-                            <h3>Trilha Kids - Atividades para crianças pequenas</h3>
+                            <h3>Dia de Descobertas para crianças de 2 a 5 anos</h3>
+                            <p>Experiências lúdicas e educativas que envolvem criatividade, construção, jogos, experimentação e descobertas. Tudo de forma prática, sem telas e sem programação.</p>
                             <p>Com <strong>Nathalia Braga</strong></p>
                             <div className="partnership-info">
                               <img src="/images/unimate-maker-logo.png" alt="Unimate Maker" className="partner-logo unimate"
@@ -691,27 +674,35 @@ const App = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="schedule-grid">
-                            {kidsLittleActivities.map((item, index) => (
-                              <div key={index} className="schedule-item kids-little-item robotics">
-                                <div className="schedule-time">
-                                  <span className="time kids-little-time">{item.time}</span>
-                                </div>
-                                <div className="schedule-content kids-little-content">
-                                  <div className="activity-info">
-                                    <h3>
-                                      <span className="activity-type robotics">🤖</span>
-                                      {item.activity}
-                                    </h3>
-                                    <p className="activity-description">{item.description}</p>
-                                  </div>
-                                </div>
+                          {kidsLittlePeriods.map((period) => (
+                            <div key={period.period} className="kids-little-period">
+                              <div className="kids-little-period-header">
+                                <span className="kids-little-period-label">{period.period} · {period.time}</span>
+                                <h4>
+                                  <span className="activity-type robotics">{period.icon}</span>
+                                  {period.theme}
+                                </h4>
                               </div>
-                            ))}
-                          </div>
+                              <div className="schedule-grid">
+                                {period.activities.map((item) => (
+                                  <div key={item.time} className="schedule-item kids-little-item robotics">
+                                    <div className="schedule-time">
+                                      <span className="time kids-little-time">{item.time}</span>
+                                    </div>
+                                    <div className="schedule-content kids-little-content">
+                                      <div className="activity-info">
+                                        <h3>{item.activity}</h3>
+                                        <p className="activity-description">{item.description}</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
                           <div className="kids-little-info">
                             <p><strong>Idades:</strong> 2 a 5 anos</p>
-                            <p><strong>Atividade:</strong> Robótica Estrutural contínua durante todo o evento</p>
+                            <p><strong>Formato:</strong> três períodos com oficinas independentes</p>
                             <p><strong>Responsabilidade:</strong> Os pais são 100% responsáveis pelas crianças durante o evento</p>
                           </div>
                         </div>

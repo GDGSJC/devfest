@@ -129,8 +129,8 @@
       "talk": {
         "title": "A IA Fez Seu Sistema. Agora Vamos Hackeá-lo",
         "description": "Criar sistemas com IA ficou fácil. Criar sistemas seguros, nem tanto.\n\nNesta palestra, vamos explorar na prática vulnerabilidades comuns em aplicações feitas com vibe coding: isAdmin no frontend, Supabase exposto, permissões mal configuradas e APIs sem proteção adequada.\n\nTambém veremos como corrigir esses problemas usando conceitos simples como JWT, autorização no backend e controle de acesso por usuário.",
-        "time": "10H30 - 11H10",
-        "duration": "40 min"
+        "time": "11H15 - 12H00",
+        "duration": "45 min"
       }
     },
     {
@@ -376,8 +376,82 @@
       "talk": {
         "title": "Agentes de IA como colegas de time: arquitetura multiagente aplicada ao Scrum (um caso real com Jira Rovo)",
         "description": "Como seria ter um agente de IA ao lado de cada papel do time Scrum? Nesta palestra, mostro como construímos um ecossistema de agentes especializados para PO, UX, Arquitetura, Dev e QA que colaboram diretamente no Jira para levar uma demanda da ideia ao “pronto para desenvolvimento”. Inclui demo ao vivo, resultados reais e os aprendizados que você pode levar para qualquer stack.\n\nAssistentes de IA já fazem parte do dia a dia dos devs. Mas o que acontece quando, em vez de um assistente genérico, o time conta com agentes especializados que atuam como membros do time Scrum, cada um com seu papel e responsabilidades?\nNesta palestra, compartilho um caso real em que criamos agentes para apoiar os papéis de Product Owner, UX, Arquitetura, Desenvolvimento e QA. Os agentes atuam diretamente nas issues do Jira: analisam e refinam histórias, sugerem critérios de aceite, apontam riscos técnicos, geram documentação no Confluence e apoiam a tomada de decisão. Juntos, eles formam um fluxo colaborativo em que cada demanda evolui no Jira enquanto o contexto passa de um agente para o outro.\nA implementação foi feita com o Rovo, integrado ao Jira e ao Confluence, mas o foco da sessão está nos padrões de arquitetura multiagente, que se aplicam a outras ferramentas e stacks.\nVamos abordar:\n- A estratégia para desenhar agentes especializados por papel\n- Como orquestrar o fluxo de trabalho e a troca de contexto entre os agentes dentro do Jira\n- Onde a IA realmente agrega valor no processo ágil e onde ela ainda não ajuda\n- Uma demo ao vivo de uma issue no Jira evoluindo da criação até estar pronta para desenvolvimento\n- Os resultados obtidos: refinamentos mais consistentes, padronização das informações, menos retrabalho, conhecimento mais distribuído e times mais produtivos\n- Os erros que cometemos no caminho e os próximos passos dessa arquitetura\nAo final, você terá uma visão prática de como transformar agentes de IA em colegas de time de verdade, e não apenas em ferramentas de consulta.",
-        "time": "11H15 - 12H00",
-        "duration": "45 min"
+        "time": "10H30 - 11H10",
+        "duration": "40 min"
+      }
+    },
+    {
+      "id": 22,
+      "name": "Amanda Barros",
+      "role": "Supervisora de Produto",
+      "company": "",
+      "bio": "Amanda Barros é administradora, com 15 anos de experiência em relacionamento e atendimento humano, e hoje atua como supervisora de produto, na área de produtos digitais para usuários com diferentes níveis de familiaridade com tecnologia. Usa IA no dia a dia para estruturar dados, narrativas e conteúdo, e defende que a tecnologia mais avançada só cumpre seu papel quando é simples para quem está na outra ponta.",
+      "image": "images/speakers/amanda.jpeg",
+      "track": "Junior",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/amanda-b-321b5854"
+      },
+      "talk": {
+        "title": "Tecnologia com Empatia: Descomplicando IAs para Quem Cria e para Quem Usa",
+        "description": "A cada semana surge uma nova IA. De forma prática descrevo as ferramentas que utilizo: Gemini, Claude e GPT na criação de produtos digitais. Trago a reflexão de um desafio do dia a dia onde mesmo com a criação de um agente de IA no WhatsApp há caso de alunas que não sabem baixar um PDF, defendo que quanto mais avançada a tecnologia, mais simples deve ser a experiência de quem usa. Termino com um checklist de empatia para quem cria para aplicação prática.",
+        "time": "16H00 - 16H40",
+        "duration": "40 min"
+      }
+    },
+    {
+      "id": 23,
+      "name": "Michele Lourenço",
+      "role": "Fundadora e Head de Estratégia e Inovação em Marketing",
+      "company": "ClickNow",
+      "bio": "Michele Lourenço é empreendedora, estrategista de crescimento, consultora e mentora. Fundadora e Head de Estratégia e Inovação em Marketing da ClickNow, empresa criada em 1998, lidera sua evolução como Growth Innovation Platform, integrando estratégia, inovação, dados, inteligência artificial e especialistas para conectar decisões à execução e ao crescimento dos negócios.\n\nCriadora do Método D.E.C.I.S.Ã.O.®️, apoia empresários e lideranças na definição de posicionamento, prioridades e estratégias de mercado, geração de demanda e receita. Possui certificações em Web Analytics pela ESPM, Inbound Marketing pela Resultados Digitais e mídia digital pelo Google e pela Meta. Atua também na articulação de iniciativas de inovação e desenvolvimento empresarial.",
+      "image": "images/speakers/michele - pit.jpeg",
+      "track": "PIT",
+      "isGuest": false,
+      "social": {},
+      "talk": {
+        "title": "Nunca foi tão fácil construir. Nunca foi tão importante saber o que construir.",
+        "description": "O valor da decisão na era da inteligência artificial.",
+        "time": "14H45 - 15H25",
+        "duration": "40 min"
+      }
+    },
+    {
+      "id": 24,
+      "name": "Vinicius Basile",
+      "role": "Microsoft MVP",
+      "company": "",
+      "bio": "Microsoft MVP | Ex Recognized Fast Track Solution Architect | Open Source Developer | Community Speaker",
+      "image": "images/speakers/vinicius-basile.png",
+      "track": "PIT",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/vinnybasile/"
+      },
+      "talk": {
+        "title": "Claude as Copilot Agent Builder",
+        "description": "Utilização das extensões Claude e Copilot Studio no VSCode para criação e publicação de Agents compatíveis com a Power Platform.",
+        "time": "14H00 - 14H40",
+        "duration": "40 min"
+      }
+    },
+    {
+      "id": 25,
+      "name": "Marcos Henrique",
+      "role": "Especialista em Node.js e AWS Community Builder",
+      "company": "",
+      "bio": "Um caipira suburbano que se autodesafia todos os dias na gringa para destilar a loucura frenética das IAs e suas complexidades para explicar pra minha vó o que faço xD\n\nEspecialista em Node.js, AWS Community Builder e pai de um autista, plasticidade as a service como lema.",
+      "image": "images/speakers/marcos-henrique.jpeg",
+      "track": "PIT",
+      "isGuest": false,
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/devopmh"
+      },
+      "talk": {
+        "title": "Usando um Modelo de Decisão pra escolher o look do meu mozão",
+        "description": "Com todo o hype ao redor de system one models/modelos de decisão, nesta palestra vou utilizar um modelo pequeno e barato para demonstrar de forma lúdica e aprofundada como podemos implementar de forma coerente e o quanto isto faz sentido em determinados contextos, como por exemplo decidir o look pro próximo role.",
+        "time": "16H00 - 16H40",
+        "duration": "40 min"
       }
     }
   ]
