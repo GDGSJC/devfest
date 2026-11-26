@@ -306,6 +306,7 @@ const App = () => {
           >
             <img
               src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=120&background=4285f4&color=ffffff&bold=true&format=png`}
+              style={{ objectPosition: speaker.imagePosition }}
               alt={speaker.name}
               className="track-speaker-avatar"
               onError={(e) => {
@@ -736,6 +737,7 @@ const App = () => {
                                   >
                                     <img
                                       src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`}
+                                      style={{ objectPosition: speaker.imagePosition }}
                                       alt={speaker.name}
                                       onError={(e) => {
                                         e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=80&background=4285f4&color=ffffff&bold=true&format=png`
@@ -794,6 +796,7 @@ const App = () => {
                 >
                   <img 
                     src={speaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`} 
+                    style={{ objectPosition: speaker.imagePosition }}
                     alt={speaker.name} 
                     onError={(e) => {
                       e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(speaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
@@ -1277,6 +1280,7 @@ const App = () => {
             <div className="speaker-image">
               <img
                 src={selectedSpeaker.image || `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedSpeaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`}
+                style={{ objectPosition: selectedSpeaker.imagePosition }}
                 alt={selectedSpeaker.name}
                 onError={(e) => {
                   e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(selectedSpeaker.name)}&size=240&background=4285f4&color=ffffff&bold=true&format=png`
